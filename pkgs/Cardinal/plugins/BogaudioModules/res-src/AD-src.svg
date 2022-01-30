@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<module hp="3">
+  <style/>
+
+  <def xlink:href="#module3" var-name="AD"/>
+
+  <g transform="translate(0 25)">
+    <text font-size="6pt" letter-spacing="1.5px" transform="translate(3.5 0)">ATTACK</text>
+    <def id="ATTACK_PARAM" xlink:href="#knob29" transform="translate(0 0)"/>
+    <def xlink:href="#dial" transform="translate(0 0)"/>
+    <def id="ATTACK_LIGHT" xlink:href="#light-tiny" transform="translate(20.8 40)"/>
+  </g>
+
+  <g transform="translate(0 82)">
+    <text font-size="6pt" letter-spacing="2px" transform="translate(6 0)">DECAY</text>
+    <def id="DECAY_PARAM" xlink:href="#knob29" transform="translate(0 0)"/>
+    <def xlink:href="#dial" transform="translate(0 0)"/>
+    <def id="DECAY_LIGHT" xlink:href="#light-tiny" transform="translate(20.8 40)"/>
+  </g>
+
+  <g transform="translate(0 132.5)">
+    <g transform="translate(2.5 0)">
+      <text font-size="5pt" letter-spacing="0.5px" transform="translate(0 6)">RT</text>
+      <def id="RETRIGGER_PARAM" xlink:href="#button-small" transform="translate(9.5 -1)"/>
+    </g>
+    <g transform="translate(23.5 0)">
+      <text font-size="5pt" letter-spacing="0.5px" transform="translate(0.3 6)">LP</text>
+      <def id="LOOP_PARAM" xlink:href="#button-small" transform="translate(9.5 -1)"/>
+    </g>
+  </g>
+
+  <g transform="translate(11 147)">
+    <text font-size="5pt" letter-spacing="1.5px" transform="translate(-1 6)">LIN</text>
+    <def id="LINEAR_PARAM" xlink:href="#button-small" transform="translate(15 -1)"/>
+  </g>
+
+  <g transform="translate(0 160.5)">
+    <g class="io-group" transform="translate(5.5 0)">
+      <rect class="input-background-filler" width="34" height="10" transform="translate(0 98)"/>
+      <rect class="input-background" width="34" height="108" rx="5"/>
+      <def id="TRIGGER_INPUT" xlink:href="#input" transform="translate(5 3)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(6.5 35)">TRIG</text>
+      <def id="ATTACK_INPUT" xlink:href="#input" transform="translate(5 38)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="1px" transform="translate(2 70)">ATTACK</text>
+      <def id="DECAY_INPUT" xlink:href="#input" transform="translate(5 73)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(2.5 105)">DECAY</text>
+    </g>
+    <g class="io-group" transform="translate(5.5 111)">
+      <rect class="output-background-filler" width="34" height="10" transform="translate(0 -3)"/>
+      <rect class="output-background" width="34" height="70" rx="5"/>
+      <def id="ENV_OUTPUT" xlink:href="#output" transform="translate(5 0)"/>
+      <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(8.5 32)">ENV</text>
+      <def id="EOC_OUTPUT" xlink:href="#output" transform="translate(5 35)"/>
+      <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(8.5 67)">EOC</text>
+    </g>
+  </g>
+</module>

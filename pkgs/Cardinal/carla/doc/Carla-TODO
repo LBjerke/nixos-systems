@@ -1,0 +1,102 @@
+# Carla TODO
+
+# ----------------------------------------------------------------------------
+# in short
+
+4. custom "plugin slots" skins, ala Reason (also define set of keys for a new LV2 extension, 80% done)
+7. direct support for csound files (as plugins, inspired by 'cabbage')
+
+Ideas for later:
+
+10. easier canvas connections by using smart key shortcuts
+11. Mobile version (using Android Patchfield for example)
+12. Mobile OSC Control app
+13. Port good JACK-only apps as internal plugins (zita stuff would be nice)
+
+# ----------------------------------------------------------------------------
+# current work
+
+FRONTEND:
+ - more skins
+ - testing stuff
+
+BACKEND:
+ - noexcept wherever possible
+
+OTHER:
+ - create tests for all utils code
+ - fix reported bugs
+
+# ----------------------------------------------------------------------------
+# more detailed
+
+GENERAL:
+ - add direct program access on ui-dialogs (needed for standalone bridges), maybe add extra buttons too (reset plugin, fix ui size)
+ - implement midi-learn (new dialog)
+ - implement favorite plugins, add in new tab near file-browser
+ - blender style canvas theme
+ - NSM rework
+
+FRONTEND:
+ - make always-on-top depend on it^
+ - complete zynfx, knob values on top
+ - synth skin
+ - samplers skin
+
+ENGINE:
+ - allow to change position of plugins (up/down)
+ - allow to add plugins when engine is stopped
+ - implement Haiku Media support (based from JACK?, LATER)
+ - implement latency in continuous-rack mode
+ - add MIDI-bank change type (GM, GS, XG and MMA). See fluidsynth and los docs
+ ~ allow to use static OSC ports
+ - switch engine modes when opening project
+ - don't pass audio buffers to plugin process, make them request via ports
+
+PLUGINS:
+ - add control-out rate/freq option in frames (or just a regular block-size option?)
+ - control/midi-out in singleProcess() calls, use timeoutFrames var
+ - implement midi-cc automation special rules (invert, half, logarithmic, etc)
+ - implement LSCP file support (new native plugin?)
+ - implement Csound file support
+
+
+LADSPA:
+
+DSSI:
+ - custom chunk-data extension, publish on kx website when complete
+
+LV2:
+ - revisit all extensions
+ - strict bounds recheck
+
+FluidSynth:
+ - per-channel volume control
+ - proper buffer-size/sample-rate change (needs testing)
+
+LinuxSampler:
+ - per-channel volume pan&control
+ - proper buffer-size/sample-rate change (needs testing)
+
+# ----------------------------------------------------------------------------
+# //tb/150118
+
+misc
+-allow to open instruments via file/open menu (same as drag from left-side tree)
+-allow drag of sfz/sf2/gig etc. also to patchbay (same effect as dragging to rack)
+-action "remove all" in toolbar and plugin menu: add confirm dialog /!\
+-action "remove folder": add confirm dialog
+-add plugin macro "reset parameters"
+-allow re-ordering of rack components
+-setting: auto-connect to physical output when new instrument loaded (for quick audition)
+-for instruments: highlight keys with assigned samples or unhighlight keys without assigned sample
+-allow in-line edit window (i.e. right of rack/canvas) -> shows as soon as plugin/instr. is selected
+-indicate engine at work top right
+-if engine is jack, show load top right (percent and/or gauge)
+-warn on quit if unsaved
+
+patchbay
+-allow click a, click b port connections
+-allow multiple port selection + connection (i.e. with enter)
+-allow to select connections with lasso (to delete)
+

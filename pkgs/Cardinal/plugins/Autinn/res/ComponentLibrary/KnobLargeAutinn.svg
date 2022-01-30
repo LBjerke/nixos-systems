@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="38"
+   height="38"
+   viewBox="0 0 10.054166 10.054167"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)"
+   sodipodi:docname="KnobLargeAutinn.svg">
+  <title
+     id="title2483">Autinn Knob 1</title>
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient7431">
+      <stop
+         style="stop-color:#bcbcbc;stop-opacity:1"
+         offset="0"
+         id="stop7427" />
+      <stop
+         style="stop-color:#969696;stop-opacity:1"
+         offset="1"
+         id="stop7429" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6206"
+       id="linearGradient6208"
+       x1="67.593513"
+       y1="32.940937"
+       x2="67.577919"
+       y2="43.391163"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient6206">
+      <stop
+         style="stop-color:#4b4b4b;stop-opacity:1"
+         offset="0"
+         id="stop6202" />
+      <stop
+         style="stop-color:#030303;stop-opacity:1"
+         offset="1"
+         id="stop6204" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7431"
+       id="linearGradient7433"
+       x1="67.569008"
+       y1="34.974224"
+       x2="67.461449"
+       y2="40.967018"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#202020"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.0416876"
+     inkscape:cx="-111.79052"
+     inkscape:cy="28.858627"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:pagecheckerboard="false"
+     inkscape:snap-grids="false"
+     inkscape:snap-others="false"
+     inkscape:object-nodes="false"
+     inkscape:snap-nodes="false"
+     inkscape:snap-to-guides="false"
+     inkscape:snap-page="true"
+     inkscape:snap-bbox="false"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:snap-global="true"
+     inkscape:document-rotation="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Autinn Knob 1</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-286.94582)">
+    <g
+       id="MediumKnob"
+       transform="matrix(0.99981779,0,0,1.001539,-62.50846,253.74812)">
+      <ellipse
+         style="fill:#261a1a;fill-opacity:1;stroke:#a2a2a2;stroke-width:0.255846;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="OuterRing"
+         cx="67.547852"
+         cy="38.166039"
+         rx="4.7941175"
+         ry="4.7850137" />
+      <path
+         style="fill:#7b7b7b;fill-opacity:1;stroke:#565656;stroke-width:0.0619125;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 71.119943,40.34556 c 0.132507,-0.49771 0.201536,-0.66152 0.480928,-1.14138 0.526682,-0.90456 0.529726,-1.12902 0.02694,-1.99564 C 71.335217,36.70421 71.295251,36.6044 71.157708,36.0345 70.997917,35.37241 70.90118,35.18947 70.58632,34.95401 70.356549,34.78216 70.229828,34.72921 69.734584,34.59806 69.236724,34.46622 69.071873,34.3971 68.5919,34.1189 67.686317,33.59403 67.461482,33.59123 66.592862,34.094 c -0.505492,0.29261 -0.605516,0.3326 -1.176527,0.47049 -0.663402,0.16018 -0.846748,0.25698 -1.082941,0.57151 -0.17244,0.22951 -0.225526,0.35613 -0.357421,0.85063 -0.132566,0.49715 -0.201978,0.66179 -0.48114,1.14121 -0.526691,0.90456 -0.529717,1.12902 -0.02694,1.99562 0.292596,0.50434 0.332562,0.60415 0.470103,1.17403 0.159802,0.66211 0.256539,0.84506 0.57139,1.08052 0.229786,0.17185 0.35649,0.2248 0.851735,0.35593 0.497861,0.13183 0.662714,0.20099 1.142684,0.47917 0.905818,0.52502 1.131653,0.52777 1.998419,0.0243 0.468791,-0.27227 0.672069,-0.35308 1.179306,-0.4687 0.16334,-0.0373 0.421016,-0.11475 0.572565,-0.17223 0.249733,-0.0947 0.295916,-0.13099 0.493333,-0.38723 0.192852,-0.2503 0.235526,-0.34916 0.372518,-0.86376 z"
+         id="path907"
+         inkscape:connector-curvature="0"
+         clip-path="none"
+         mask="none"
+         inkscape:label="FingerKnob" />
+      <ellipse
+         style="opacity:0.46;fill:url(#linearGradient6208);fill-opacity:1;stroke:none;stroke-width:0.143931;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
+         id="LowestCircle"
+         ry="5.0193586"
+         rx="5.0279994"
+         cy="38.16605"
+         cx="67.547852" />
+      <path
+         style="fill:#cdcdcd;fill-opacity:1;stroke:none;stroke-width:5.5538;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 67.601656,34.56883 c -0.35913,0.0313 -0.47328,-0.3999 -0.158734,-0.59979 0.132122,-0.084 0.222103,-0.0656 0.352899,0.0721 0.195492,0.20554 0.08624,0.50279 -0.194081,0.52791 z"
+         id="path830"
+         inkscape:connector-curvature="0"
+         clip-path="none"
+         mask="none"
+         inkscape:label="Indicator" />
+      <ellipse
+         style="fill:url(#linearGradient7433);fill-opacity:1;stroke:#4b4b4b;stroke-width:0.175294;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1"
+         id="path6191"
+         cx="67.547852"
+         cy="38.166039"
+         rx="3.2847059"
+         ry="3.2784686"
+         inkscape:label="TopCircle" />
+    </g>
+  </g>
+</svg>

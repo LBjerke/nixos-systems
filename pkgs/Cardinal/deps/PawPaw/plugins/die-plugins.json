@@ -1,0 +1,17 @@
+{
+    "name": "die-plugins",
+    "lv2bundles": [
+        "distrho-a-comp.lv2",
+        "distrho-a-delay.lv2",
+        "distrho-a-eq.lv2",
+        "distrho-a-exp.lv2",
+        "distrho-a-fluidsynth.lv2",
+        "distrho-a-reverb.lv2"
+    ],
+    "version": "6c693aab4bbd8bb7b15b2423202248f66f1990fe",
+    "description": "DISTRHO Imported Effect",
+    "dlbaseurl": "https://github.com/DISTRHO/DIE-Plugins.git",
+    "dlmethod": "git",
+    "buildtype": "make",
+    "buildargs": "NOOPT=true"
+}

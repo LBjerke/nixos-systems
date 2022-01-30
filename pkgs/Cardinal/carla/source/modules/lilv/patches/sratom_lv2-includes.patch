@@ -1,0 +1,34 @@
+diff --git a/sratom/sratom.h b/sratom/sratom.h
+index 3e76954..5a9ec73 100644
+--- a/sratom/sratom.h
++++ b/sratom/sratom.h
+@@ -23,9 +23,9 @@
+ 
+ #include <stdint.h>
+ 
+-#include "lv2/lv2plug.in/ns/ext/urid/urid.h"
+-#include "lv2/lv2plug.in/ns/ext/atom/atom.h"
+-#include "lv2/lv2plug.in/ns/ext/atom/forge.h"
++#include "lv2/urid.h"
++#include "lv2/atom.h"
++#include "lv2/atom-forge.h"
+ #include "serd/serd.h"
+ #include "sord/sord.h"
+ 
+diff --git a/src/sratom.c b/src/sratom.c
+index 04613fd..d220a6a 100644
+--- a/src/sratom.c
++++ b/src/sratom.c
+@@ -20,9 +20,9 @@
+ #include <stdlib.h>
+ #include <string.h>
+ 
+-#include "lv2/lv2plug.in/ns/ext/atom/forge.h"
+-#include "lv2/lv2plug.in/ns/ext/atom/util.h"
+-#include "lv2/lv2plug.in/ns/ext/midi/midi.h"
++#include "lv2/atom-forge.h"
++#include "lv2/atom-util.h"
++#include "lv2/midi.h"
+ 
+ #include "sratom/sratom.h"
+ 

@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<module hp="10">
+  <style/>
+
+  <defs>
+    <symbol id="dial-attenuverter-cmpdist" viewBox="0 0 45px 45px">
+      <g transform="translate(22.5 22.5)">
+        <text font-size="7pt" transform="rotate(-240) translate(20 0) rotate(240) translate(-1.2 2.2)">-</text>
+
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-225) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-210) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-195) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-180) translate(17 0)"/>
+        <polyline points="0,0 3.5,0" stroke-width="1" transform="rotate(-165) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-150) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-135) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-120) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-105) translate(17 0)"/>
+
+        <text font-size="5pt" transform="rotate(-90) translate(20 0) rotate(90) translate(-1.9 3)">0</text>
+
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-75) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-60) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-45) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-30) translate(17 0)"/>
+        <polyline points="0,0 3.5,0" stroke-width="1" transform="rotate(-15) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(0) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(15) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(30) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(45) translate(17 0)"/>
+
+        <text font-size="5pt" transform="rotate(60) translate(20 0) rotate(-60) translate(-2 2)">+</text>
+      </g>
+    </symbol>
+
+    <symbol id="dial-drywet-cmpdist" viewBox="0 0 45px 45px">
+      <g transform="translate(22.5 22.5)">
+        <text font-size="5pt" transform="rotate(-240) translate(20 0) rotate(240) translate(-2.5 3)">D</text>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-210) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-180) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-150) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-120) translate(17 0)"/>
+        <polyline points="0,0 4.5,0" stroke-width="1" transform="rotate(-90) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-60) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-30) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(0) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(30) translate(17 0)"/>
+        <text font-size="5pt" transform="rotate(60) translate(20 0) rotate(-60) translate(-2 3)">W</text>
+      </g>
+    </symbol>
+  </defs>
+
+  <def xlink:href="#module" var-name="CMPDIST"/>
+
+  <!-- <rect width="150" height="14" fill="#0f0" transform="translate(0 80)" /> -->
+  <!-- <rect width="150" height="14" fill="#0f0" transform="translate(0 145)" /> -->
+  <!-- <rect width="150" height="14" fill="#0f0" transform="translate(0 211)" /> -->
+
+  <g transform="translate(6 35)">
+    <text font-size="6pt" letter-spacing="1px" transform="translate(3.5 0)">A SCALE</text>
+    <def id="A_PARAM" xlink:href="#knob29" transform="translate(0 3)"/>
+    <use xlink:href="#dial-attenuverter-cmpdist" transform="translate(0 3)"/>
+  </g>
+
+  <g transform="translate(52.5 35)">
+    <text font-size="6pt" letter-spacing="1px" transform="translate(4 0)">WINDOW</text>
+    <def id="WINDOW_PARAM" xlink:href="#knob29" transform="translate(0 3)"/>
+    <def xlink:href="#dial-window" transform="translate(0 3)"/>
+  </g>
+
+  <g transform="translate(99 35)">
+    <text font-size="6pt" letter-spacing="1px" transform="translate(3.5 0)">B SCALE</text>
+    <def id="B_PARAM" xlink:href="#knob29" transform="translate(0 3)"/>
+    <use xlink:href="#dial-attenuverter-cmpdist" transform="translate(0 3)"/>
+  </g>
+
+  <g transform="translate(6 100)">
+    <text font-size="6pt" letter-spacing="1px" transform="translate(6.5 0)">GT MIX</text>
+    <def id="GT_MIX_PARAM" xlink:href="#knob29" transform="translate(0 3)"/>
+    <use xlink:href="#dial-attenuverter-cmpdist" transform="translate(0 3)"/>
+  </g>
+
+  <g transform="translate(52.5 100)">
+    <text font-size="6pt" letter-spacing="1px" transform="translate(6.5 0)">EQ MIX</text>
+    <def id="EQ_MIX_PARAM" xlink:href="#knob29" transform="translate(0 3)"/>
+    <use xlink:href="#dial-attenuverter-cmpdist" transform="translate(0 3)"/>
+  </g>
+
+  <g transform="translate(99 100)">
+    <text font-size="6pt" letter-spacing="1px" transform="translate(7 0)">LT MIX</text>
+    <def id="LT_MIX_PARAM" xlink:href="#knob29" transform="translate(0 3)"/>
+    <use xlink:href="#dial-attenuverter-cmpdist" transform="translate(0 3)"/>
+  </g>
+
+  <!-- <polyline points="0,0 0,350" stroke="#0f0" stroke-width="1" fill="none" transform="translate(28.5 0)" /> -->
+  <!-- <polyline points="0,0 0,350" stroke="#0f0" stroke-width="1" fill="none" transform="translate(121.5 0)" /> -->
+  <!-- <polyline points="0,0 150,0" stroke="#0f0" stroke-width="1" fill="none" transform="translate(0 190.5)" /> -->
+
+  <g transform="translate(52.5 165)">
+    <text font-size="6pt" letter-spacing="1px" transform="translate(2.5 0)">DRY/WET</text>
+    <def id="DRY_WET_PARAM" xlink:href="#knob29" transform="translate(0 3)"/>
+    <use xlink:href="#dial-drywet-cmpdist" transform="translate(0 3)"/>
+  </g>
+
+  <g transform="translate(20.5 182.5)">
+    <text font-size="6pt" letter-spacing="1px" transform="translate(-6 -9)">A DRY</text>
+    <def id="A_DRY_PARAM" xlink:href="#knob16" transform="translate(0 0)"/>
+    <def xlink:href="#dial-mintick" transform="translate(-12.5 -12)"/>
+  </g>
+
+  <g transform="translate(113.5 182.5)">
+    <text font-size="6pt" letter-spacing="1px" transform="translate(-6 -9)">B DRY</text>
+    <def id="B_DRY_PARAM" xlink:href="#knob16" transform="translate(0 0)"/>
+    <def xlink:href="#dial-mintick" transform="translate(-12.5 -12)"/>
+  </g>
+
+  <g class="io-group" transform="translate(0 225)">
+    <rect class="input-background" width="130" height="135" rx="5" transform="translate(10 0)"/>
+    <rect class="output-background" width="65" height="91" rx="5" transform="translate(75 44)"/>
+    <rect class="output-background-filler" width="10" height="8" transform="translate(75 44)"/>
+    <rect class="output-background-filler" width="10" height="8" transform="translate(130 44)"/>
+    <rect class="output-background-filler" width="10" height="8" transform="translate(75 127)"/>
+
+    <g transform="translate(12 0)">
+      <def id="GT_MIX_INPUT" xlink:href="#input" transform="translate(3 5)"/>
+      <text class="input-label" font-size="6pt" letter-spacing="1px" transform="translate(5 40)">GTM</text>
+    </g>
+    <g transform="translate(44 0)">
+      <def id="LT_MIX_INPUT" xlink:href="#input" transform="translate(3 5)"/>
+      <text class="input-label" font-size="6pt" letter-spacing="1px" transform="translate(6 40)">LTM</text>
+    </g>
+    <g transform="translate(76 0)">
+      <def id="WINDOW_INPUT" xlink:href="#input" transform="translate(3 5)"/>
+      <text class="input-label" font-size="6pt" letter-spacing="0.5px" transform="translate(1.5 40)">WNDW</text>
+    </g>
+    <g transform="translate(108 0)">
+      <def id="DRY_WET_INPUT" xlink:href="#input" transform="translate(3 5)"/>
+      <text class="input-label" font-size="6pt" letter-spacing="1px" transform="translate(6 40)">D/W</text>
+    </g>
+
+    <g transform="translate(0 44)">
+      <g transform="translate(12 0)">
+        <def id="A_INPUT" xlink:href="#input" transform="translate(3 5)"/>
+        <text class="input-label" font-size="6pt" letter-spacing="1px" transform="translate(5 40)">A IN</text>
+      </g>
+      <g transform="translate(44 0)">
+        <def id="A_SCALE_INPUT" xlink:href="#input" transform="translate(3 5)"/>
+        <text class="input-label" font-size="6pt" letter-spacing="1px" transform="translate(1.5 40)">A SCL</text>
+      </g>
+      <g transform="translate(76 0)">
+        <def id="GT_OUTPUT" xlink:href="#output" transform="translate(3 5)"/>
+        <text class="output-label" font-size="6pt" letter-spacing="2px" transform="translate(8 40)">GT</text>
+      </g>
+      <g transform="translate(108 0)">
+        <def id="LT_OUTPUT" xlink:href="#output" transform="translate(3 5)"/>
+        <text class="output-label" font-size="6pt" letter-spacing="2px" transform="translate(9.5 40)">LT</text>
+      </g>
+
+      <g transform="translate(10 44)">
+        <g transform="translate(2 0)">
+          <def id="B_INPUT" xlink:href="#input" transform="translate(3 5)"/>
+          <text class="input-label" font-size="6pt" letter-spacing="1px" transform="translate(5 40)">B IN</text>
+        </g>
+        <g transform="translate(34 0)">
+          <def id="B_SCALE_INPUT" xlink:href="#input" transform="translate(3 5)"/>
+          <text class="input-label" font-size="6pt" letter-spacing="1px" transform="translate(1.5 40)">B SCL</text>
+        </g>
+        <g transform="translate(66 0)">
+          <def id="EQ_OUTPUT" xlink:href="#output" transform="translate(3 5)"/>
+          <text class="output-label" font-size="6pt" letter-spacing="2px" transform="translate(9 40)">EQ</text>
+        </g>
+        <g transform="translate(98 0)">
+          <def id="MIX_OUTPUT" xlink:href="#output" transform="translate(3 5)"/>
+          <text class="output-label" font-size="6pt" letter-spacing="2px" transform="translate(6 40)">MIX</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</module>

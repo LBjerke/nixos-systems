@@ -1,0 +1,298 @@
+{
+  "version": "",
+  "modules": [
+    {
+      "plugin": "Fundamental",
+      "model": "SEQ3",
+      "pos": [
+        0.0,
+        0.0
+      ],
+      "params": [
+        -0.17200051248073578,
+        0.0,
+        0.0,
+        8.0,
+        0.0,
+        1.2599997520446777,
+        0.0,
+        0.0,
+        1.8149995803833008,
+        2.8799972534179688,
+        0.0,
+        0.0,
+        2.354996919631958,
+        2.2499997615814209,
+        0.0,
+        0.0,
+        1.6650000810623169,
+        0.88499993085861206,
+        0.0,
+        0.0,
+        2.2050004005432129,
+        1.079999566078186,
+        0.0,
+        0.0,
+        1.589999794960022,
+        0.68999975919723511,
+        0.0,
+        0.0,
+        2.9850001335144043,
+        1.4399996995925903,
+        0.0,
+        0.0,
+        1.785003662109375,
+        0.31499996781349182,
+        0.0,
+        0.0
+      ],
+      "data": {
+        "running": true,
+        "gates": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "gateMode": 0
+      }
+    },
+    {
+      "plugin": "BaconMusic",
+      "model": "Glissinator",
+      "pos": [
+        330.0,
+        0.0
+      ],
+      "params": [
+        0.90000033378601074
+      ]
+    },
+    {
+      "plugin": "Core",
+      "model": "AudioInterface",
+      "pos": [
+        1290.0,
+        0.0
+      ],
+      "params": [],
+      "data": {
+        "driver": 5,
+        "device": 1,
+        "sampleRate": 44100.0,
+        "blockSize": 256
+      }
+    },
+    {
+      "plugin": "Fundamental",
+      "model": "VCMixer",
+      "pos": [
+        1140.0,
+        0.0
+      ],
+      "params": [
+        0.88849997520446777,
+        0.50999969244003296,
+        0.26400008797645569,
+        0.39150002598762512
+      ]
+    },
+    {
+      "plugin": "Fundamental",
+      "model": "VCO",
+      "pos": [
+        690.0,
+        0.0
+      ],
+      "params": [
+        1.0,
+        1.0,
+        -8.9406967163085938e-6,
+        0.16200003027915955,
+        0.5,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "plugin": "BaconMusic",
+      "model": "QuantEyes",
+      "pos": [
+        525.0,
+        0.0
+      ],
+      "params": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "data": {
+        "scaleState": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "plugin": "Fundamental",
+      "model": "VCO",
+      "pos": [
+        840.0,
+        0.0
+      ],
+      "params": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.5,
+        0.14850008487701416,
+        0.3135000467300415
+      ]
+    },
+    {
+      "plugin": "BaconMusic",
+      "model": "HarMoNee",
+      "pos": [
+        405.0,
+        0.0
+      ],
+      "params": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "plugin": "Fundamental",
+      "model": "VCO",
+      "pos": [
+        990.0,
+        0.0
+      ],
+      "params": [
+        1.0,
+        1.0,
+        -23.814014434814453,
+        0.0,
+        0.5,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "wires": [
+    {
+      "outputModuleId": 0,
+      "outputId": 1,
+      "inputModuleId": 1,
+      "inputId": 0
+    },
+    {
+      "outputModuleId": 3,
+      "outputId": 0,
+      "inputModuleId": 2,
+      "inputId": 0
+    },
+    {
+      "outputModuleId": 3,
+      "outputId": 0,
+      "inputModuleId": 2,
+      "inputId": 1
+    },
+    {
+      "outputModuleId": 1,
+      "outputId": 0,
+      "inputModuleId": 5,
+      "inputId": 0
+    },
+    {
+      "outputModuleId": 5,
+      "outputId": 0,
+      "inputModuleId": 4,
+      "inputId": 0
+    },
+    {
+      "outputModuleId": 4,
+      "outputId": 1,
+      "inputModuleId": 3,
+      "inputId": 1
+    },
+    {
+      "outputModuleId": 6,
+      "outputId": 2,
+      "inputModuleId": 3,
+      "inputId": 3
+    },
+    {
+      "outputModuleId": 4,
+      "outputId": 3,
+      "inputModuleId": 6,
+      "inputId": 1
+    },
+    {
+      "outputModuleId": 5,
+      "outputId": 1,
+      "inputModuleId": 6,
+      "inputId": 0
+    },
+    {
+      "outputModuleId": 1,
+      "outputId": 0,
+      "inputModuleId": 7,
+      "inputId": 0
+    },
+    {
+      "outputModuleId": 7,
+      "outputId": 1,
+      "inputModuleId": 5,
+      "inputId": 1
+    },
+    {
+      "outputModuleId": 0,
+      "outputId": 2,
+      "inputModuleId": 5,
+      "inputId": 2
+    },
+    {
+      "outputModuleId": 5,
+      "outputId": 2,
+      "inputModuleId": 8,
+      "inputId": 0
+    },
+    {
+      "outputModuleId": 8,
+      "outputId": 2,
+      "inputModuleId": 3,
+      "inputId": 5
+    }
+  ]
+}

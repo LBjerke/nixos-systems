@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<module hp="3">
+  <style/>
+
+  <def xlink:href="#module3" var-name="POLYMULT"/>
+
+  <g transform="translate(2.5 30)">
+    <text font-size="6pt" letter-spacing="1.5px" transform="translate(6.5 0)">CHAN</text>
+    <def id="CHANNELS_PARAM" xlink:href="#knob16" transform="translate(12 12)"/>
+    <def xlink:href="#dial-channels-small" transform="translate(0 0)"/>
+  </g>
+
+  <g transform="translate(0 70)">
+    <g class="io-group" transform="translate(5.5 0)">
+      <rect class="input-background" width="34" height="74" rx="5"/>
+      <rect class="input-background-filler" width="34" height="10" transform="translate(0 64)"/>
+      <def id="CHANNELS_INPUT" xlink:href="#input" transform="translate(5 3)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="1px" transform="translate(6 35)">CHAN</text>
+      <def id="IN_INPUT" xlink:href="#input" transform="translate(5 39)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(12.5 71)">IN</text>
+    </g>
+    <g class="io-group" transform="translate(5.5 77)">
+      <rect class="output-background-filler" width="34" height="10" transform="translate(0 -3)"/>
+      <rect class="output-background" width="34" height="140" rx="5"/>
+      <def id="OUT1_OUTPUT" xlink:href="#output" transform="translate(5 0)"/>
+      <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(8.3 32)">OUT</text>
+      <def id="OUT2_OUTPUT" xlink:href="#output" transform="translate(5 35)"/>
+      <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(8.3 67)">OUT</text>
+      <def id="OUT3_OUTPUT" xlink:href="#output" transform="translate(5 70)"/>
+      <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(8.3 102)">OUT</text>
+      <def id="OUT4_OUTPUT" xlink:href="#output" transform="translate(5 105)"/>
+      <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(8.3 137)">OUT</text>
+    </g>
+  </g>
+</module>

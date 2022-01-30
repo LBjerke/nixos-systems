@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<module hp="6">
+  <style/>
+
+  <def xlink:href="#module6" var-name="LMTR"/>
+
+  <!-- <polyline points="0,0 0,380" stroke="#0f0" stroke-width="1" fill="none" transform="translate(45 0)" /> -->
+  <!-- <rect width="90" height="15" fill="#0f0" transform="translate(0 18)" /> -->
+  <!-- <rect width="90" height="15" fill="#0f0" transform="translate(0 102)" /> -->
+  <!-- <rect width="90" height="7" fill="#0f0" transform="translate(0 185)" /> -->
+  <!-- <rect width="90" height="7" fill="#0f0" transform="translate(0 232)" /> -->
+
+  <g transform="translate(0 40)">
+    <text font-size="8pt" letter-spacing="2px" transform="translate(8 0)">THRESHOLD</text>
+    <def id="THRESHOLD_PARAM" xlink:href="#knob38" transform="translate(26 12)"/>
+    <def xlink:href="#dial-threshold" transform="translate(10 -4)"/>
+  </g>
+
+  <g transform="translate(0 122)">
+    <text font-size="8pt" letter-spacing="2px" transform="translate(15.5 0)">OUT GAIN</text>
+    <def id="OUTPUT_GAIN_PARAM" xlink:href="#knob38" transform="translate(26 12)"/>
+    <def xlink:href="#dial-outputgain" transform="translate(10 -4)"/>
+  </g>
+
+  <g transform="translate(40 198)">
+    <text font-size="5pt" letter-spacing="2px" transform="translate(-8 25.5) rotate(270)">KNEE</text>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(-4 -1)">SOFT</text>
+    <def id="KNEE_PARAM" xlink:href="#switch" transform="translate(0 2)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(-5 34)">HARD</text>
+  </g>
+
+  <g transform="translate(11 240)">
+    <g class="io-group" transform="translate(0 0)">
+      <rect class="input-background-filler" width="68" height="10" transform="translate(0 66)"/>
+      <rect class="input-background" width="68" height="73" rx="5"/>
+      <def id="LEFT_INPUT" xlink:href="#input" transform="translate(5 4)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(15.5 36)">L</text>
+      <def id="RIGHT_INPUT" xlink:href="#input" transform="translate(39 4)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(49 36)">R</text>
+      <def id="THRESHOLD_INPUT" xlink:href="#input" transform="translate(5 40)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(5.5 72)">TRSH</text>
+      <def id="OUTPUT_GAIN_INPUT" xlink:href="#input" transform="translate(39 40)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(42 72)">OGN</text>
+    </g>
+    <g class="io-group" transform="translate(0 79)">
+      <rect class="output-background-filler" width="68" height="10" transform="translate(0 -3)"/>
+      <rect class="output-background" width="68" height="37" rx="5"/>
+      <def id="LEFT_OUTPUT" xlink:href="#output" transform="translate(5 1)"/>
+      <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(15.5 33)">L</text>
+      <def id="RIGHT_OUTPUT" xlink:href="#output" transform="translate(39 1)"/>
+      <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(49 33)">R</text>
+    </g>
+  </g>
+</module>

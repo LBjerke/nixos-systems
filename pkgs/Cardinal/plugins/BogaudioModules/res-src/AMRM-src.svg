@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<module hp="6">
+  <style/>
+
+  <defs>
+    <symbol id="dial-rectify-amrm" viewBox="0 0 90px 90px">
+      <g transform="translate(45 45)">
+        <text font-size="6.0pt" transform="rotate(-240) translate(29 0) rotate(240) translate(-4 3)">0</text>
+        <polyline points="0,0 3.5,0" stroke-width="0.7" transform="rotate(-210) translate(26 0)"/>
+        <polyline points="0,0 3.5,0" stroke-width="0.7" transform="rotate(-180) translate(26 0)"/>
+        <polyline points="0,0 3.5,0" stroke-width="0.7" transform="rotate(-150) translate(26 0)"/>
+        <polyline points="0,0 3.5,0" stroke-width="0.7" transform="rotate(-120) translate(26 0)"/>
+        <polyline points="0,0 3.5,0" stroke-width="0.7" transform="rotate(-90) translate(26 0)"/>
+        <polyline points="0,0 3.5,0" stroke-width="0.7" transform="rotate(-60) translate(26 0)"/>
+        <polyline points="0,0 3.5,0" stroke-width="0.7" transform="rotate(-30) translate(26 0)"/>
+        <polyline points="0,0 3.5,0" stroke-width="0.7" transform="rotate(0) translate(26 0)"/>
+        <polyline points="0,0 3.5,0" stroke-width="0.7" transform="rotate(30) translate(26 0)"/>
+        <polyline points="0,0 5.5,0" stroke-width="1.5" transform="rotate(60) translate(26 0)"/>
+      </g>
+    </symbol>
+
+    <symbol id="dial-drywet-amrm" viewBox="0 0 90px 90px">
+      <g transform="translate(45 45)">
+        <text font-size="6.0pt" transform="rotate(-240) translate(29 0) rotate(240) translate(-4 3)">D</text>
+        <polyline points="0,0 3.5,0" stroke-width="0.7" transform="rotate(-210) translate(26 0)"/>
+        <polyline points="0,0 3.5,0" stroke-width="0.7" transform="rotate(-180) translate(26 0)"/>
+        <polyline points="0,0 3.5,0" stroke-width="0.7" transform="rotate(-150) translate(26 0)"/>
+        <polyline points="0,0 3.5,0" stroke-width="0.7" transform="rotate(-120) translate(26 0)"/>
+        <polyline points="0,0 5.5,0" stroke-width="1.5" transform="rotate(-90) translate(26 0)"/>
+        <polyline points="0,0 3.5,0" stroke-width="0.7" transform="rotate(-60) translate(26 0)"/>
+        <polyline points="0,0 3.5,0" stroke-width="0.7" transform="rotate(-30) translate(26 0)"/>
+        <polyline points="0,0 3.5,0" stroke-width="0.7" transform="rotate(0) translate(26 0)"/>
+        <polyline points="0,0 3.5,0" stroke-width="0.7" transform="rotate(30) translate(26 0)"/>
+        <text font-size="6.0pt" transform="rotate(60) translate(29 0) rotate(-60) translate(-1 3)">W</text>
+      </g>
+    </symbol>
+  </defs>
+
+  <def xlink:href="#module6" var-name="AM/RM"/>
+
+  <!-- <rect width="90" height="23" fill="#0f0" transform="translate(0 18)" /> -->
+  <!-- <rect width="90" height="23" fill="#0f0" transform="translate(0 117)" /> -->
+  <!-- <rect width="90" height="23" fill="#0f0" transform="translate(0 217)" /> -->
+
+  <g transform="translate(0 49)">
+    <text font-size="8pt" letter-spacing="2px" transform="translate(18 0)">RECTIFY</text>
+    <def id="RECTIFY_PARAM" xlink:href="#knob45" transform="translate(0 -5)"/>
+    <use xlink:href="#dial-rectify-amrm" transform="translate(0 -5)"/>
+  </g>
+
+  <g transform="translate(0 148)">
+    <text font-size="8pt" letter-spacing="2px" transform="translate(15.5 0)">DRY/WET</text>
+    <def id="DRYWET_PARAM" xlink:href="#knob45" transform="translate(0 -5)"/>
+    <use xlink:href="#dial-drywet-amrm" transform="translate(0 -5)"/>
+  </g>
+
+  <g transform="translate(11 240)">
+    <g class="io-group" transform="translate(0 0)">
+      <rect class="input-background-filler" width="68" height="10" transform="translate(0 66)"/>
+      <rect class="input-background" width="68" height="73" rx="5"/>
+      <def id="MODULATOR_INPUT" xlink:href="#input" transform="translate(5 4)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(7.5 36)">MOD</text>
+      <def id="CARRIER_INPUT" xlink:href="#input" transform="translate(39 4)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(42.5 36)">CAR</text>
+      <def id="RECTIFY_INPUT" xlink:href="#input" transform="translate(5 40)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(5.5 72)">RECT</text>
+      <def id="DRYWET_INPUT" xlink:href="#input" transform="translate(39 40)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(42 72)">D/W</text>
+    </g>
+    <g class="io-group" transform="translate(0 79)">
+      <rect class="output-background-filler" width="68" height="10" transform="translate(0 -3)"/>
+      <rect class="output-background" width="68" height="37" rx="5"/>
+      <def id="RECTIFY_OUTPUT" xlink:href="#output" transform="translate(5 1)"/>
+      <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(5.5 33)">RECT</text>
+      <def id="OUT_OUTPUT" xlink:href="#output" transform="translate(39 1)"/>
+      <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(42.5 33)">OUT</text>
+    </g>
+  </g>
+
+  <!-- <polyline points="0,0 45,0" stroke-width="0.7" stroke="#0f0" transform="translate(0 73)" /> -->
+</module>

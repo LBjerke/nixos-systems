@@ -1,0 +1,13 @@
+{
+    "name": "distrho-ports-temper",
+    "lv2bundles": [
+        "Temper.lv2"
+    ],
+    "version": "575d56057ba9cee8505839e4ee00cc26d0193fc9",
+    "description": "Modern digital distortion",
+    "dlbaseurl": "https://github.com/DISTRHO/DISTRHO-Ports.git",
+    "dlmethod": "git",
+    "dlname": "distrho-ports",
+    "buildtype": "meson",
+    "buildargs": "-Dbuild-vst2=false -Dbuild-vst3=false -Dbuild-legacy-only=true -Doptimizations=false -Dplugins=temper"
+}

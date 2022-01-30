@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<module hp="3">
+  <style/>
+
+  <def xlink:href="#module3" var-name="PEQ6XF"/>
+
+  <g transform="translate(0 24)">
+    <def id="DAMP_PARAM" xlink:href="#knob16" transform="translate(14.5 8)"/>
+    <def xlink:href="#dial-mintick" transform="translate(2.5 -4)"/>
+    <text font-size="5pt" letter-spacing="1px" transform="translate(12 0)">DAMP</text>
+  </g>
+
+  <g transform="translate(0 63)">
+    <def id="GAIN_PARAM" xlink:href="#knob16" transform="translate(14.5 8)"/>
+    <def xlink:href="#dial-centertick" transform="translate(2.5 -4)"/>
+    <text font-size="5pt" letter-spacing="1px" transform="translate(13 0)">GAIN</text>
+  </g>
+
+  <g class="io-group" transform="translate(5.5 104)">
+    <rect class="output-background" width="34" height="225" rx="5" transform="translate(0 -10)"/>
+    <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(12.5 0)">EF</text>
+    <def id="EF1_OUTPUT" xlink:href="#output" transform="translate(5 3)"/>
+    <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(15 35)">1</text>
+    <def id="EF2_OUTPUT" xlink:href="#output" transform="translate(5 38)"/>
+    <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(15 70)">2</text>
+    <def id="EF3_OUTPUT" xlink:href="#output" transform="translate(5 73)"/>
+    <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(15 105)">3</text>
+    <def id="EF4_OUTPUT" xlink:href="#output" transform="translate(5 108)"/>
+    <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(15 140)">4</text>
+    <def id="EF5_OUTPUT" xlink:href="#output" transform="translate(5 143)"/>
+    <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(15 175)">5</text>
+    <def id="EF6_OUTPUT" xlink:href="#output" transform="translate(5 178)"/>
+    <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(15 210)">6</text>
+  </g>
+</module>

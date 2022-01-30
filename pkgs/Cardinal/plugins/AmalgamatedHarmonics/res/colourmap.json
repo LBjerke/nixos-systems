@@ -1,0 +1,19 @@
+{
+	"userCmap0":  [ 255,	0,		0 ],
+	"userCmap1":  [ 255,	0,		38 ],
+	"userCmap2":  [ 255,	0,		89 ],
+	"userCmap3":  [ 255,	0,		157 ],
+	"userCmap4":  [ 255,	0,		255 ],
+	"userCmap5":  [ 152,	0,		255 ],
+	"userCmap6":  [ 84,		0,		255 ],
+	"userCmap7":  [ 34,		0,		255 ],
+	"userCmap8":  [ 0,		38,		255 ],
+	"userCmap9":  [ 0,		89,		255 ],
+	"userCmap10": [ 0,		157,	159 ],
+	"userCmap11": [ 0,		255,	255 ],
+	"userCmap12": [ 0,		255,	153 ],
+	"userCmap13": [ 0,		255,	85 ],
+	"userCmap14": [ 0,		255,	33 ],
+	"userCmap15": [ 0,		255,	0 ]
+}
+

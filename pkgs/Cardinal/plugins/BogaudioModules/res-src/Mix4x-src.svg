@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<module hp="15">
+  <style/>
+
+  <def xlink:href="#module" var-name="MIX4X"/>
+
+  <g transform="translate(4 20)">
+    <text font-size="5pt" letter-spacing="2px" transform="translate(13.7 9)">CH1</text>
+    <def id="LOW1_PARAM" xlink:href="#knob16" transform="translate(14.5 23)"/>
+    <def xlink:href="#dial-centertick" transform="translate(2.5 11)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(14 48)">LOW</text>
+    <def id="MID1_PARAM" xlink:href="#knob16" transform="translate(14.5 69)"/>
+    <def xlink:href="#dial-centertick" transform="translate(2.5 57)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(14 94)">MID</text>
+    <def id="HIGH1_PARAM" xlink:href="#knob16" transform="translate(14.5 115)"/>
+    <def xlink:href="#dial-centertick" transform="translate(2.5 103)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(11.5 140)">HIGH</text>
+    <def id="A1_PARAM" xlink:href="#knob16" transform="translate(14.5 160)"/>
+    <def xlink:href="#dial-mintick" transform="translate(2.5 148)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(20.2 185)">A</text>
+    <text font-size="5pt" letter-spacing="1px" transform="translate(9 195)">PRE</text>
+    <def id="PRE_A1_PARAM" xlink:href="#button-small" transform="translate(26 188)"/>
+    <def id="B1_PARAM" xlink:href="#knob16" transform="translate(14.5 216)"/>
+    <def xlink:href="#dial-mintick" transform="translate(2.5 204)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(20.4 241)">B</text>
+    <text font-size="5pt" letter-spacing="1px" transform="translate(9 251)">PRE</text>
+    <def id="PRE_B1_PARAM" xlink:href="#button-small" transform="translate(26 244)"/>
+    <g class="io-group" transform="translate(5.5 267)">
+      <rect class="input-background" width="34" height="73" rx="5"/>
+      <def id="A1_INPUT" xlink:href="#input" transform="translate(5 3)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(6 35)">CV-A</text>
+      <def id="B1_INPUT" xlink:href="#input" transform="translate(5 38)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(6 70)">CV-B</text>
+    </g>
+  </g>
+
+  <g transform="translate(47 20)">
+    <text font-size="5pt" letter-spacing="2px" transform="translate(13.7 9)">CH2</text>
+    <def id="LOW2_PARAM" xlink:href="#knob16" transform="translate(14.5 23)"/>
+    <def xlink:href="#dial-centertick" transform="translate(2.5 11)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(14 48)">LOW</text>
+    <def id="MID2_PARAM" xlink:href="#knob16" transform="translate(14.5 69)"/>
+    <def xlink:href="#dial-centertick" transform="translate(2.5 57)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(14 94)">MID</text>
+    <def id="HIGH2_PARAM" xlink:href="#knob16" transform="translate(14.5 115)"/>
+    <def xlink:href="#dial-centertick" transform="translate(2.5 103)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(11.5 140)">HIGH</text>
+    <def id="A2_PARAM" xlink:href="#knob16" transform="translate(14.5 160)"/>
+    <def xlink:href="#dial-mintick" transform="translate(2.5 148)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(20.2 185)">A</text>
+    <text font-size="5pt" letter-spacing="1px" transform="translate(9 195)">PRE</text>
+    <def id="PRE_A2_PARAM" xlink:href="#button-small" transform="translate(26 188)"/>
+    <def id="B2_PARAM" xlink:href="#knob16" transform="translate(14.5 216)"/>
+    <def xlink:href="#dial-mintick" transform="translate(2.5 204)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(20.4 241)">B</text>
+    <text font-size="5pt" letter-spacing="1px" transform="translate(9 251)">PRE</text>
+    <def id="PRE_B2_PARAM" xlink:href="#button-small" transform="translate(26 244)"/>
+    <g class="io-group" transform="translate(5.5 267)">
+      <rect class="input-background" width="34" height="73" rx="5"/>
+      <def id="A2_INPUT" xlink:href="#input" transform="translate(5 3)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(6 35)">CV-A</text>
+      <def id="B2_INPUT" xlink:href="#input" transform="translate(5 38)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(6 70)">CV-B</text>
+    </g>
+  </g>
+
+  <g transform="translate(90 20)">
+    <text font-size="5pt" letter-spacing="2px" transform="translate(13.7 9)">CH3</text>
+    <def id="LOW3_PARAM" xlink:href="#knob16" transform="translate(14.5 23)"/>
+    <def xlink:href="#dial-centertick" transform="translate(2.5 11)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(14 48)">LOW</text>
+    <def id="MID3_PARAM" xlink:href="#knob16" transform="translate(14.5 69)"/>
+    <def xlink:href="#dial-centertick" transform="translate(2.5 57)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(14 94)">MID</text>
+    <def id="HIGH3_PARAM" xlink:href="#knob16" transform="translate(14.5 115)"/>
+    <def xlink:href="#dial-centertick" transform="translate(2.5 103)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(11.5 140)">HIGH</text>
+    <def id="A3_PARAM" xlink:href="#knob16" transform="translate(14.5 160)"/>
+    <def xlink:href="#dial-mintick" transform="translate(2.5 148)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(20.2 185)">A</text>
+    <text font-size="5pt" letter-spacing="1px" transform="translate(9 195)">PRE</text>
+    <def id="PRE_A3_PARAM" xlink:href="#button-small" transform="translate(26 188)"/>
+    <def id="B3_PARAM" xlink:href="#knob16" transform="translate(14.5 216)"/>
+    <def xlink:href="#dial-mintick" transform="translate(2.5 204)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(20.4 241)">B</text>
+    <text font-size="5pt" letter-spacing="1px" transform="translate(9 251)">PRE</text>
+    <def id="PRE_B3_PARAM" xlink:href="#button-small" transform="translate(26 244)"/>
+    <g class="io-group" transform="translate(5.5 267)">
+      <rect class="input-background" width="34" height="73" rx="5"/>
+      <def id="A3_INPUT" xlink:href="#input" transform="translate(5 3)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(6 35)">CV-A</text>
+      <def id="B3_INPUT" xlink:href="#input" transform="translate(5 38)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(6 70)">CV-B</text>
+    </g>
+  </g>
+
+  <g transform="translate(133 20)">
+    <text font-size="5pt" letter-spacing="2px" transform="translate(13.7 9)">CH4</text>
+    <def id="LOW4_PARAM" xlink:href="#knob16" transform="translate(14.5 23)"/>
+    <def xlink:href="#dial-centertick" transform="translate(2.5 11)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(14 48)">LOW</text>
+    <def id="MID4_PARAM" xlink:href="#knob16" transform="translate(14.5 69)"/>
+    <def xlink:href="#dial-centertick" transform="translate(2.5 57)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(14 94)">MID</text>
+    <def id="HIGH4_PARAM" xlink:href="#knob16" transform="translate(14.5 115)"/>
+    <def xlink:href="#dial-centertick" transform="translate(2.5 103)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(11.5 140)">HIGH</text>
+    <def id="A4_PARAM" xlink:href="#knob16" transform="translate(14.5 160)"/>
+    <def xlink:href="#dial-mintick" transform="translate(2.5 148)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(20.2 185)">A</text>
+    <text font-size="5pt" letter-spacing="1px" transform="translate(9 195)">PRE</text>
+    <def id="PRE_A4_PARAM" xlink:href="#button-small" transform="translate(26 188)"/>
+    <def id="B4_PARAM" xlink:href="#knob16" transform="translate(14.5 216)"/>
+    <def xlink:href="#dial-mintick" transform="translate(2.5 204)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(20.4 241)">B</text>
+    <text font-size="5pt" letter-spacing="1px" transform="translate(9 251)">PRE</text>
+    <def id="PRE_B4_PARAM" xlink:href="#button-small" transform="translate(26 244)"/>
+    <g class="io-group" transform="translate(5.5 267)">
+      <rect class="input-background" width="34" height="73" rx="5"/>
+      <def id="A4_INPUT" xlink:href="#input" transform="translate(5 3)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(6 35)">CV-A</text>
+      <def id="B4_INPUT" xlink:href="#input" transform="translate(5 38)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(6 70)">CV-B</text>
+    </g>
+  </g>
+
+  <g transform="translate(176 20)">
+    <!-- <rect width="39" height="344" fill="#ccc" transform="translate(3 0)" /> -->
+    <g class="io-group" transform="translate(5.5 1)">
+      <rect class="output-background" width="34" height="50" rx="5"/>
+      <def id="SEND_A_OUTPUT" xlink:href="#output" transform="translate(5 3)"/>
+      <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(14.7 35)">A</text>
+      <rect class="input-background" width="34" height="146" rx="5" transform="translate(0 38)"/>
+      <rect class="input-background-filler" width="34" height="5" transform="translate(0 38)"/>
+      <def id="L_A_INPUT" xlink:href="#input" transform="translate(5 41)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(15.3 73)">L</text>
+      <def id="R_A_INPUT" xlink:href="#input" transform="translate(5 76)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(8 108)">R(L)</text>
+      <def id="LEVEL_A_PARAM" xlink:href="#knob16" transform="translate(9 117)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(3.5 145)">LEVEL</text>
+      <def id="LEVEL_A_INPUT" xlink:href="#input" transform="translate(5 149)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(11 181)">CV</text>
+      <!-- <g transform="translate(0 29.5)"> -->
+        <!-- <rect width="9" height="36" rx="5" fill="#fafafa" transform="translate(-9 8.5)" /> -->
+        <!-- <rect width="4" height="36" fill="#fafafa" transform="translate(-4 8.5)" /> -->
+        <!-- <text font-size="5pt" letter-spacing="2px" transform="translate(-1 40) rotate(-90)">AUX A</text> -->
+      <!-- </g> -->
+    </g>
+    <def xlink:href="#dial-mintick-input" transform="translate(2.5 106)"/>
+
+    <g class="io-group" transform="translate(5.5 191)">
+      <rect class="output-background" width="34" height="50" rx="5"/>
+      <def id="SEND_B_OUTPUT" xlink:href="#output" transform="translate(5 3)"/>
+      <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(14.8 35)">B</text>
+      <rect class="input-background" width="34" height="111" rx="5" transform="translate(0 38)"/>
+      <rect class="input-background-filler" width="34" height="5" transform="translate(0 38)"/>
+      <def id="L_B_INPUT" xlink:href="#input" transform="translate(5 41)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(15.3 73)">L</text>
+      <def id="R_B_INPUT" xlink:href="#input" transform="translate(5 76)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(8 108)">R(L)</text>
+      <def id="LEVEL_B_PARAM" xlink:href="#knob16" transform="translate(9 117)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(3.5 145)">LEVEL</text>
+    </g>
+    <def xlink:href="#dial-mintick-input" transform="translate(2.5 296)"/>
+    <!-- <polyline points="0,0 0,350" stroke="#0f0" stroke-width="1" fill="none" transform="translate(22.5 0)" /> -->
+  </g>
+</module>

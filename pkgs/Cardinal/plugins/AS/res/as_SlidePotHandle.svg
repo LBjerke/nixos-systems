@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="24" viewBox="0 0 17 24">
+  <defs>
+    <linearGradient id="linear-gradient" x1="8.5" y1="0.71" x2="8.5" y2="23.28" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#231f20"/>
+      <stop offset="1" stop-color="#2e2e2e"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_11" data-name="Layer 11">
+      <g>
+        <g>
+          <rect x="0.75" y="0.75" width="15.5" height="22.5" rx="2.25" style="fill: url(#linear-gradient)"/>
+          <path d="M14,0H3A3,3,0,0,0,0,3V21a3,3,0,0,0,3,3H14a3,3,0,0,0,3-3V3A3,3,0,0,0,14,0Zm2.63,21A2.63,2.63,0,0,1,14,23.63H3A2.63,2.63,0,0,1,.37,21V3A2.62,2.62,0,0,1,3,.38H14A2.62,2.62,0,0,1,16.63,3Z" style="fill: #161616"/>
+          <path d="M14,.38H3A2.62,2.62,0,0,0,.37,3V21A2.63,2.63,0,0,0,3,23.63H14A2.63,2.63,0,0,0,16.63,21V3A2.62,2.62,0,0,0,14,.38ZM16.25,21A2.25,2.25,0,0,1,14,23.25H3A2.25,2.25,0,0,1,.75,21V3A2.25,2.25,0,0,1,3,.75H14A2.25,2.25,0,0,1,16.25,3Z" style="fill: #333"/>
+        </g>
+        <g>
+          <rect id="rect833" x="1.79" y="16.32" width="13.42" height="0.86" rx="0.07" style="fill: #1b1b1b"/>
+          <rect id="rect835" x="1.79" y="14.22" width="13.42" height="0.86" rx="0.07" style="fill: #1b1b1b"/>
+          <rect id="rect841" x="1.79" y="18.42" width="13.42" height="0.86" rx="0.07" style="fill: #1b1b1b"/>
+          <rect id="rect843" x="1.79" y="20.52" width="13.42" height="0.86" rx="0.07" style="fill: #1b1b1b"/>
+          <rect id="rect851" x="1.79" y="4.72" width="13.42" height="0.86" rx="0.07" style="fill: #1b1b1b"/>
+          <rect id="rect853" x="1.79" y="2.62" width="13.42" height="0.86" rx="0.07" style="fill: #1b1b1b"/>
+          <rect id="rect855" x="1.79" y="6.82" width="13.42" height="0.86" rx="0.07" style="fill: #1b1b1b"/>
+          <rect id="rect857" x="1.79" y="8.92" width="13.42" height="0.86" rx="0.07" style="fill: #1b1b1b"/>
+          <g>
+            <rect id="rect828" x="4.5" y="11.25" width="8" height="1.5" rx="0.12" style="fill: #f40"/>
+            <path id="rect828-2" data-name="rect828" d="M12.38,12.84H4.62c-.06,0-.12,0-.12-.05v-.41s.06,0,.12,0h7.76c.06,0,.12,0,.12,0v.41S12.44,12.84,12.38,12.84Z" style="fill: #fff;opacity: 0.3"/>
+          </g>
+        </g>
+        <g>
+          <path d="M16.7,22.09H.22A3,3,0,0,0,1.7,23.69,3,3,0,0,0,3,24H14a3,3,0,0,0,1.3-.31,2.92,2.92,0,0,0,1.48-1.59Z" style="fill: #231f20;opacity: 0.4"/>
+          <path d="M15.38.35A2.91,2.91,0,0,0,14,0H3A2.91,2.91,0,0,0,1.62.35,3,3,0,0,0,.2,1.94L.3,2H16.7l.1,0A3,3,0,0,0,15.38.35Z" style="fill: #fff;opacity: 0.08"/>
+        </g>
+        <g>
+          <g>
+            <rect id="rect851-2" data-name="rect851" x="1.79" y="4.72" width="13.42" height="0.86" rx="0.07" style="fill: #181818"/>
+            <rect id="rect853-2" data-name="rect853" x="1.79" y="2.62" width="13.42" height="0.86" rx="0.07" style="fill: #0f0f0f"/>
+            <rect id="rect855-2" data-name="rect855" x="1.79" y="6.82" width="13.42" height="0.86" rx="0.07" style="fill: #202020"/>
+            <rect id="rect857-2" data-name="rect857" x="1.79" y="8.92" width="13.42" height="0.86" rx="0.07" style="fill: #292929"/>
+          </g>
+          <g>
+            <rect id="rect851-3" data-name="rect851" x="1.79" y="18.42" width="13.42" height="0.86" rx="0.07" style="fill: #414141"/>
+            <rect id="rect853-3" data-name="rect853" x="1.79" y="20.52" width="13.42" height="0.86" rx="0.07" style="fill: #484949"/>
+            <rect id="rect855-3" data-name="rect855" x="1.79" y="16.32" width="13.42" height="0.86" rx="0.07" style="fill: #393a3a"/>
+            <rect id="rect857-3" data-name="rect857" x="1.79" y="14.22" width="13.42" height="0.86" rx="0.07" style="fill: #323232"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

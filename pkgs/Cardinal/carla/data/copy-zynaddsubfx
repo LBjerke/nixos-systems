@@ -1,0 +1,55 @@
+#!/bin/bash
+
+set -e
+
+ORIG_ZYN_DIR="/home/falktx/FOSS/GIT-mine/falkTX/zynaddsubfx"
+CARLA_ZYN_DIR="/home/falktx/FOSS/GIT-mine/falkTX/Carla/source/native-plugins/zynaddsubfx"
+
+rm -f $CARLA_ZYN_DIR/*.cpp
+rm -f $CARLA_ZYN_DIR/*.h
+rm -f $CARLA_ZYN_DIR/Containers/*
+rm -f $CARLA_ZYN_DIR/DSP/*
+rm -f $CARLA_ZYN_DIR/Effects/*
+rm -f $CARLA_ZYN_DIR/Misc/*
+rm -f $CARLA_ZYN_DIR/Nio/*
+rm -f $CARLA_ZYN_DIR/Params/*
+rm -f $CARLA_ZYN_DIR/Synth/*
+rm -f $CARLA_ZYN_DIR/Tests/*
+rm -fr $CARLA_ZYN_DIR/UI/*
+rm -fr $CARLA_ZYN_DIR/rtosc/*
+rm -f $CARLA_ZYN_DIR/tlsf/*
+
+cp $ORIG_ZYN_DIR/src/*.cpp $CARLA_ZYN_DIR/
+cp $ORIG_ZYN_DIR/src/*.h $CARLA_ZYN_DIR/
+cp $ORIG_ZYN_DIR/src/Containers/* $CARLA_ZYN_DIR/Containers/
+cp $ORIG_ZYN_DIR/src/DSP/* $CARLA_ZYN_DIR/DSP/
+cp $ORIG_ZYN_DIR/src/Effects/* $CARLA_ZYN_DIR/Effects/
+cp $ORIG_ZYN_DIR/src/Misc/* $CARLA_ZYN_DIR/Misc/
+cp $ORIG_ZYN_DIR/src/Nio/* $CARLA_ZYN_DIR/Nio/
+cp $ORIG_ZYN_DIR/src/Params/* $CARLA_ZYN_DIR/Params/
+cp $ORIG_ZYN_DIR/src/Synth/* $CARLA_ZYN_DIR/Synth/
+cp -r $ORIG_ZYN_DIR/src/UI/* $CARLA_ZYN_DIR/UI/
+cp $ORIG_ZYN_DIR/rtosc/include/rtosc/* $CARLA_ZYN_DIR/rtosc/
+cp -r $ORIG_ZYN_DIR/rtosc/src/* $CARLA_ZYN_DIR/rtosc/
+cp $ORIG_ZYN_DIR/tlsf/*.h $CARLA_ZYN_DIR/tlsf/
+cp $ORIG_ZYN_DIR/tlsf/*.c $CARLA_ZYN_DIR/tlsf/
+
+rm $CARLA_ZYN_DIR/*/CMakeLists.txt
+rm $CARLA_ZYN_DIR/UI/zynaddsubfx.xpm
+
+cp $ORIG_ZYN_DIR/src/zyn-version.h.in $CARLA_ZYN_DIR/zyn-version.h
+sed -i 's|${VERSION_MAJOR}|3|'    $CARLA_ZYN_DIR/zyn-version.h
+sed -i 's|${VERSION_MINOR}|0|'    $CARLA_ZYN_DIR/zyn-version.h
+sed -i 's|${VERSION_REVISION}|2|' $CARLA_ZYN_DIR/zyn-version.h
+
+find $CARLA_ZYN_DIR -name "*.h"   -type f | xargs sed -i "s|namespace zyn|namespace zyncarla|g"
+find $CARLA_ZYN_DIR -name "*.fl"  -type f | xargs sed -i "s|namespace zyn|namespace zyncarla|g"
+find $CARLA_ZYN_DIR -name "*.cpp" -type f | xargs sed -i "s|namespace zyn|namespace zyncarla|g"
+sed -i "s|zyn::|zyncarla::|g" $CARLA_ZYN_DIR/*/*.h
+sed -i "s|zyn::|zyncarla::|g" $CARLA_ZYN_DIR/*/*.cpp
+
+sed -i "s|emplace_uint32(|emplace_uint32_cpp(|" $CARLA_ZYN_DIR/rtosc/cpp/subtree-serialize.cpp
+sed -i "s|../../include/rtosc/|../|" $CARLA_ZYN_DIR/rtosc/cpp/*.cpp
+sed -i "s|../../tlsf/tlsf.h|tlsf/tlsf.h|" $CARLA_ZYN_DIR/Misc/Allocator.cpp
+sed -i "s|../src/globals.h|globals.h|" $CARLA_ZYN_DIR/Misc/Config.cpp
+sed -i "s|identity|identity_ts|"  $CARLA_ZYN_DIR/UI/Fl_Osc_TSlider.cpp

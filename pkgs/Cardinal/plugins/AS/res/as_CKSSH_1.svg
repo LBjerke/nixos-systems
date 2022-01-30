@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16">
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_11" data-name="Layer 11">
+      <g>
+        <g>
+          <path id="path5829" d="M1.72,16A1.71,1.71,0,0,1,0,14.31V1.69A1.71,1.71,0,0,1,1.72,0H22.29A1.71,1.71,0,0,1,24,1.69V14.31A1.71,1.71,0,0,1,22.29,16Z"/>
+          <path id="path5849" d="M1.55,13.49a1,1,0,0,0,1,1h19a1,1,0,0,0,1-1h0v-11a1,1,0,0,0-1-1h-19a1,1,0,0,0-1,1h0Z" style="fill: #1a1a1a"/>
+        </g>
+        <g>
+          <path d="M12.58,14.35V1.65a.16.16,0,0,0-.16-.15H1a.16.16,0,0,0-.16.15v12.7A.16.16,0,0,0,1,14.5H12.42A.16.16,0,0,0,12.58,14.35Z" style="fill: #424242"/>
+          <rect x="1.55" y="2.25" width="10.29" height="11.5" style="fill: #2e2e2e"/>
+          <rect id="rect828" x="5.94" y="4" width="1.5" height="8" rx="0.12" style="fill: #f40"/>
+          <path id="rect828-2" data-name="rect828" d="M7.42,12H6s0,0,0,0v-.42s0,0,0,0H7.42s0,0,0,0V12S7.43,12,7.42,12Z" style="fill: #fff;opacity: 0.3"/>
+          <path id="rect828-3" data-name="rect828" d="M1.71,12.29h10a.15.15,0,0,1,.16.13v1.34a.15.15,0,0,1-.16.13h-10a.15.15,0,0,1-.16-.13V12.42A.15.15,0,0,1,1.71,12.29Z" style="fill: #231f20;opacity: 0.4"/>
+          <path id="rect828-4" data-name="rect828" d="M1.71,1.5h10a.15.15,0,0,1,.16.13V3a.15.15,0,0,1-.16.14h-10A.15.15,0,0,1,1.55,3V1.63A.15.15,0,0,1,1.71,1.5Z" style="fill: #fff;opacity: 0.08"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<module hp="17">
+  <style/>
+
+  <def xlink:href="#module" var-name="8FO"/>
+
+  <g transform="translate(20 25)">
+    <!-- <rect width="108" height="108" fill="none" stroke="#0f0" /> -->
+    <!-- <polyline points="0,54 54,54" stroke="#0f0" stroke-width="1" fill="none" /> -->
+    <!-- <polyline points="54,54 54,354" stroke="#0f0" stroke-width="1" fill="none" /> -->
+    <!-- <polyline points="40,54 40,354" stroke="#0f0" stroke-width="1" fill="none" /> -->
+    <!-- <polyline points="68,54 68,354" stroke="#0f0" stroke-width="1" fill="none" /> -->
+    <def id="FREQUENCY_PARAM" xlink:href="#knob68" transform="translate(20 20)"/>
+  </g>
+  <def xlink:href="#dial-frequency-lfo" transform="translate(10 15)"/>
+
+  <!-- <rect width="20" height="10" fill="#0f0" transform="translate(20 130)" /> -->
+  <!-- <rect width="20" height="10" fill="#0f0" transform="translate(108 130)" /> -->
+  <text font-size="6pt" letter-spacing="1px" transform="translate(34 130)">0V = C-3 = 2.04HZ</text>
+
+  <g transform="translate(10 141)">
+    <text font-size="6pt" letter-spacing="2px" transform="translate(9 6.1)">SLOW</text>
+    <def id="SLOW_PARAM" xlink:href="#button-small" transform="translate(40 -1.3)"/>
+  </g>
+
+  <g transform="translate(20 173)">
+    <def id="WAVE_PARAM" xlink:href="#knob16" transform="translate(0 5)"/>
+    <!-- <rect width="60" height="60" fill="none" stroke="#0f0" transform="translate(-10 -30) translate(8 13)" /> -->
+    <def xlink:href="#dial-waves" transform="translate(-12 -22)"/>
+  </g>
+
+  <g transform="translate(80 143)">
+    <!-- <polyline points="0,0 170,0" stroke="#f00" stroke-width="1" fill="none" transform="translate(-10 -10)" /> -->
+    <!-- <polyline points="0,0 170,0" stroke="#0f0" stroke-width="1" fill="none" transform="translate(-10 13)" /> -->
+    <!-- <polyline points="0,0 0,170" stroke="#0f0" stroke-width="1" fill="none" transform="translate(33 -13)" /> -->
+    <!-- <polyline points="0,0 170,0" stroke="#f00" stroke-width="1" fill="none" transform="translate(-10 33)" /> -->
+    <text font-size="8pt" letter-spacing="1px" transform="translate(8 29) rotate(270)">S/PW</text>
+    <def id="SAMPLE_PWM_PARAM" xlink:href="#knob26" transform="translate(20 0)"/>
+    <def xlink:href="#dial-attenuverter" transform="translate(10.5 -9.6)"/>
+  </g>
+
+  <g transform="translate(80 190)">
+    <!-- <polyline points="0,0 170,0" stroke="#f00" stroke-width="1" fill="none" transform="translate(-10 -10)" /> -->
+    <!-- <polyline points="0,0 170,0" stroke="#0f0" stroke-width="1" fill="none" transform="translate(-10 13)" /> -->
+    <!-- <polyline points="0,0 0,170" stroke="#0f0" stroke-width="1" fill="none" transform="translate(33 -13)" /> -->
+    <!-- <polyline points="0,0 170,0" stroke="#f00" stroke-width="1" fill="none" transform="translate(-10 33)" /> -->
+    <text font-size="8pt" letter-spacing="1px" transform="translate(8 31) rotate(270)">SMTH</text>
+    <def id="SMOOTH_PARAM" xlink:href="#knob26" transform="translate(20 0)"/>
+    <def xlink:href="#dial-linear" transform="translate(10.5 -9.6)"/>
+  </g>
+
+  <!-- <rect width="230" height="10" fill="#0f0" transform="translate(0 203)" /> -->
+  <g transform="translate(10 235)">
+    <!-- <polyline points="0,0 170,0" stroke="#f00" stroke-width="1" fill="none" transform="translate(10 -10)" /> -->
+    <!-- <polyline points="0,0 170,0" stroke="#0f0" stroke-width="1" fill="none" transform="translate(10 13)" /> -->
+    <!-- <polyline points="0,0 0,170" stroke="#0f0" stroke-width="1" fill="none" transform="translate(43 -13)" /> -->
+    <!-- <polyline points="0,0 170,0" stroke="#f00" stroke-width="1" fill="none" transform="translate(10 33)" /> -->
+    <g transform="translate(10 0)">
+      <text font-size="8pt" letter-spacing="1px" transform="translate(8 34.5) rotate(270)">OFFSET</text>
+      <def id="OFFSET_PARAM" xlink:href="#knob26" transform="translate(20 0)"/>
+    </g>
+    <def xlink:href="#dial-attenuverter" transform="translate(20.5 -9.6)"/>
+    <g transform="translate(70 0)">
+      <text font-size="8pt" letter-spacing="1px" transform="translate(8 33) rotate(270)">SCALE</text>
+      <def id="SCALE_PARAM" xlink:href="#knob26" transform="translate(20 0)"/>
+    </g>
+    <def xlink:href="#dial-linear" transform="translate(80.5 -9.6)"/>
+  </g>
+
+  <g transform="translate(137 32)">
+    <g transform="translate(3 4)">
+      <g transform="translate(0 0)">
+        <def id="PHASE7_PARAM" xlink:href="#knob16" transform="translate(4 4)"/>
+      </g>
+      <g transform="translate(0 40)">
+        <def id="PHASE6_PARAM" xlink:href="#knob16" transform="translate(4 4)"/>
+      </g>
+      <g transform="translate(0 80)">
+        <def id="PHASE5_PARAM" xlink:href="#knob16" transform="translate(4 4)"/>
+      </g>
+      <g transform="translate(0 120)">
+        <def id="PHASE4_PARAM" xlink:href="#knob16" transform="translate(4 4)"/>
+      </g>
+
+      <g transform="translate(0 160)">
+        <def id="PHASE3_PARAM" xlink:href="#knob16" transform="translate(4 4)"/>
+      </g>
+      <g transform="translate(0 200)">
+        <def id="PHASE2_PARAM" xlink:href="#knob16" transform="translate(4 4)"/>
+      </g>
+      <g transform="translate(0 240)">
+        <def id="PHASE1_PARAM" xlink:href="#knob16" transform="translate(4 4)"/>
+      </g>
+      <g transform="translate(0 280)">
+        <!-- <polyline points="0,0 200,0" stroke="#0f0" stroke-width="1" fill="none" transform="translate(0 12)" /> -->
+        <def id="PHASE0_PARAM" xlink:href="#knob16" transform="translate(4 4)"/>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(137 36)">
+    <def xlink:href="#dial-phase" transform="translate(3 0) translate(12 12) rotate(-225) translate(-20 -20)"/>
+    <def xlink:href="#dial-phase" transform="translate(3 40) translate(12 12) rotate(-180) translate(-20 -20)"/>
+    <def xlink:href="#dial-phase" transform="translate(3 80) translate(12 12) rotate(-135) translate(-20 -20)"/>
+    <def xlink:href="#dial-phase" transform="translate(3 120) translate(12 12) rotate(-90) translate(-20 -20)"/>
+
+    <def xlink:href="#dial-phase" transform="translate(3 160) translate(12 12) rotate(-45) translate(-20 -20)"/>
+    <def xlink:href="#dial-phase" transform="translate(3 200) translate(12 12) rotate(0) translate(-20 -20)"/>
+    <def xlink:href="#dial-phase" transform="translate(3 240) translate(12 12) rotate(45) translate(-20 -20)"/>
+    <def xlink:href="#dial-phase" transform="translate(3 280) translate(12 12) rotate(90) translate(-20 -20)"/>
+  </g>
+
+  <g class="io-group" transform="translate(176 32)">
+    <rect class="input-background" width="30" height="328" rx="5"/>
+    <g transform="translate(3 4)">
+      <def id="PHASE7_INPUT" xlink:href="#input" transform="translate(0 0)"/>
+      <def id="PHASE6_INPUT" xlink:href="#input" transform="translate(0 40)"/>
+      <def id="PHASE5_INPUT" xlink:href="#input" transform="translate(0 80)"/>
+      <def id="PHASE4_INPUT" xlink:href="#input" transform="translate(0 120)"/>
+
+      <def id="PHASE3_INPUT" xlink:href="#input" transform="translate(0 160)"/>
+      <def id="PHASE2_INPUT" xlink:href="#input" transform="translate(0 200)"/>
+      <def id="PHASE1_INPUT" xlink:href="#input" transform="translate(0 240)"/>
+      <def id="PHASE0_INPUT" xlink:href="#input" transform="translate(0 280)"/>
+    </g>
+    <text class="input-label" font-size="6pt" letter-spacing="2px" transform="translate(5 320)">PHS</text>
+  </g>
+
+  <g class="io-group" transform="translate(215 32)">
+    <rect class="output-background" width="30" height="328" rx="5"/>
+    <g transform="translate(3 4)">
+      <def id="PHASE7_OUTPUT" xlink:href="#output" transform="translate(0 0)"/>
+      <def id="PHASE6_OUTPUT" xlink:href="#output" transform="translate(0 40)"/>
+      <def id="PHASE5_OUTPUT" xlink:href="#output" transform="translate(0 80)"/>
+      <def id="PHASE4_OUTPUT" xlink:href="#output" transform="translate(0 120)"/>
+
+      <def id="PHASE3_OUTPUT" xlink:href="#output" transform="translate(0 160)"/>
+      <def id="PHASE2_OUTPUT" xlink:href="#output" transform="translate(0 200)"/>
+      <def id="PHASE1_OUTPUT" xlink:href="#output" transform="translate(0 240)"/>
+      <def id="PHASE0_OUTPUT" xlink:href="#output" transform="translate(0 280)"/>
+    </g>
+    <text class="output-label" font-size="6pt" letter-spacing="2px" transform="translate(5 320)">OUT</text>
+  </g>
+
+  <!-- <polyline points="0,0 0,360" stroke="#0f0" stroke-width="1" fill="none" transform="translate(135 0)" /> -->
+  <!-- <polyline points="0,0 270,0" stroke="#0f0" stroke-width="1" fill="none" transform="translate(0 360)" /> -->
+  <!-- <rect width="230" height="10" fill="#0f0" transform="translate(0 263)" /> -->
+  <g class="io-group" transform="translate(7 313)">
+    <rect class="input-background" width="108" height="87" rx="5" transform="translate(10 -40)"/>
+    <!-- <rect width="300" height="7" fill="#f00" transform="translate(10 40)" /> -->
+    <g transform="translate(10 -40)">
+      <!-- <rect width="30" height="40" rx="5" fill="#fafafa" /> -->
+      <def id="SAMPLE_PWM_INPUT" xlink:href="#input" transform="translate(4 4)"/>
+      <text class="input-label" font-size="6pt" letter-spacing="1px" transform="translate(4 38)">S/PW</text>
+    </g>
+    <g transform="translate(50 -40)">
+      <!-- <rect width="30" height="40" rx="5" fill="#fafafa" /> -->
+      <def id="OFFSET_INPUT" xlink:href="#input" transform="translate(2 4)"/>
+      <text class="input-label" font-size="6pt" letter-spacing="2px" transform="translate(4.5 38)">OFF</text>
+    </g>
+    <g transform="translate(90 -40)">
+      <!-- <rect width="30" height="40" rx="5" fill="#fafafa" /> -->
+      <def id="SCALE_INPUT" xlink:href="#input" transform="translate(0 4)"/>
+      <text class="input-label" font-size="6pt" letter-spacing="2px" transform="translate(2.5 38)">SCL</text>
+    </g>
+    <g transform="translate(10 0)">
+      <!-- <rect width="30" height="47" rx="5" fill="#fafafa" /> -->
+      <def id="PITCH_INPUT" xlink:href="#input" transform="translate(4 5)"/>
+      <text class="input-label" font-size="6pt" letter-spacing="1px" transform="translate(2 40)">V/OCT</text>
+    </g>
+    <g transform="translate(50 0)">
+      <!-- <rect width="30" height="47" rx="5" fill="#fafafa" /> -->
+      <def id="RESET_INPUT" xlink:href="#input" transform="translate(2 5)"/>
+      <text class="input-label" font-size="6pt" letter-spacing="1px" transform="translate(0 40)">RESET</text>
+    </g>
+    <g transform="translate(90 0)">
+      <!-- <rect width="30" height="47" rx="5" fill="#fafafa" /> -->
+      <def id="SMOOTH_INPUT" xlink:href="#input" transform="translate(0 5)"/>
+      <text class="input-label" font-size="6pt" letter-spacing="1px" transform="translate(-1 40)">SMTH</text>
+    </g>
+  </g>
+</module>

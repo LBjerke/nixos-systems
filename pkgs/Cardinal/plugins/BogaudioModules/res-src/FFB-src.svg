@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<module hp="8">
+  <style/>
+
+  <def xlink:href="#module8" var-name="FFB"/>
+  <!-- <rect width="120" height="254" fill="#0ff" transform="translate(0 24)" /> -->
+
+  <g transform="translate(1.5 24)">
+    <!-- <rect width="38" height="44" fill="#f0f" transform="translate(0 0)" /> -->
+    <text font-size="6pt" letter-spacing="2px" transform="translate(10 6)">125</text>
+    <def id="BAND_1_PARAM" xlink:href="#knob26" transform="translate(6 13.5)"/>
+    <def xlink:href="#dial-linear" transform="translate(-3.5 4)"/>
+    <!-- <use id="BAND_1_LIGHT" xlink:href="#light-small" transform="translate(1 8.5)" /> -->
+  </g>
+  <g transform="translate(41 24)">
+    <text font-size="6pt" letter-spacing="2px" transform="translate(10 6)">500</text>
+    <def id="BAND_5_PARAM" xlink:href="#knob26" transform="translate(6 13.5)"/>
+    <def xlink:href="#dial-linear" transform="translate(-3.5 4)"/>
+    <!-- <use id="BAND_5_LIGHT" xlink:href="#light-small" transform="translate(1 8.5)" /> -->
+  </g>
+  <g transform="translate(80.5 24)">
+    <text font-size="6pt" letter-spacing="2px" transform="translate(7 6)">2000</text>
+    <def id="BAND_9_PARAM" xlink:href="#knob26" transform="translate(6 13.5)"/>
+    <def xlink:href="#dial-linear" transform="translate(-3.5 4)"/>
+    <!-- <use id="BAND_9_LIGHT" xlink:href="#light-small" transform="translate(1 8.5)" /> -->
+  </g>
+
+  <g transform="translate(1.5 75)">
+    <text font-size="6pt" letter-spacing="2px" transform="translate(10 6)">175</text>
+    <def id="BAND_2_PARAM" xlink:href="#knob26" transform="translate(6 13.5)"/>
+    <def xlink:href="#dial-linear" transform="translate(-3.5 4)"/>
+    <!-- <use id="BAND_2_LIGHT" xlink:href="#light-small" transform="translate(1 8.5)" /> -->
+  </g>
+  <g transform="translate(41 75)">
+    <text font-size="6pt" letter-spacing="2px" transform="translate(10 6)">700</text>
+    <def id="BAND_6_PARAM" xlink:href="#knob26" transform="translate(6 13.5)"/>
+    <def xlink:href="#dial-linear" transform="translate(-3.5 4)"/>
+    <!-- <use id="BAND_6_LIGHT" xlink:href="#light-small" transform="translate(1 8.5)" /> -->
+  </g>
+  <g transform="translate(80.5 75)">
+    <text font-size="6pt" letter-spacing="2px" transform="translate(7 6)">2800</text>
+    <def id="BAND_10_PARAM" xlink:href="#knob26" transform="translate(6 13.5)"/>
+    <def xlink:href="#dial-linear" transform="translate(-3.5 4)"/>
+    <!-- <use id="BAND_10_LIGHT" xlink:href="#light-small" transform="translate(1 8.5)" /> -->
+  </g>
+
+  <g transform="translate(1.5 126)">
+    <text font-size="6pt" letter-spacing="2px" transform="translate(10 6)">250</text>
+    <def id="BAND_3_PARAM" xlink:href="#knob26" transform="translate(6 13.5)"/>
+    <def xlink:href="#dial-linear" transform="translate(-3.5 4)"/>
+    <!-- <use id="BAND_3_LIGHT" xlink:href="#light-small" transform="translate(1 8.5)" /> -->
+  </g>
+  <g transform="translate(41 126)">
+    <text font-size="6pt" letter-spacing="2px" transform="translate(6.5 6)">1000</text>
+    <def id="BAND_7_PARAM" xlink:href="#knob26" transform="translate(6 13.5)"/>
+    <def xlink:href="#dial-linear" transform="translate(-3.5 4)"/>
+    <!-- <use id="BAND_7_LIGHT" xlink:href="#light-small" transform="translate(1 8.5)" /> -->
+  </g>
+  <g transform="translate(80.5 126)">
+    <text font-size="6pt" letter-spacing="2px" transform="translate(6.5 6)">4000</text>
+    <def id="BAND_11_PARAM" xlink:href="#knob26" transform="translate(6 13.5)"/>
+    <def xlink:href="#dial-linear" transform="translate(-3.5 4)"/>
+    <!-- <use id="BAND_11_LIGHT" xlink:href="#light-small" transform="translate(1 8.5)" /> -->
+  </g>
+
+  <g transform="translate(1.5 177)">
+    <text font-size="6pt" letter-spacing="2px" transform="translate(10 6)">350</text>
+    <def id="BAND_4_PARAM" xlink:href="#knob26" transform="translate(6 13.5)"/>
+    <def xlink:href="#dial-linear" transform="translate(-3.5 4)"/>
+    <!-- <use id="BAND_4_LIGHT" xlink:href="#light-small" transform="translate(1 8.5)" /> -->
+  </g>
+  <g transform="translate(41 177)">
+    <text font-size="6pt" letter-spacing="2px" transform="translate(6.5 6)">1400</text>
+    <def id="BAND_8_PARAM" xlink:href="#knob26" transform="translate(6 13.5)"/>
+    <def xlink:href="#dial-linear" transform="translate(-3.5 4)"/>
+    <!-- <use id="BAND_8_LIGHT" xlink:href="#light-small" transform="translate(1 8.5)" /> -->
+  </g>
+  <g transform="translate(80.5 177)">
+    <text font-size="6pt" letter-spacing="2px" transform="translate(7 6)">5600</text>
+    <def id="BAND_12_PARAM" xlink:href="#knob26" transform="translate(6 13.5)"/>
+    <def xlink:href="#dial-linear" transform="translate(-3.5 4)"/>
+    <!-- <use id="BAND_12_LIGHT" xlink:href="#light-small" transform="translate(1 8.5)" /> -->
+  </g>
+
+  <g transform="translate(1.5 228)">
+    <text font-size="6pt" letter-spacing="2px" transform="translate(13.5 6)">LP</text>
+    <def id="LOWPASS_PARAM" xlink:href="#knob26" transform="translate(6 13.5)"/>
+    <def xlink:href="#dial-linear" transform="translate(-3.5 4)"/>
+    <!-- <use id="LOWWPASS_LIGHT" xlink:href="#light-small" transform="translate(1 8.5)" /> -->
+  </g>
+  <g transform="translate(41 228)">
+    <text font-size="6pt" letter-spacing="2px" transform="translate(6 6)">FREQ</text>
+    <def id="CV_PARAM" xlink:href="#knob16" transform="translate(11 18.5)"/>
+    <def xlink:href="#dial-centertick" transform="translate(-1 6.5)"/>
+  </g>
+  <g transform="translate(80.5 228)">
+    <text font-size="6pt" letter-spacing="2px" transform="translate(12.5 6)">HP</text>
+    <def id="HIGHPASS_PARAM" xlink:href="#knob26" transform="translate(6 13.5)"/>
+    <def xlink:href="#dial-linear" transform="translate(-3.5 4)"/>
+    <!-- <use id="HIGHPASS_LIGHT" xlink:href="#light-small" transform="translate(1 8.5)" /> -->
+  </g>
+
+  <g class="io-group" transform="translate(28.5 278)">
+    <rect class="input-background" width="63" height="43" rx="5"/>
+    <rect class="input-background-filler" width="63" height="10" transform="translate(0 33)"/>
+    <g transform="translate(1 0)">
+      <def id="IN_INPUT" xlink:href="#input" transform="translate(3 4)"/>
+      <text class="input-label" font-size="6pt" letter-spacing="2px" transform="translate(10 39)">IN</text>
+    </g>
+    <g transform="translate(32 0)">
+      <def id="CV_INPUT" xlink:href="#input" transform="translate(3 4)"/>
+      <text class="input-label" font-size="6pt" letter-spacing="2px" transform="translate(5.5 39)">FCV</text>
+    </g>
+  </g>
+  <g class="io-group" transform="translate(13 320)">
+    <rect class="output-background" width="94" height="43" rx="5"/>
+    <g transform="translate(1 0)">
+      <def id="ALL_OUTPUT" xlink:href="#output" transform="translate(3 4)"/>
+      <text class="output-label" font-size="6pt" letter-spacing="2px" transform="translate(6 39)">ALL</text>
+    </g>
+    <g transform="translate(32 0)">
+      <def id="ODD_OUTPUT" xlink:href="#output" transform="translate(3 4)"/>
+      <text class="output-label" font-size="6pt" letter-spacing="2px" transform="translate(5 39)">ODD</text>
+    </g>
+    <g transform="translate(63 0)">
+      <def id="EVEN_OUTPUT" xlink:href="#output" transform="translate(3 4)"/>
+      <text class="output-label" font-size="6pt" letter-spacing="1.5px" transform="translate(3 39)">EVEN</text>
+    </g>
+  </g>
+</module>

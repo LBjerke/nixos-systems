@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<module hp="3">
+  <style/>
+
+  <def xlink:href="#module3" var-name="ARP"/>
+
+  <!-- <polyline points="0,0 0,380" stroke="#0f0" stroke-width="1" fill="none" transform="translate(22.5 0)" /> -->
+  <!-- <polyline points="0,0 0,380" stroke="#f00" stroke-width="1" fill="none" transform="translate(3 0)" /> -->
+  <!-- <polyline points="0,0 0,380" stroke="#0f0" stroke-width="1" fill="none" transform="translate(42 0)" /> -->
+
+  <!-- <rect width="20" height="24" fill="#0f0" transform="translate(0 0)" /> -->
+  <g transform="translate(3 18)">
+    <text font-size="6pt" letter-spacing="2.0px" transform="translate(5 6)">MODE</text>
+    <g transform="translate(0 10)">
+      <def id="UP_LIGHT" xlink:href="#light-small" transform="translate(0 0)"/>
+      <text font-size="5pt" letter-spacing="1px" transform="translate(8 5.7)">UP</text>
+    </g>
+    <g transform="translate(21 10)">
+      <def id="DOWN_LIGHT" xlink:href="#light-small" transform="translate(0 0)"/>
+      <text font-size="5pt" letter-spacing="1px" transform="translate(8 5.7)">DN</text>
+    </g>
+    <g transform="translate(0 20)">
+      <def id="UP_DOWN_LIGHT" xlink:href="#light-small" transform="translate(0 0)"/>
+      <text font-size="5pt" letter-spacing="1px" transform="translate(8 5.7)">PD</text>
+    </g>
+    <g transform="translate(21 20)">
+      <def id="UP_DOWN_REPEAT_LIGHT" xlink:href="#light-small" transform="translate(0 0)"/>
+      <text font-size="5pt" letter-spacing="1px" transform="translate(8 5.7)">PR</text>
+    </g>
+    <g transform="translate(0 30)">
+      <def id="IN_ORDER_LIGHT" xlink:href="#light-small" transform="translate(0 0)"/>
+      <text font-size="5pt" letter-spacing="1px" transform="translate(8 5.7)">IO</text>
+    </g>
+    <g transform="translate(21 30)">
+      <def id="RANDOM_LIGHT" xlink:href="#light-small" transform="translate(0 0)"/>
+      <text font-size="5pt" letter-spacing="1px" transform="translate(8 5.7)">RD</text>
+    </g>
+    <g transform="translate(0 40)">
+      <def id="SHUFFLE_LIGHT" xlink:href="#light-small" transform="translate(0 0)"/>
+      <text font-size="5pt" letter-spacing="1px" transform="translate(8 5.7)">SH</text>
+    </g>
+    <def id="MODE_PARAM" xlink:href="#button-small" transform="translate(21 39)"/>
+  </g>
+
+  <g transform="translate(2.5 78.5)">
+    <text font-size="6pt" letter-spacing="1.5px" transform="translate(7.5 0)">GATE</text>
+    <def id="GATE_LENGTH_PARAM" xlink:href="#knob16" transform="translate(12 9)"/>
+    <def xlink:href="#dial-mintick" transform="translate(0 -3)"/>
+    <!-- <rect width="45" height="5" fill="#0f0" transform="translate(0 -11)" /> -->
+  </g>
+
+  <g transform="translate(6 115)">
+    <text font-size="5pt" letter-spacing="1px" transform="translate(0 6)">HOLD</text>
+    <def id="HOLD_PARAM" xlink:href="#button-small" transform="translate(23 -1)"/>
+    <!-- <rect width="45" height="5" fill="#0f0" transform="translate(0 -6)" /> -->
+    <!-- <rect width="45" height="5" fill="#0f0" transform="translate(0 8)" /> -->
+  </g>
+
+  <g transform="translate(0 129)">
+    <g class="io-group" transform="translate(5.5 0)">
+      <rect class="input-background" width="34" height="143" rx="5"/>
+      <rect class="input-background-filler" width="34" height="10" transform="translate(0 133)"/>
+      <def id="CLOCK_INPUT" xlink:href="#input" transform="translate(5 3)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(2.3 35)">CLOCK</text>
+      <def id="RESET_INPUT" xlink:href="#input" transform="translate(5 38)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(2.3 70)">RESET</text>
+      <def id="PITCH_INPUT" xlink:href="#input" transform="translate(5 73)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(3 105)">V/OCT</text>
+      <def id="GATE_INPUT" xlink:href="#input" transform="translate(5 108)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(5.5 140)">GATE</text>
+    </g>
+    <g class="io-group" transform="translate(5.5 146)">
+      <rect class="output-background-filler" width="34" height="10" transform="translate(0 -3)"/>
+      <rect class="output-background" width="34" height="70" rx="5"/>
+      <def id="PITCH_OUTPUT" xlink:href="#output" transform="translate(5 0)"/>
+      <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(3 32)">V/OCT</text>
+      <def id="GATE_OUTPUT" xlink:href="#output" transform="translate(5 35)"/>
+      <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(5.5 67)">GATE</text>
+    </g>
+  </g>
+</module>

@@ -1,0 +1,60 @@
+<module hp="5">
+  <style/>
+
+  <def xlink:href="#module5" var-name="VISH"/>
+
+  <g transform="translate(0 35)" var-pad="3.0">
+    <!-- <polyline class="guide" points="0,0 $width,0" stroke-width="1" fill="none" transform="translate(0 $pad+22)"/> -->
+    <text font-size="8pt" letter-spacing="2.0px" text-anchor="middle" transform="translate($width/2.0 0)">RISE</text>
+    <def id="RISE_PARAM" xlink:href="#knob26" transform="translate(12.5 $pad+9)"/>
+    <def xlink:href="#dial-rise-time" transform="translate(3 $pad-1)"/>
+    <def id="RISE_SHAPE_PARAM" xlink:href="#knob16" transform="translate(52 $pad+14)"/>
+    <def xlink:href="#dial-shape-rise" transform="translate(40 $pad+2)"/>
+  </g>
+
+  <g transform="translate(0 101)" var-pad="1.0">
+    <!-- <polyline class="guide" points="0,0 $width,0" stroke-width="1" fill="none" transform="translate(0 $pad+22)"/> -->
+    <text font-size="8pt" letter-spacing="2.0px" text-anchor="middle" transform="translate($width/2.0 0)">FALL</text>
+    <def id="FALL_PARAM" xlink:href="#knob26" transform="translate(12.5 $pad+9)"/>
+    <def xlink:href="#dial-fall-time" transform="translate(3 $pad-1)"/>
+    <def id="FALL_SHAPE_PARAM" xlink:href="#knob16" transform="translate(52 $pad+14)"/>
+    <def xlink:href="#dial-shape-fall" transform="translate(40 $pad+2)"/>
+  </g>
+
+  <g transform="translate(0 164)" var-pad="3.0">
+    <text font-size="8pt" letter-spacing="1.5px" text-anchor="middle" transform="translate($width/2.0 0)">MIN GATE</text>
+    <def id="MINIMUM_GATE_PARAM" xlink:href="#knob29" transform="translate(15 $pad)"/>
+    <def xlink:href="#dial-mingate" transform="translate($width/2.0-25 $pad-2.5)"/>
+  </g>
+
+  <g transform="translate(-6 221)">
+    <text font-size="5pt" letter-spacing="1px" text-anchor="middle" transform="translate($width/2.0 6)">GT TO TRIG</text>
+    <def id="GATE_TO_TRIGGER_PARAM" xlink:href="#button-small" transform="translate(63 -1)"/>
+  </g>
+
+  <g transform="translate(-6 235)">
+    <text font-size="5pt" letter-spacing="1px" text-anchor="middle" transform="translate($width/2.0 6)">TIMES 10X</text>
+    <def id="TIMES_10X_PARAM" xlink:href="#button-small" transform="translate(61 -1)"/>
+  </g>
+
+  <g transform="translate(0 248)">
+    <rect class="input-background" width="64" height="112" rx="5" transform="translate(5.5 0)"/>
+    <def id="RISE_INPUT" xlink:href="#input" transform="translate(10.5 3)"/>
+    <text class="input-label" font-size="5pt" letter-spacing="2px" text-anchor="middle" transform="translate(22.5 35)">RISE</text>
+    <def id="MINIMUM_GATE_INPUT" xlink:href="#input" transform="translate(40.5 3)"/>
+    <text class="input-label" font-size="5pt" letter-spacing="2px" text-anchor="middle" transform="translate(52.5 35)">MIN</text>
+    <def id="FALL_INPUT" xlink:href="#input" transform="translate(10.5 40)"/>
+    <text class="input-label" font-size="5pt" letter-spacing="2px" text-anchor="middle" transform="translate(22.5 72)">FALL</text>
+    <def id="SHAPE_INPUT" xlink:href="#input" transform="translate(40.5 40)"/>
+    <text class="input-label" font-size="5pt" letter-spacing="1.5px" text-anchor="middle" transform="translate(52.5 72)">SHAPE</text>
+    <def id="GATE_INPUT" xlink:href="#input" transform="translate(10.5 77)"/>
+    <text class="input-label" font-size="5pt" letter-spacing="1px" text-anchor="middle" transform="translate(22.5 109)">GATE</text>
+    <g class="io-group" transform="translate(30 72)">
+      <rect class="output-background" width="32" height="38" rx="5" transform="translate(7.5 2)"/>
+      <rect class="output-background-filler" width="32" height="10" transform="translate(7.5 2)"/>
+      <rect class="output-background-filler" width="10" height="10" transform="translate(7.5 30)"/>
+      <def id="OUT_OUTPUT" xlink:href="#output" transform="translate(10.5 5)"/>
+      <text class="output-label" font-size="5pt" letter-spacing="2px" text-anchor="middle" transform="translate(22.5 37)">OUT</text>
+    </g>
+  </g>
+</module>

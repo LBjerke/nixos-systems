@@ -1,0 +1,17 @@
+{
+    "name": "distrho-ports-drowaudio",
+    "lv2bundles": [
+        "drowaudio-distortion.lv2",
+        "drowaudio-distortionshaper.lv2",
+        "drowaudio-flanger.lv2",
+        "drowaudio-reverb.lv2",
+        "drowaudio-tremolo.lv2"
+    ],
+    "version": "575d56057ba9cee8505839e4ee00cc26d0193fc9",
+    "description": "Open-source audio plugins from David Rowland",
+    "dlbaseurl": "https://github.com/DISTRHO/DISTRHO-Ports.git",
+    "dlmethod": "git",
+    "dlname": "distrho-ports",
+    "buildtype": "meson",
+    "buildargs": "-Dbuild-vst3=false -Dbuild-legacy-only=true -Doptimizations=false -Dplugins=drowaudio-distortion,drowaudio-distortionshaper,drowaudio-flanger,drowaudio-reverb,drowaudio-tremolo"
+}

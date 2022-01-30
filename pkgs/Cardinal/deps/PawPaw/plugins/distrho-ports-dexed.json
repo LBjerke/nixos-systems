@@ -1,0 +1,13 @@
+{
+    "name": "distrho-ports-dexed",
+    "lv2bundles": [
+        "Dexed.lv2"
+    ],
+    "version": "575d56057ba9cee8505839e4ee00cc26d0193fc9",
+    "description": "Recreation of Yamaha DX7",
+    "dlbaseurl": "https://github.com/DISTRHO/DISTRHO-Ports.git",
+    "dlmethod": "git",
+    "dlname": "distrho-ports",
+    "buildtype": "meson",
+    "buildargs": "-Dbuild-vst2=false -Dbuild-vst3=false -Dbuild-legacy-only=true -Doptimizations=false -Dplugins=dexed"
+}

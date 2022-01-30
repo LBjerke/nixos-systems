@@ -1,0 +1,66 @@
+{
+  "version": "2.0",
+  "zoom": 1.0,
+  "modules": [
+    {
+      "id": 1,
+      "plugin": "Cardinal",
+      "model": "HostAudio2",
+      "version": "2.0",
+      "params": [
+        {
+          "value": 1.0,
+          "id": 0
+        }
+      ],
+      "rightModuleId": 2,
+      "data": {
+        "dcFilter": true
+      },
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 2,
+      "plugin": "Cardinal",
+      "model": "HostMIDI",
+      "version": "2.0",
+      "params": [],
+      "leftModuleId": 1,
+      "rightModuleId": 3,
+      "pos": [
+        5,
+        0
+      ]
+    },
+    {
+      "id": 3,
+      "plugin": "Cardinal",
+      "model": "HostParameters",
+      "version": "2.0",
+      "params": [],
+      "leftModuleId": 2,
+      "rightModuleId": 4,
+      "pos": [
+        18,
+        0
+      ]
+    },
+    {
+      "id": 4,
+      "plugin": "Cardinal",
+      "model": "HostTime",
+      "version": "2.0",
+      "params": [],
+      "leftModuleId": 3,
+      "pos": [
+        27,
+        0
+      ]
+    }
+  ],
+  "cables": [],
+  "masterModuleId": 1
+}

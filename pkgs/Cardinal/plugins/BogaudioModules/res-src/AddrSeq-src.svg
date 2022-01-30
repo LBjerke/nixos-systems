@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<module hp="6">
+  <style/>
+
+  <def xlink:href="#module6" var-name="ADDR-SEQ" var-letterspacing="0.5"/>
+
+  <g class="io-group" transform="translate(6.5 32)">
+    <rect class="input-background" width="34" height="39" rx="5"/>
+    <rect class="input-background-filler" width="34" height="10" transform="translate(0 30)"/>
+    <def id="CLOCK_INPUT" xlink:href="#input" transform="translate(5 3)"/>
+    <text class="input-label" font-size="5pt" letter-spacing="1px" transform="translate(4 35)">CLOCK</text>
+  </g>
+  <g class="io-group" transform="translate(6.5 69)">
+    <rect class="input-background" width="34" height="39" rx="5"/>
+    <def id="RESET_INPUT" xlink:href="#input" transform="translate(5 3)"/>
+    <text class="input-label" font-size="5pt" letter-spacing="1px" transform="translate(5 35)">RESET</text>
+  </g>
+
+  <g transform="translate(1 121)">
+    <text font-size="6pt" letter-spacing="1.5px" transform="translate(7.5 0)">STEPS</text>
+    <def id="STEPS_PARAM" xlink:href="#knob16" transform="translate(14.5 10.5)"/>
+    <def xlink:href="#dial-steps" transform="translate(2.5 -1)"/>
+  </g>
+
+  <g transform="translate(16.5 166)">
+    <text font-size="5pt" letter-spacing="2px" transform="translate(-1.8 -1)">FWD</text>
+    <def id="DIRECTION_PARAM" xlink:href="#switch" transform="translate(0 2)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(-1.3 34)">REV</text>
+  </g>
+
+  <!-- <rect width="45" height="14" fill="#0f0" transform="translate(0 200)" /> -->
+  <!-- <rect width="45" height="14" fill="#0f0" transform="translate(0 307)" /> -->
+  <g transform="translate(1 220)">
+    <text font-size="6pt" letter-spacing="1.5px" transform="translate(4.5 0)">SELECT</text>
+    <def id="SELECT_PARAM" xlink:href="#knob29" transform="translate(0 2)"/>
+    <def xlink:href="#dial-select" transform="translate(0 2)"/>
+    <g class="io-group" transform="translate(5.5 47)">
+      <rect class="input-background" width="34" height="39" rx="5"/>
+      <def id="SELECT_INPUT" xlink:href="#input" transform="translate(5 3)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(11.5 35)">CV</text>
+    </g>
+  </g>
+
+  <g class="io-group" transform="translate(6.5 321)">
+    <rect class="output-background" width="34" height="39" rx="5"/>
+    <def id="OUT_OUTPUT" xlink:href="#output" transform="translate(5 3)"/>
+    <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(8 35)">OUT</text>
+  </g>
+
+  <g transform="translate(49.5 32)">
+    <def id="OUT1_PARAM" xlink:href="#knob16" transform="translate(9 4)"/>
+    <def xlink:href="#dial-bipolar-addrseq" transform="translate(-3 -8)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(11 32)">1</text>
+    <def id="OUT1_LIGHT" xlink:href="#light-small" transform="translate(17 26.5)"/>
+
+    <def id="OUT2_PARAM" xlink:href="#knob16" transform="translate(9 45.3)"/>
+    <def xlink:href="#dial-bipolar-addrseq" transform="translate(-3 33.3)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(11 73.3)">2</text>
+    <def id="OUT2_LIGHT" xlink:href="#light-small" transform="translate(17 67.8)"/>
+
+    <def id="OUT3_PARAM" xlink:href="#knob16" transform="translate(9 86.6)"/>
+    <def xlink:href="#dial-bipolar-addrseq" transform="translate(-3 74.6)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(11 114.6)">3</text>
+    <def id="OUT3_LIGHT" xlink:href="#light-small" transform="translate(17 109.1)"/>
+
+    <def id="OUT4_PARAM" xlink:href="#knob16" transform="translate(9 127.9)"/>
+    <def xlink:href="#dial-bipolar-addrseq" transform="translate(-3 115.9)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(11 155.9)">4</text>
+    <def id="OUT4_LIGHT" xlink:href="#light-small" transform="translate(17 150.4)"/>
+
+    <def id="OUT5_PARAM" xlink:href="#knob16" transform="translate(9 169.1)"/>
+    <def xlink:href="#dial-bipolar-addrseq" transform="translate(-3 157.1)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(11 197.1)">5</text>
+    <def id="OUT5_LIGHT" xlink:href="#light-small" transform="translate(17 191.6)"/>
+
+    <def id="OUT6_PARAM" xlink:href="#knob16" transform="translate(9 210.4)"/>
+    <def xlink:href="#dial-bipolar-addrseq" transform="translate(-3 198.4)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(11 238.4)">6</text>
+    <def id="OUT6_LIGHT" xlink:href="#light-small" transform="translate(17 232.9)"/>
+
+    <def id="OUT7_PARAM" xlink:href="#knob16" transform="translate(9 251.7)"/>
+    <def xlink:href="#dial-bipolar-addrseq" transform="translate(-3 239.7)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(11 279.7)">7</text>
+    <def id="OUT7_LIGHT" xlink:href="#light-small" transform="translate(17 274.2)"/>
+
+    <def id="OUT8_PARAM" xlink:href="#knob16" transform="translate(9 293)"/>
+    <def xlink:href="#dial-bipolar-addrseq" transform="translate(-3 281)"/>
+    <text font-size="5pt" letter-spacing="2px" transform="translate(11 321)">8</text>
+    <def id="OUT8_LIGHT" xlink:href="#light-small" transform="translate(17 315.5)"/>
+  </g>
+
+  <!-- <polyline points="0,0 90,0" stroke="#f00" stroke-width="1" fill="none" transform="translate(0 47)" /> -->
+  <!-- <polyline points="0,0 90,0" stroke="#f00" stroke-width="1" fill="none" transform="translate(0 336)" /> -->
+  <!-- <polyline points="0,0 90,0" stroke="#f00" stroke-width="1" fill="none" transform="translate(0 351)" /> -->
+  <!-- <polyline points="0,0 0,360" stroke="#f00" stroke-width="1" fill="none" transform="translate(23.50 0)" /> -->
+</module>

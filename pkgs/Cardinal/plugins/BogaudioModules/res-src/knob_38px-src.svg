@@ -1,0 +1,9 @@
+<widget width="38" height="38">
+  <style/>
+
+  <g transform="translate(19 19)">
+    <circle class="knob-rim" cx="0" cy="0" r="18.7"/>
+    <circle class="knob-center" cx="0" cy="0" r="14"/>
+  </g>
+  <circle class="knob-tick" cx="19" cy="2.7" r="1.8"/>
+</widget>

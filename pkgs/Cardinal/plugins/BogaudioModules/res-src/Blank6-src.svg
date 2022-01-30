@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<module hp="6">
+  <style/>
+
+  <def xlink:href="#module-background"/>
+  <def xlink:href="#module-border"/>
+
+  <!-- <rect width="90" height="380" fill="#0f0" /> -->
+  <!-- <rect width="30" height="316" fill="#ddd" transform="translate(30 32)" /> -->
+  <!-- <g transform="translate(30 31) scale(4.0) rotate(90)"> -->
+    <!-- <text class="brand" font-size="8pt" letter-spacing="2px">BOGAUDIO</text> -->
+    <!-- <rect width="3.0" height="3" fill="#ddd" transform="translate(24 -5)" /> -->
+  <!-- </g> -->
+</module>

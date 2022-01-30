@@ -1,0 +1,8 @@
+**/.DS_Store
+/build/*
+/dist/*
+*dylib
+plugin.dll
+plugin.so
+/dep/*
+/src2/*
