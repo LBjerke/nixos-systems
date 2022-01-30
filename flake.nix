@@ -37,7 +37,7 @@ impermanence.nixosModules.impermanence{
 }
    musnix.nixosModules.musnix
   
-  ./configuration.nix ];
+  ./machines/loki/configuration.nix ];
     };
   };
 }
