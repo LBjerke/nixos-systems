@@ -9,10 +9,10 @@
   home.username = "orlyn";
   home.homeDirectory = "/home/orlyn";
   programs.ion = {
-   enabled = true;
+   enable = true;
   };
  programs.starship = {
-   enabled = true;
+   enable = true;
   enableIonIntegration = true;
   };
   services.network-manager-applet.enable = true;
