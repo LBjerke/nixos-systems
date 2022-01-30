@@ -105,7 +105,7 @@ in
   # List packages installed in system profile. To search, run:
   # $ nix search wget
    environment.systemPackages = with pkgs; [
-    csound  alsaLib vim git firefox wavetal qjackctl pavucontrol jack_capture
+    csound  alsaLib vim git firefox ardour wavetal qjackctl pavucontrol jack_capture
    ];
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

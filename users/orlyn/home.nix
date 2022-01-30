@@ -11,7 +11,7 @@
   services.network-manager-applet.enable = true;
   home.packages = [
   pkgs.tmux
-
+  pkgs.ardour
   ];
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
