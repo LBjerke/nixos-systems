@@ -8,10 +8,10 @@
   # paths it should manage.
   home.username = "orlyn";
   home.homeDirectory = "/home/orlyn";
-  programs.ion {
+  programs.ion = {
    enabled = true;
   };
- programs.starship {
+ programs.starship = {
    enabled = true;
   enableIonIntegration = true;
   };
