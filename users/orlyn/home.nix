@@ -8,6 +8,13 @@
   # paths it should manage.
   home.username = "orlyn";
   home.homeDirectory = "/home/orlyn";
+  programs.ion {
+   enabled = true;
+  };
+ programs.starship {
+   enabled = true;
+  enableIonIntegration = true;
+  };
   services.network-manager-applet.enable = true;
   home.packages = [
   pkgs.tmux
