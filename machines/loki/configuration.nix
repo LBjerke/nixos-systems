@@ -189,6 +189,7 @@ services.jack = {
      isNormalUser = true;
      extraGroups = [ "wheel" "networkmanager" "audio" "video" "disk" "jackaudio" "realtime" ]; # Enable ‘sudo’ for the user.
      initialPassword = "loyde1029";
+     shell = pkgs.ion; 
    };
 
 
