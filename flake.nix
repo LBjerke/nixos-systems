@@ -15,10 +15,7 @@ inputs = {
 {
     home-manager.useGlobalPkgs = true;
     home-manager.useUserPackages = true;
-    home-manager.users.orlyn = {  
-    programs.home-manager.enable = true;
-    services.network-manager-applet.enable = true;
-  };
+    home-manager.users.orlyn = import ./users/orlyn/home.nix; 
 }
 impermanence.nixosModules.impermanence{
    environment.persistence."/persist" = {
