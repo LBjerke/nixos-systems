@@ -1,21 +1,6 @@
 name: NixOS 
   
- on: 
-  push: 
-   branches: 
-     - master 
-    paths-ignore: 
-      - 'GNOME.md' 
-      - 'README.md' 
-      - 'notes/**' 
-      - '.git-crypt/**' 
-      - '.gitattributes' 
-      - '.gitignore' 
-      - 'home/**' 
-      - 'outputs/home-conf.nix' 
-      - 'outputs/installation.nix' 
-      - 'build' 
-      - 'switch' 
+on: [push] 
   
 jobs: 
   build: 
