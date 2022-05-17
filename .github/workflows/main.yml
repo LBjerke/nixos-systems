@@ -1,4 +1,4 @@
- name: NixOS 
+name: NixOS 
   
  on: 
    pull_request: 
