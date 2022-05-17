@@ -1,6 +1,6 @@
 #! /usr/bin/env bash 
   
- # Shows the 
+ # Shows the terminal
 
 build_ci_system() { 
    nix build .#nixosConfigurations.loki.config.system.build.toplevel 
