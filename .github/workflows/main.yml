@@ -1,18 +1,18 @@
 
 name: nixos 
 on: [push] 
-jobs: 
-  build: 
-    runs_on: ubuntu-18.04 
-    steps: 
-      - uses: actions/checkout@v2.3.2 
+jobs:
+  build:
+    runs_on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2.3.2
   
       - name: "Install Nix ❄️" 
         uses: cachix/install-nix-action@v15 
   
       - name: "Install Cachix ❄️" 
         uses: cachix/cachix-action@v10 
-        with: 
+        with:
           name: damaen
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}" 
   
