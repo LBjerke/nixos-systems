@@ -1,5 +1,5 @@
 
-name: NixOS  
+name: nixos 
 on: [push] 
 jobs: 
   build: 
