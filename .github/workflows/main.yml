@@ -30,7 +30,7 @@ jobs:
       - name: "Install Cachix ❄️"
         uses: cachix/cachix-action@v10
         with:
-          name: gvolpe-nixos
+          name: damaen
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
 
       - name: "Build NixOS config ❄️"
