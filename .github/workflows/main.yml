@@ -1,8 +1,6 @@
 
-name: NixOS 
-  
+name: NixOS  
 on: [push] 
-  
 jobs: 
   build: 
     runs-on: ubuntu-18.04 
