@@ -1,0 +1,33 @@
+[submodule "dep/nanovg"]
+	path = dep/nanovg
+	url = https://github.com/VCVRack/nanovg.git
+	ignore = untracked
+[submodule "dep/nanosvg"]
+	path = dep/nanosvg
+	url = https://github.com/memononen/nanosvg.git
+	ignore = untracked
+[submodule "dep/osdialog"]
+	path = dep/osdialog
+	url = https://github.com/AndrewBelt/osdialog.git
+	ignore = untracked
+[submodule "dep/oui-blendish"]
+	path = dep/oui-blendish
+	url = https://github.com/VCVRack/oui-blendish.git
+	ignore = untracked
+[submodule "dep/rtaudio"]
+	path = dep/rtaudio
+	url = https://github.com/VCVRack/rtaudio.git
+	ignore = untracked
+[submodule "dep/glfw"]
+	path = dep/glfw
+	url = https://github.com/VCVRack/glfw.git
+	ignore = untracked
+[submodule "dep/fuzzysearchdatabase"]
+	path = dep/fuzzysearchdatabase
+	url = https://bitbucket.org/j_norberg/fuzzysearchdatabase.git
+[submodule "dep/filesystem"]
+	path = dep/filesystem
+	url = https://github.com/gulrak/filesystem.git
+[submodule "dep/pffft"]
+	path = dep/pffft
+	url = https://bitbucket.org/jpommier/pffft.git

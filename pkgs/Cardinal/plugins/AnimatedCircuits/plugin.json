@@ -1,0 +1,25 @@
+{
+	"slug": "AnimatedCircuits",
+	"name": "Animated Circuits",
+	"version": "2.1.0",
+	"brand": "Animated Circuits",
+	"author": "Animated Circuits",
+	"license": "GPL-3.0-or-later",
+	"authorEmail": "animatedcircuits@gmail.com",
+	"pluginUrl": "https://github.com/AnimatedCircuits/RackModules",
+	"authorUrl": "",
+	"manualUrl": "https://github.com/AnimatedCircuits/RackModules/wiki",
+	"sourceUrl": "https://github.com/AnimatedCircuits/RackModules",
+  	"changelogUrl": "",
+	"modules": [
+		{
+			"slug": "ACFolding",
+			"name": "Folding",
+			"description": "Wavefolder",
+			"tags": [
+				"Waveshaper",
+				"Polyphonic"
+			]
+		}
+	]
+}

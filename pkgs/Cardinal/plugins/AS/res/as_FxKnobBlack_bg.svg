@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <linearGradient id="linear-gradient" x1="18" y1="-0.15" x2="18" y2="35.77" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1e1e1e"/>
+      <stop offset="1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="17.96" y1="-13.57" x2="17.96" y2="18.09" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#737373"/>
+      <stop offset="0.18" stop-color="#6b6b6b"/>
+      <stop offset="0.47" stop-color="#565654"/>
+      <stop offset="0.83" stop-color="#343430"/>
+      <stop offset="1" stop-color="#21211c"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="17.96" y1="45.74" x2="17.96" y2="22.07" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#404040"/>
+      <stop offset="1" stop-color="#21211c"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_10" data-name="Layer 10">
+      <g>
+        <path id="path2522" d="M18,36A18,18,0,1,1,36,18,18,18,0,0,1,18,36Z" style="fill: url(#linear-gradient)"/>
+        <circle id="path3744" cx="18" cy="18.01" r="17" style="fill: #21211c"/>
+        <path d="M18,1A16.84,16.84,0,0,0,1.46,13.86,30.22,30.22,0,0,0,18,18.43a30.22,30.22,0,0,0,16.5-4.57A16.84,16.84,0,0,0,18,1Z" style="fill: url(#linear-gradient-2)"/>
+        <path d="M2.13,23.55a16.66,16.66,0,0,0,31.66,0A30.56,30.56,0,0,0,18,19.39,30.56,30.56,0,0,0,2.13,23.55Z" style="fill: url(#linear-gradient-3)"/>
+      </g>
+    </g>
+  </g>
+</svg>

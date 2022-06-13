@@ -1,0 +1,34 @@
+#!/bin/bash
+
+set -e
+
+PYTHON=$(which python3 2>/dev/null)
+
+if [ ! -f ${PYTHON} ]; then
+  PYTHON=python
+fi
+
+if [ "$1" = "--gdb" ]; then
+  PYTHON="gdb --args $PYTHON"
+fi
+
+INSTALL_ARGS="--with-appname="${0}""
+
+if [ -f "$(dirname ${0})/carla-utils.pc" ]; then
+    cd "$(dirname ${0})/.."
+    INSTALL_PREFIX="$(pwd)"
+    INSTALL_FRONTENDDIR="${INSTALL_PREFIX}/source/frontend"
+else
+    INSTALL_PREFIX="X-PREFIX-X"
+    INSTALL_FRONTENDDIR="${INSTALL_PREFIX}/share/carla"
+    INSTALL_ARGS="${INSTALL_ARGS} --with-libprefix="${INSTALL_PREFIX}""
+fi
+
+if lsof -i:21337 > /dev/null; then
+    echo "NOTICE: Backend already running"
+else
+    ${PYTHON} "${INSTALL_FRONTENDDIR}/carla" ${INSTALL_ARGS} --osc-gui=21337 "$@" --with-appname="carla-osc-dsp"
+    echo "NOTICE: Backend was not running yet, start was triggered now"
+fi
+
+exec ${PYTHON} "${INSTALL_FRONTENDDIR}/carla-control" ${INSTALL_ARGS} osc.tcp://127.0.0.1:21337/Carla "$@"

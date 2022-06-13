@@ -1,0 +1,250 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+# Carla Native Plugins
+# Copyright (C) 2012-2019 Filipe Coelho <falktx@falktx.com>
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License as
+# published by the Free Software Foundation; either version 2 of
+# the License, or any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# For a full copy of the GNU General Public License see the doc/GPL.txt file.
+
+# ------------------------------------------------------------------------------------------------------------
+# Imports (Global)
+
+from PyQt5.QtCore import pyqtSlot, Qt
+from PyQt5.QtWidgets import QGridLayout, QLabel, QPushButton, QTextEdit, QWidget
+
+# -----------------------------------------------------------------------
+# Imports (Custom)
+
+from carla_shared import *
+from carla_utils import *
+
+# -----------------------------------------------------------------------
+# Imports (ExternalUI)
+
+from carla_app import CarlaApplication
+from externalui import ExternalUI
+from widgets.paramspinbox import ParamSpinBox
+
+# -----------------------------------------------------------------------
+# External UI
+
+class DistrhoUINotes(ExternalUI, QWidget):
+    def __init__(self):
+        ExternalUI.__init__(self)
+        QWidget.__init__(self, None)
+
+        self.fCurPage = 1
+        self.fSaveSizeNowChecker = -1
+        self.fSaveTextNowChecker = -1
+        self.fNotes = ["" for x in range(100)]
+
+        self.fTextEdit    = QTextEdit(self)
+        self.fButton      = QPushButton(self)
+        self.fProgressBar = ParamSpinBox(self)
+        self.fSpacer      = QLabel(self)
+        self.fGridLayout  = QGridLayout(self)
+
+        self.fButton.setCheckable(True)
+        self.fButton.setChecked(True)
+        self.fButton.setText("Edit")
+        self.fButton.setFixedSize(self.fButton.minimumSizeHint())
+
+        self.fProgressBar.setMinimum(1.0)
+        self.fProgressBar.setMaximum(100.0)
+        self.fProgressBar.setValue(1.0)
+        self.fProgressBar.setStep(1.0)
+        self.fProgressBar.setStepSmall(1.0)
+        self.fProgressBar.setStepLarge(10.0)
+
+        self.fSpacer.setText("")
+        self.fSpacer.setFixedSize(5, 5)
+
+        self.fTextEdit.setReadOnly(False)
+
+        self.setLayout(self.fGridLayout)
+        self.fGridLayout.addWidget(self.fTextEdit, 0, 0, 1, 3)
+        self.fGridLayout.addWidget(self.fButton, 1, 0, 1, 1)
+        self.fGridLayout.addWidget(self.fProgressBar, 1, 1, 1, 1)
+        self.fGridLayout.addWidget(self.fSpacer, 1, 2, 1, 1)
+        self.fGridLayout.setContentsMargins(0, 0, 0, 0)
+
+        self.fButton.clicked.connect(self.slot_buttonClicked)
+        self.fProgressBar.valueChanged.connect(self.slot_progressBarValueChanged)
+        self.fTextEdit.textChanged.connect(self.slot_textChanged)
+
+        self.fIdleTimer = self.startTimer(50)
+
+        self.resize(300, 200)
+        self.setWindowTitle(self.fUiName)
+        self.ready()
+
+    def saveCurrentTextState(self):
+        pageKey   = "pageText #%i" % self.fCurPage
+        pageValue = self.fTextEdit.toPlainText()
+
+        if pageValue != self.fNotes[self.fCurPage-1]:
+            self.fNotes[self.fCurPage-1] = pageValue
+            self.sendConfigure(pageKey, pageValue)
+
+    # -------------------------------------------------------------------
+
+    @pyqtSlot(bool)
+    def slot_buttonClicked(self, click):
+        readOnly = not click
+        self.fTextEdit.setReadOnly(readOnly)
+        self.sendConfigure("readOnly", "yes" if readOnly else "no")
+
+    @pyqtSlot(float)
+    def slot_progressBarValueChanged(self, value):
+        ivalue = int(value)
+        value  = float(ivalue)
+
+        if self.fCurPage == ivalue:
+            return
+
+        # maybe save current text before changing page
+        if self.fSaveTextNowChecker >= 0 and value >= 1.0 and value <= 100.0:
+            self.saveCurrentTextState()
+            self.fSaveTextNowChecker = -1
+
+        # change current page
+        self.dspParameterChanged(0, value)
+
+        # tell host about this change
+        self.sendControl(0, value)
+
+    @pyqtSlot()
+    def slot_textChanged(self):
+        self.fSaveTextNowChecker = 0
+
+    # -------------------------------------------------------------------
+    # DSP Callbacks
+
+    def dspParameterChanged(self, index, value):
+        if index != 0:
+            return
+
+        nextCurPage = int(value)
+
+        if nextCurPage != self.fCurPage and nextCurPage >= 1 and nextCurPage <= 100:
+            self.saveCurrentTextState()
+            self.fCurPage = nextCurPage
+
+            self.fTextEdit.setPlainText(self.fNotes[self.fCurPage-1])
+            self.fProgressBar.setValue(self.fCurPage)
+            self.fProgressBar.update()
+
+    def dspStateChanged(self, key, value):
+        if key == "guiWidth":
+            try:
+                width = int(value)
+            except:
+                width = 0
+
+            if width > 0:
+                self.resize(width, self.height())
+
+        elif key == "guiHeight":
+            try:
+                height = int(value)
+            except:
+                height = 0
+
+            if height > 0:
+                self.resize(self.width(), height)
+
+        elif key.startswith("pageText #"):
+            try:
+                pageIndex = int(key.replace("pageText #",""))
+            except:
+                pageIndex = 0
+
+            if pageIndex >= 1 and pageIndex <= 100:
+                self.fNotes[pageIndex-1] = value
+
+                if pageIndex == self.fCurPage:
+                    self.fTextEdit.setPlainText(self.fNotes[pageIndex-1])
+
+        elif key == "readOnly":
+            readOnly = (value == "yes")
+            self.fButton.setChecked(not readOnly)
+            self.fTextEdit.setReadOnly(readOnly)
+
+    # -------------------------------------------------------------------
+    # ExternalUI Callbacks
+
+    def uiShow(self):
+        self.show()
+
+    def uiFocus(self):
+        self.setWindowState((self.windowState() & ~Qt.WindowMinimized) | Qt.WindowActive)
+        self.show()
+
+        self.raise_()
+        self.activateWindow()
+
+    def uiHide(self):
+        self.hide()
+
+    def uiQuit(self):
+        self.closeExternalUI()
+        self.close()
+        app.quit()
+
+    def uiTitleChanged(self, uiTitle):
+        self.setWindowTitle(uiTitle)
+
+    # -------------------------------------------------------------------
+    # Qt events
+
+    def resizeEvent(self, event):
+        self.fSaveSizeNowChecker = 0
+        QWidget.resizeEvent(self, event)
+
+    def timerEvent(self, event):
+        if event.timerId() == self.fIdleTimer:
+            self.idleExternalUI()
+
+            if self.fSaveSizeNowChecker == 11:
+                self.sendConfigure("guiWidth", str(self.width()))
+                self.sendConfigure("guiHeight", str(self.height()))
+                self.fSaveSizeNowChecker = -1
+            elif self.fSaveSizeNowChecker >= 0:
+                self.fSaveSizeNowChecker += 1
+
+            if self.fSaveTextNowChecker == 11:
+                self.saveCurrentTextState()
+                self.fSaveTextNowChecker = -1
+            elif self.fSaveTextNowChecker >= 0:
+                self.fSaveTextNowChecker += 1
+
+        QWidget.timerEvent(self, event)
+
+    def closeEvent(self, event):
+        self.closeExternalUI()
+        QWidget.closeEvent(self, event)
+
+        # there might be other qt windows open which will block the UI from quitting
+        app.quit()
+
+#--------------- main ------------------
+if __name__ == '__main__':
+    import resources_rc
+
+    pathBinaries, pathResources = getPaths()
+    gCarla.utils = CarlaUtils(os.path.join(pathBinaries, "libcarla_utils." + DLL_EXTENSION))
+    gCarla.utils.set_process_name("Notes")
+
+    app = CarlaApplication("Notes")
+    gui = DistrhoUINotes()
+    app.exit_exec()

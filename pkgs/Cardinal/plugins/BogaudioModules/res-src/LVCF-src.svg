@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<module hp="3">
+  <style/>
+
+  <defs>
+    <symbol id="dial-cutoff-lvcf" viewBox="0 0 45px 45px">
+      <g transform="translate(22.5 22.5)">
+        <text font-size="5.0pt" transform="rotate(-240) translate(18 0) rotate(240) translate(-2 2)">0</text>
+        <polyline points="0,0 1.5,0" stroke-width="0.7" transform="rotate(-218.8) translate(15 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-192.6) translate(15 0)"/>
+
+        <text font-size="5.0pt" transform="rotate(-172.2) translate(18 0) rotate(172.2) translate(-1 2)">1</text>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-90) translate(15 0)"/>
+
+        <text font-size="5.0pt" transform="rotate(-27.9) translate(18 0) rotate(27.9) translate(-4 2)">10</text>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(19.8) translate(15 0)"/>
+
+        <text font-size="5.0pt" transform="rotate(60) translate(18 0) rotate(-60) translate(-2 2)">20</text>
+
+        <text font-size="4.0pt" transform="rotate(90) translate(18 0) rotate(-90) translate(-5 2)">KHZ</text>
+      </g>
+    </symbol>
+
+    <symbol id="dial-q-lvcf" viewBox="0 0 45px 45px">
+      <g transform="translate(22.5 22.5)">
+        <text font-size="5.0pt" transform="rotate(-240) translate(18 0) rotate(240) translate(-2 2)">0</text>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-210) translate(15 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-180) translate(15 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-150) translate(15 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-120) translate(15 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-90) translate(15 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-60) translate(15 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-30) translate(15 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(0) translate(15 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(30) translate(15 0)"/>
+        <polyline points="0,0 3.5,0" stroke-width="1" transform="rotate(60) translate(15 0)"/>
+      </g>
+    </symbol>
+
+  </defs>
+
+  <def xlink:href="#module3" var-name="LVCF"/>
+
+  <g transform="translate(0 31)">
+    <text font-size="6pt" letter-spacing="1px" transform="translate(5 0)">CUTOFF</text>
+    <def id="FREQUENCY_PARAM" xlink:href="#knob26" transform="translate(9.5 8)"/>
+    <use xlink:href="#dial-cutoff-lvcf" transform="translate(0 -1.5)"/>
+  </g>
+
+  <g transform="translate(0 84)">
+    <text font-size="6pt" letter-spacing="2px" transform="translate(16 0)">CV</text>
+    <def id="FREQUENCY_CV_PARAM" xlink:href="#knob16" transform="translate(14.5 9.5)"/>
+    <def xlink:href="#dial-centertick" transform="translate(2.2 -2.5)"/>
+  </g>
+
+  <g transform="translate(0 130)">
+    <text font-size="6pt" letter-spacing="1px" transform="translate(5 0)">RES/BW</text>
+    <def id="Q_PARAM" xlink:href="#knob26" transform="translate(9.5 8)"/>
+    <use xlink:href="#dial-q-lvcf" transform="translate(0 -1.5)"/>
+  </g>
+
+  <g transform="translate(0.5 180)">
+    <g transform="translate(10 0)">
+      <g transform="translate(0 0)">
+        <def id="LOWPASS_LIGHT" xlink:href="#light-small" transform="translate(-7.5 1)"/>
+        <text font-size="5pt" letter-spacing="0.5px" transform="translate(1 6.7)">LP</text>
+      </g>
+
+      <g transform="translate(0 13)">
+        <def id="BANDPASS_LIGHT" xlink:href="#light-small" transform="translate(-7.5 1)"/>
+        <text font-size="5pt" letter-spacing="0.5px" transform="translate(1 6.7)">BP</text>
+      </g>
+    </g>
+
+    <g transform="translate(32 0)">
+      <g transform="translate(0 0)">
+        <def id="HIGHPASS_LIGHT" xlink:href="#light-small" transform="translate(-7.5 1)"/>
+        <text font-size="5pt" letter-spacing="0.5px" transform="translate(1 6.7)">HP</text>
+      </g>
+
+      <g transform="translate(0 13)">
+        <def id="BANDREJECT_LIGHT" xlink:href="#light-small" transform="translate(-7.5 1)"/>
+        <text font-size="5pt" letter-spacing="0.5px" transform="translate(1 6.7)">BR</text>
+      </g>
+    </g>
+
+    <def id="MODE_PARAM" xlink:href="#button-small" transform="translate(17.5 24)"/>
+  </g>
+
+  <g transform="translate(0 225)">
+    <g class="io-group" transform="translate(5.5 0)">
+      <rect class="input-background" width="34" height="73" rx="5"/>
+      <rect class="input-background-filler" width="34" height="10" transform="translate(0 63)"/>
+      <def id="IN_INPUT" xlink:href="#input" transform="translate(5 3)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(12.5 35)">IN</text>
+      <def id="FREQUENCY_CV_INPUT" xlink:href="#input" transform="translate(5 38)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(11 70)">CV</text>
+    </g>
+    <g class="io-group" transform="translate(5.5 76)">
+      <rect class="output-background-filler" width="34" height="10" transform="translate(0 -3)"/>
+      <rect class="output-background" width="34" height="35" rx="5"/>
+      <def id="OUT_OUTPUT" xlink:href="#output" transform="translate(5 0)"/>
+      <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(8.3 32)">OUT</text>
+    </g>
+  </g>
+</module>

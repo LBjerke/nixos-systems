@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<module hp="3">
+  <style/>
+
+  <defs>
+    <symbol id="dial-response-follow" viewBox="0 0 45px 45px">
+      <g transform="translate(22.5 22.5)">
+        <text font-size="5.0pt" transform="rotate(-240) translate(20 0) rotate(240) translate(-2 2)">0</text>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-210) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-180) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-150) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-120) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-90) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-60) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-30) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(0) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(30) translate(17 0)"/>
+        <polyline points="0,0 3.5,0" stroke-width="1" transform="rotate(60) translate(17 0)"/>
+      </g>
+    </symbol>
+
+    <symbol id="dial-scale-follow" viewBox="0 0 45px 45px">
+      <g transform="translate(22.5 22.5)">
+        <text font-size="8pt" transform="rotate(-240) translate(20 0) rotate(240) translate(-2 3)">-</text>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-210) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-180) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-150) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-120) translate(17 0)"/>
+        <polyline points="0,0 3.5,0" stroke-width="1.0" transform="rotate(-90) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-60) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-30) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(0) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(30) translate(17 0)"/>
+        <text font-size="6pt" transform="rotate(60) translate(20 0) rotate(-60) translate(-2 2)">+</text>
+      </g>
+    </symbol>
+  </defs>
+
+  <def xlink:href="#module3" var-name="FOLLOW"/>
+
+  <g transform="translate(0 25)">
+    <text font-size="6pt" letter-spacing="2.0px" transform="translate(8.5 0)">DAMP</text>
+    <def id="RESPONSE_PARAM" xlink:href="#knob29" transform="translate(0 3)"/>
+    <use xlink:href="#dial-response-follow" transform="translate(0 3)"/>
+    <g class="io-group" transform="translate(5.5 49)">
+      <rect class="input-background" width="34" height="39" rx="5"/>
+      <def id="RESPONSE_INPUT" xlink:href="#input" transform="translate(5 3)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(11 35)">CV</text>
+    </g>
+  </g>
+
+  <g transform="translate(0 131)">
+    <text font-size="6pt" letter-spacing="1px" transform="translate(11.5 0)">GAIN</text>
+    <def id="GAIN_PARAM" xlink:href="#knob29" transform="translate(0 3)"/>
+    <use xlink:href="#dial-scale-follow" transform="translate(0 3)"/>
+    <g class="io-group" transform="translate(5.5 49)">
+      <rect class="input-background" width="34" height="38" rx="5"/>
+      <def id="GAIN_INPUT" xlink:href="#input" transform="translate(5 3)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(11 35)">CV</text>
+    </g>
+  </g>
+
+  <g transform="translate(0 230)">
+    <g class="io-group" transform="translate(5.5 0)">
+      <rect class="input-background-filler" width="34" height="10" transform="translate(0 28)"/>
+      <rect class="input-background" width="34" height="35" rx="5"/>
+      <def id="IN_INPUT" xlink:href="#input" transform="translate(5 3)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(12.5 35)">IN</text>
+    </g>
+    <g class="io-group" transform="translate(5.5 41)">
+      <rect class="output-background-filler" width="34" height="10" transform="translate(0 -3)"/>
+      <rect class="output-background" width="34" height="35" rx="5"/>
+      <def id="OUT_OUTPUT" xlink:href="#output" transform="translate(5 0)"/>
+      <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(8.3 32)">OUT</text>
+    </g>
+  </g>
+
+  <!-- <polyline points="0,0 45,0" stroke-width="0.7" stroke="#0f0" transform="translate(0 73)" /> -->
+</module>

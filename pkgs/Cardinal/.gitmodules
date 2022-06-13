@@ -1,0 +1,141 @@
+[submodule "plugins/Cardinal/Rack"]
+	path = src/Rack
+	url = https://github.com/VCVRack/Rack.git
+[submodule "dpf"]
+	path = dpf
+	url = https://github.com/DISTRHO/DPF.git
+[submodule "plugins/Cardinal/mingw-std-threads"]
+	path = include/mingw-std-threads
+	url = https://github.com/meganz/mingw-std-threads.git
+[submodule "plugins/Cardinal/sse2neon"]
+	path = include/sse2neon
+	url = https://github.com/DLTcollab/sse2neon.git
+[submodule "plugins/Fundamental"]
+	path = plugins/Fundamental
+	url = https://github.com/CardinalModules/Fundamental.git
+[submodule "plugins/Befaco"]
+	path = plugins/Befaco
+	url = https://github.com/VCVRack/Befaco.git
+[submodule "plugins/AudibleInstruments"]
+	path = plugins/AudibleInstruments
+	url = https://github.com/CardinalModules/AudibleInstruments.git
+[submodule "plugins/AnimatedCircuits"]
+	path = plugins/AnimatedCircuits
+	url = https://github.com/AnimatedCircuits/RackModules.git
+[submodule "plugins/ZetaCarinaeModules"]
+	path = plugins/ZetaCarinaeModules
+	url = https://github.com/mhampton/ZetaCarinaeModules.git
+[submodule "plugins/GrandeModular"]
+	path = plugins/GrandeModular
+	url = https://github.com/dbgrande/GrandeModular.git
+[submodule "plugins/BogaudioModules"]
+	path = plugins/BogaudioModules
+	url = https://github.com/bogaudio/BogaudioModules.git
+[submodule "plugins/Bidoo"]
+	path = plugins/Bidoo
+	url = https://github.com/CardinalModules/Bidoo.git
+[submodule "plugins/ESeries"]
+	path = plugins/ESeries
+	url = https://github.com/VCVRack/ESeries.git
+[submodule "plugins/JW-Modules"]
+	path = plugins/JW-Modules
+	url = https://github.com/jeremywen/JW-Modules.git
+[submodule "plugins/rackwindows"]
+	path = plugins/rackwindows
+	url = https://github.com/CardinalModules/rackwindows.git
+[submodule "plugins/AS"]
+	path = plugins/AS
+	url = https://github.com/AScustomWorks/AS.git
+[submodule "plugins/ImpromptuModular"]
+	path = plugins/ImpromptuModular
+	url = https://github.com/MarcBoule/ImpromptuModular.git
+[submodule "plugins/AmalgamatedHarmonics"]
+	path = plugins/AmalgamatedHarmonics
+	url = https://github.com/jhoar/AmalgamatedHarmonics.git
+[submodule "plugins/cf"]
+	path = plugins/cf
+	url = https://github.com/CardinalModules/cf.git
+[submodule "plugins/MindMeldModular"]
+	path = plugins/MindMeldModular
+	url = https://github.com/MarcBoule/MindMeldModular.git
+[submodule "plugins/ValleyAudio"]
+	path = plugins/ValleyAudio
+	url = https://github.com/ValleyAudio/ValleyRackFree.git
+[submodule "plugins/DrumKit"]
+	path = plugins/DrumKit
+	url = https://github.com/SVModular/DrumKit.git
+[submodule "carla"]
+	path = carla
+	url = https://github.com/falkTX/Carla.git
+[submodule "plugins/Atelier"]
+	path = plugins/Atelier
+	url = https://github.com/Xenakios/Atelier.git
+[submodule "plugins/mscHack"]
+	path = plugins/mscHack
+	url = https://github.com/CardinalModules/mscHack.git
+[submodule "plugins/ZZC"]
+	path = plugins/ZZC
+	url = https://github.com/zezic/ZZC.git
+[submodule "plugins/repelzen"]
+	path = plugins/repelzen
+	url = https://github.com/wiqid/repelzen.git
+[submodule "plugins/AriaModules"]
+	path = plugins/AriaModules
+	url = https://github.com/CardinalModules/AriaModules.git
+[submodule "plugins/BaconPlugs"]
+	path = plugins/BaconPlugs
+	url = https://github.com/baconpaul/BaconPlugs.git
+[submodule "plugins/FehlerFabrik"]
+	path = plugins/FehlerFabrik
+	url = https://github.com/RCameron93/FehlerFabrik.git
+[submodule "plugins/sonusmodular"]
+	path = plugins/sonusmodular
+	url = https://gitlab.com/sonusdept/sonusmodular.git
+[submodule "plugins/Mog"]
+	path = plugins/Mog
+	url = https://github.com/CardinalModules/Mog-VCV.git
+[submodule "plugins/ChowDSP"]
+	path = plugins/ChowDSP
+	url = https://github.com/jatinchowdhury18/ChowDSP-VCV.git
+[submodule "plugins/GlueTheGiant"]
+	path = plugins/GlueTheGiant
+	url = https://github.com/gluethegiant/gtg-rack.git
+[submodule "plugins/HetrickCV"]
+	path = plugins/HetrickCV
+	url = https://github.com/mhetrick/hetrickcv.git
+[submodule "plugins/LyraeModules"]
+	path = plugins/LyraeModules
+	url = https://github.com/VegaDeftwing/LyraeModules.git
+[submodule "plugins/LittleUtils"]
+	path = plugins/LittleUtils
+	url = https://github.com/mgunyho/Little-Utils.git
+[submodule "plugins/Prism"]
+	path = plugins/Prism
+	url = https://github.com/SteveRussell33/Prism.git
+[submodule "plugins/Extratone"]
+	path = plugins/Extratone
+	url = https://github.com/EaterOfSheep/Extratone.git
+[submodule "plugins/LifeFormModular"]
+	path = plugins/LifeFormModular
+	url = https://github.com/SteveRussell33/LifeFormModular.git
+[submodule "plugins/21kHz"]
+	path = plugins/21kHz
+	url = https://github.com/netboy3/21kHz-rack-plugins.git
+[submodule "deps/PawPaw"]
+	path = deps/PawPaw
+	url = https://github.com/DISTRHO/PawPaw.git
+[submodule "plugins/LomasModules"]
+	path = plugins/LomasModules
+	url = https://github.com/LomasModules/LomasModules.git
+[submodule "plugins/ExpertSleepers-Encoders"]
+	path = plugins/ExpertSleepers-Encoders
+	url = https://github.com/expertsleepersltd/vcvrack-encoders.git
+[submodule "plugins/ihtsyn"]
+	path = plugins/ihtsyn
+	url = https://github.com/CardinalModules/ihtsyn.git
+[submodule "deps/QuickJS"]
+	path = deps/QuickJS
+	url = https://github.com/JerrySievert/QuickJS.git
+[submodule "plugins/Autinn"]
+	path = plugins/Autinn
+	url = https://github.com/NikolaiVChr/Autinn.git

@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<module hp="3">
+  <style/>
+
+  <defs>
+    <symbol id="dial-octave-stack" viewBox="0 0 45px 45px">
+      <g transform="translate(22.5 22.5)">
+        <g transform="rotate(-180) translate(10 0)">
+          <text font-size="5.0pt" transform="translate(2 0) rotate(180) translate(-4 2.2)">-3</text>
+        </g>
+        <g transform="rotate(-150) translate(11 0)">
+          <polyline points="0,0 2.5,0" stroke-width="0.7"/>
+        </g>
+        <g transform="rotate(-120) translate(11 0)">
+          <polyline points="0,0 2.5,0" stroke-width="0.7"/>
+        </g>
+        <g transform="rotate(-90) translate(10 0)">
+          <text font-size="5.0pt" transform="translate(2 0) rotate(90) translate(-2.2 2.2)">0</text>
+        </g>
+        <g transform="rotate(-60) translate(11 0)">
+          <polyline points="0,0 2.5,0" stroke-width="0.7"/>
+        </g>
+        <g transform="rotate(-30) translate(11 0)">
+          <polyline points="0,0 2.5,0" stroke-width="0.7"/>
+        </g>
+        <g transform="rotate(0) translate(10 0)">
+          <text font-size="5.0pt" transform="translate(2 0) rotate(0) translate(-2.2 2.2)">3</text>
+        </g>
+      </g>
+    </symbol>
+
+    <symbol id="dial-interval-stack" viewBox="0 0 45px 45px">
+      <g transform="translate(22.5 22.5)">
+        <g transform="rotate(-240) translate(15 0)">
+          <text font-size="5.0pt" transform="translate(2.5 0) rotate(240) translate(-2.2 2.2)">0</text>
+        </g>
+        <g transform="rotate(-212.73) translate(15 0)">
+          <polyline points="0,0 2.5,0" stroke-width="0.7"/>
+        </g>
+        <g transform="rotate(-185.45) translate(15 0)">
+          <polyline points="0,0 2.5,0" stroke-width="0.7"/>
+        </g>
+        <g transform="rotate(-158.18) translate(15 0)">
+          <polyline points="0,0 2.5,0" stroke-width="0.7"/>
+        </g>
+        <g transform="rotate(-130.91) translate(15 0)">
+          <text font-size="5.0pt" transform="translate(2.5 0) rotate(130.91) translate(-2.2 2.2)">4</text>
+        </g>
+        <g transform="rotate(-103.64) translate(15 0)">
+          <polyline points="0,0 2.5,0" stroke-width="0.7"/>
+        </g>
+        <g transform="rotate(-76.36) translate(15 0)">
+          <polyline points="0,0 2.5,0" stroke-width="0.7"/>
+        </g>
+        <g transform="rotate(-49.09) translate(15 0)">
+          <text font-size="5.0pt" transform="translate(2.5 0) rotate(49.09) translate(-2.2 2.2)">7</text>
+        </g>
+        <g transform="rotate(-21.82) translate(15 0)">
+          <polyline points="0,0 2.5,0" stroke-width="0.7"/>
+        </g>
+        <g transform="rotate(5.45) translate(15 0)">
+          <polyline points="0,0 2.5,0" stroke-width="0.7"/>
+        </g>
+        <g transform="rotate(32.73) translate(15 0)">
+          <polyline points="0,0 2.5,0" stroke-width="0.7"/>
+        </g>
+        <g transform="rotate(60) translate(15 0)">
+          <text font-size="5.0pt" transform="translate(2.5 0) rotate(-60) translate(-4 2.2)">11</text>
+        </g>
+      </g>
+    </symbol>
+
+    <symbol id="dial-fine-stack" viewBox="0 0 45px 45px">
+      <g transform="translate(22.5 22.5)">
+        <g transform="rotate(-240) translate(10 0)">
+          <!-- <polyline points="0,0 3,0" stroke-width="0.7" /> -->
+          <text font-size="5.0pt" transform="translate(2.5 0) rotate(240) translate(-1.5 2.2)">-</text>
+        </g>
+        <g transform="rotate(-90) translate(10 0)">
+          <!-- <polyline points="0,0 3,0" stroke-width="0.7" /> -->
+          <text font-size="5.0pt" transform="translate(2 0) rotate(90) translate(-1.9 2.2)">0</text>
+        </g>
+        <g transform="rotate(60) translate(10 0)">
+          <!-- <polyline points="0,0 3,0" stroke-width="0.7" /> -->
+          <text font-size="5.0pt" transform="translate(2.5 0) rotate(-60) translate(-1.9 2.2)">+</text>
+        </g>
+        <path d="M 0 -12.5 A 12.5 12.5 0 0 1 12.5 0" stroke-width="0.7" stroke-linecap="round" stroke="#333" fill="none" transform="rotate(20)"/>
+        <path d="M 0 -12.5 A 12.5 12.5 0 0 1 12.5 0" stroke-width="0.7" stroke-linecap="round" stroke="#333" fill="none" transform="rotate(43)"/>
+        <path d="M 0 -12.5 A 12.5 12.5 0 0 0 -12.5 0" stroke-width="0.7" stroke-linecap="round" stroke="#333" fill="none" transform="rotate(-20)"/>
+        <path d="M 0 -12.5 A 12.5 12.5 0 0 0 -12.5 0" stroke-width="0.7" stroke-linecap="round" stroke="#333" fill="none" transform="rotate(-43)"/>
+      </g>
+    </symbol>
+  </defs>
+
+  <def xlink:href="#module3" var-name="STACK"/>
+
+  <g transform="translate(0 25)">
+    <text font-size="6pt" letter-spacing="2px" transform="translate(6.4 0)">SEMIS</text>
+    <def id="SEMIS_PARAM" xlink:href="#knob26" transform="translate(9.5 7.5)"/>
+    <use xlink:href="#dial-interval-stack" transform="translate(0 -2)"/>
+  </g>
+
+  <g transform="translate(0 77)">
+    <text font-size="6pt" letter-spacing="2px" transform="translate(2.2 0)">OCTAVE</text>
+    <def id="OCTAVE_PARAM" xlink:href="#knob16" transform="translate(14.5 9.5)"/>
+    <use xlink:href="#dial-octave-stack" transform="translate(0 -5)"/>
+  </g>
+
+  <g transform="translate(0 117)">
+    <text font-size="6pt" letter-spacing="2px" transform="translate(11 0)">FINE</text>
+    <def id="FINE_PARAM" xlink:href="#knob16" transform="translate(14.5 9.5)"/>
+    <use xlink:href="#dial-fine-stack" transform="translate(0 -5)"/>
+  </g>
+
+  <g class="io-group" transform="translate(5.5 154)">
+    <rect class="input-background" width="34" height="50" rx="5"/>
+    <def id="CV_INPUT" xlink:href="#input" transform="translate(5 3)"/>
+    <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(11 35)">CV</text>
+    <g transform="translate(1.5 39)">
+      <text class="input-label" font-size="5pt" letter-spacing="0.75px" transform="translate(0 6)">QNTZ</text>
+      <def id="QUANTIZE_PARAM" xlink:href="#button-small" transform="translate(22 -1)"/>
+    </g>
+  </g>
+
+  <g transform="translate(0 212)">
+    <g class="io-group" transform="translate(5.5 0)">
+      <rect class="input-background-filler" width="34" height="10" transform="translate(0 28)"/>
+      <rect class="input-background" width="34" height="35" rx="5"/>
+      <def id="IN_INPUT" xlink:href="#input" transform="translate(5 3)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(3 35)">V/OCT</text>
+    </g>
+    <g class="io-group" transform="translate(5.5 41)">
+      <rect class="output-background-filler" width="34" height="10" transform="translate(0 -3)"/>
+      <rect class="output-background" width="34" height="72" rx="5"/>
+      <def id="THRU_OUTPUT" xlink:href="#output" transform="translate(5 0)"/>
+      <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(5.5 32)">THRU</text>
+      <def id="OUT_OUTPUT" xlink:href="#output" transform="translate(5 36)"/>
+      <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(8.3 68)">OUT</text>
+    </g>
+  </g>
+</module>

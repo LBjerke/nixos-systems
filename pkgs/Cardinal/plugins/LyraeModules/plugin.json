@@ -1,0 +1,63 @@
+{
+  "slug": "LyraeModules",
+  "name": "LyraeModules",
+  "version": "2.0.2",
+  "license": "GPL-3.0-or-later",
+  "brand": "LyraeModules",
+  "author": "Vega Deftwing",
+  "authorUrl": "https://opguides.info",
+  "manualUrl": "https://github.com/VegaDeftwing/LyraeModules/blob/main/README.md",
+  "sourceUrl": "https://github.com/VegaDeftwing/LyraeModules",
+  "donateUrl": "https://github.com/sponsors/VegaDeftwing",
+  "modules": [
+    {
+      "slug": "Sulafat",
+      "name": "Sulafat",
+      "description": "Distortion at 15 Solar Radii",
+      "tags": [
+        "Distortion",
+        "Waveshaper"
+      ]
+    },
+    {
+      "slug": "Gamma",
+      "name": "Gamma",
+      "description": "",
+      "tags": [
+        "Utility"
+      ]
+    },
+    {
+      "slug": "Delta",
+      "name": "Delta",
+      "description": "So I heard you like ringmod",
+      "tags": [
+        "Ring modulator"
+      ]
+    },
+    {
+      "slug": "Vega",
+      "name": "Vega",
+      "description": "ADSR with per stage outputs and ringmod",
+      "tags": [
+        "Envelope Generator"
+      ]
+    },
+    {
+      "slug": "BD383238",
+      "name": "BD383238",
+      "description": "Expander for Vega ADSR",
+      "tags": [
+        "Expander"
+      ]
+    },
+    {
+      "slug": "Zeta",
+      "name": "Zeta",
+      "description": "Blank",
+      "tags": [
+        "Blank"
+      ]
+    }
+  ]
+}

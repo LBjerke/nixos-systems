@@ -1,0 +1,13 @@
+{
+    "name": "distrho-ports-swankyamp",
+    "lv2bundles": [
+        "SwankyAmp.lv2"
+    ],
+    "version": "00bd0b1510ef3ad87d06770dc509f85af82a7134",
+    "description": "Tube amplifier simulation plugin",
+    "dlbaseurl": "https://github.com/DISTRHO/DISTRHO-Ports.git",
+    "dlmethod": "git",
+    "dlname": "distrho-ports",
+    "buildtype": "meson",
+    "buildargs": "-Dbuild-vst2=false -Dbuild-vst3=false -Doptimizations=false -Dplugins=swankyamp"
+}

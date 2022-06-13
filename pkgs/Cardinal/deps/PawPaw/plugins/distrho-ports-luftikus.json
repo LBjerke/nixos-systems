@@ -1,0 +1,13 @@
+{
+    "name": "distrho-ports-luftikus",
+    "lv2bundles": [
+        "Luftikus.lv2"
+    ],
+    "version": "575d56057ba9cee8505839e4ee00cc26d0193fc9",
+    "description": "Digital adaptation of an analog EQ with fixed half-octave bands and additional high frequency boost",
+    "dlbaseurl": "https://github.com/DISTRHO/DISTRHO-Ports.git",
+    "dlmethod": "git",
+    "dlname": "distrho-ports",
+    "buildtype": "meson",
+    "buildargs": "-Dbuild-vst2=false -Dbuild-vst3=false -Dbuild-legacy-only=true -Doptimizations=false -Dplugins=luftikus"
+}

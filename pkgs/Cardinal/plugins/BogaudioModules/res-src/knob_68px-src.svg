@@ -1,0 +1,9 @@
+<widget width="68" height="68">
+  <style/>
+
+  <g transform="translate(34 34)">
+    <circle class="knob-rim" r="33.8"/>
+    <circle class="knob-center" r="27"/>
+  </g>
+  <polyline class="knob-tick" points="34,2 34,4.5" stroke-width="3" stroke-linecap="round" fill="none"/>
+</widget>

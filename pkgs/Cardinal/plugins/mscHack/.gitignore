@@ -1,0 +1,11 @@
+/build
+/mschack
+/oldcode
+/.vs
+/.git
+/dist
+
+plugin.dll
+mschack.zip
+*.bat
+*.scc

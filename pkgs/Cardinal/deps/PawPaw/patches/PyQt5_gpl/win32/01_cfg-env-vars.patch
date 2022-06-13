@@ -1,0 +1,44 @@
+diff --git a/configure.py b/configure.py
+index d893ae8..7d13747 100644
+--- a/configure.py
++++ b/configure.py
+@@ -2421,6 +2418,10 @@ def compile_test_program(target_config, verbose, mname, source=None, debug=None)
+     pro_lines.append('TARGET = %s' % name)
+ 
+     pro_lines.append('SOURCES = %s' % qmake_quote(name_source))
++    pro_lines.append('QMAKE_CFLAGS += $$(CFLAGS)')
++    pro_lines.append('QMAKE_CXXFLAGS += $$(CXXFLAGS)')
++    pro_lines.append('QMAKE_LFLAGS += $$(LDFLAGS)')
++
+ 
+     f = open_for_writing(name_pro)
+     f.write('\n'.join(pro_lines))
+@@ -2442,7 +2443,13 @@ def run_test_program(mname, test, verbose):
+ 
+     # Create the output file, first making sure it doesn't exist.
+     remove_file(out_file)
+-    run_command(test + ' ' + out_file, verbose)
++
++    exe_wrapper = os.getenv('EXE_WRAPPER')
++    if exe_wrapper is not None:
++        exe_wrapper += ' '
++    else:
++        exe_wrapper = ''
++    run_command(exe_wrapper + test + ' ' + out_file, verbose)
+ 
+     if not os.access(out_file, os.F_OK):
+         error("%s failed to create %s. Make sure your Qt installation is correct." % (test, out_file))
+@@ -2751,6 +2751,13 @@ def generate_module_makefile(target_config, verbose, mname, include_paths=None,
+         # qmake is run otherwise the install and uninstall targets are not
+         # generated.
+         shared = '''
++CONFIG += link_pkgconfig
++PKGCONFIG += python3
++
++QMAKE_CFLAGS += $$(CFLAGS)
++QMAKE_CXXFLAGS += $$(CXXFLAGS)
++QMAKE_LFLAGS += $$(LDFLAGS)
++
+ win32 {
+     PY_MODULE = %s%s.pyd
+     PY_MODULE_SRC = $(DESTDIR_TARGET)

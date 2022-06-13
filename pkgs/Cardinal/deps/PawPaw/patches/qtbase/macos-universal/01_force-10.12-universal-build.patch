@@ -1,0 +1,23 @@
+diff --git a/src/gui/painting/qdrawhelper.cpp b/src/gui/painting/qdrawhelper.cpp
+index 6265d51..e3d96d7 100644
+--- a/src/gui/painting/qdrawhelper.cpp
++++ b/src/gui/painting/qdrawhelper.cpp
+@@ -6622,3 +6622,5 @@ static void qInitDrawhelperFunctions()
+ Q_CONSTRUCTOR_FUNCTION(qInitDrawhelperFunctions);
+ 
+ QT_END_NAMESPACE
++
++#include "qdrawhelper_sse2.cpp"
+diff --git a/src/gui/painting/qdrawhelper_sse2.cpp b/src/gui/painting/qdrawhelper_sse2.cpp
+index 3212ffd..05ca742 100644
+--- a/src/gui/painting/qdrawhelper_sse2.cpp
++++ b/src/gui/painting/qdrawhelper_sse2.cpp
+@@ -40,7 +40,7 @@
+ 
+ #include <private/qdrawhelper_x86_p.h>
+ 
+-#ifdef QT_COMPILER_SUPPORTS_SSE2
++#ifdef __SSE2__
+ 
+ #include <private/qdrawingprimitive_sse2_p.h>
+ #include <private/qpaintengine_raster_p.h>

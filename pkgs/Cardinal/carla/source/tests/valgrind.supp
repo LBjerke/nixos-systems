@@ -1,0 +1,21 @@
+{
+   libdl init part 1
+   Memcheck:Leak
+   fun:calloc
+   ...
+   fun:_dl_init
+}
+{
+   libdl init part 2
+   Memcheck:Leak
+   fun:malloc
+   ...
+   fun:_dl_init
+}
+{
+   tls variables
+   Memcheck:Leak
+   fun:malloc
+   ...
+   fun:tls_get_addr_tail
+}

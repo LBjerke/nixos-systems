@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<module hp="3">
+  <style/>
+
+  <defs>
+    <symbol id="dial-mixab-xfade" viewBox="0 0 45px 45px">
+      <g transform="translate(22.5 22.5)">
+        <text font-size="5.0pt" transform="rotate(-240) translate(20 0) rotate(240) translate(-2 2)">A</text>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-210) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-180) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-150) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-120) translate(17 0)"/>
+        <polyline points="0,0 3.5,0" stroke-width="1" transform="rotate(-90) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-60) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(-30) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(0) translate(17 0)"/>
+        <polyline points="0,0 2.5,0" stroke-width="0.7" transform="rotate(30) translate(17 0)"/>
+        <text font-size="5.0pt" transform="rotate(60) translate(20 0) rotate(-60) translate(-2 2)">B</text>
+      </g>
+    </symbol>
+
+    <symbol id="dial-curve-xfade" viewBox="0 0 45px 45px">
+      <g transform="translate(22.5 22.5)">
+        <polyline points="0,0 2,0" stroke-width="1" transform="rotate(-180) translate(9.5 0)"/>
+        <g transform="rotate(-180) translate(16 0) rotate(180) translate(-2.5 -2.5)">
+          <!-- <rect width="5" height="5" stroke-width="1" stroke="#0f0" fill="none" /> -->
+          <polyline points="0,0 2.5,5" stroke-width="1" stroke-linecap="round" fill="none" transform="translate(0 0)"/>
+          <polyline points="5,0 2.5,5" stroke-width="1" stroke-linecap="round" fill="none" transform="translate(0 0)"/>
+        </g>
+
+        <polyline points="0,0 2,0" stroke-width="0.7" transform="rotate(-135) translate(9.5 0)"/>
+
+        <polyline points="0,0 2,0" stroke-width="1" transform="rotate(-90) translate(9.5 0)"/>
+        <g transform="rotate(-90) translate(16 0) rotate(90) translate(-2.5 -2.5)">
+          <!-- <rect width="5" height="5" stroke-width="1" stroke="#0f0" fill="none" /> -->
+          <polyline points="0,0 5,5" stroke-width="1" stroke-linecap="round" fill="none" transform="translate(0 0)"/>
+          <polyline points="5,0 0,5" stroke-width="1" stroke-linecap="round" fill="none" transform="translate(0 0)"/>
+        </g>
+
+        <polyline points="0,0 2,0" stroke-width="0.7" transform="rotate(-45) translate(9.5 0)"/>
+
+        <polyline points="0,0 2,0" stroke-width="1" transform="rotate(0) translate(9.5 0)"/>
+        <g transform="rotate(0) translate(16 0) rotate(-0) translate(-2.5 -2.5)">
+          <!-- <rect width="5" height="5" stroke-width="1" stroke="#0f0" fill="none" /> -->
+          <polyline points="2.5,0 5,5" stroke-width="1" stroke-linecap="round" fill="none" transform="translate(0 0)"/>
+          <polyline points="2.5,0 0,5" stroke-width="1" stroke-linecap="round" fill="none" transform="translate(0 0)"/>
+        </g>
+      </g>
+    </symbol>
+  </defs>
+
+  <def xlink:href="#module3" var-name="XFADE"/>
+
+  <g transform="translate(0 25)">
+    <text font-size="6pt" letter-spacing="1px" transform="translate(14 0)">MIX</text>
+    <def id="MIX_PARAM" xlink:href="#knob29" transform="translate(0 3)"/>
+    <use xlink:href="#dial-mixab-xfade" transform="translate(0 3)"/>
+    <g class="io-group" transform="translate(5.5 49)">
+      <rect class="input-background" width="34" height="38" rx="5"/>
+      <def id="MIX_INPUT" xlink:href="#input" transform="translate(5 3)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(11 35)">CV</text>
+    </g>
+  </g>
+
+  <g transform="translate(0 135)">
+    <text font-size="6pt" letter-spacing="1px" transform="translate(7.5 0)">SHAPE</text>
+    <def id="CURVE_PARAM" xlink:href="#knob16" transform="translate(14.5 17.5)"/>
+    <use xlink:href="#dial-curve-xfade" transform="translate(0 3)"/>
+  </g>
+
+  <g transform="translate(10.5 178)">
+    <text font-size="5pt" letter-spacing="1px" transform="translate(0 6)">LIN</text>
+    <def id="LINEAR_PARAM" xlink:href="#button-small" transform="translate(15 -1)"/>
+  </g>
+
+  <g transform="translate(0 210)">
+    <g class="io-group" transform="translate(5.5 0)">
+      <rect class="input-background-filler" width="34" height="10" transform="translate(0 63)"/>
+      <rect class="input-background" width="34" height="70" rx="5"/>
+      <def id="A_INPUT" xlink:href="#input" transform="translate(5 3)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(15 35)">A</text>
+      <def id="B_INPUT" xlink:href="#input" transform="translate(5 38)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(15 70)">B</text>
+    </g>
+    <g class="io-group" transform="translate(5.5 76)">
+      <rect class="output-background-filler" width="34" height="10" transform="translate(0 -3)"/>
+      <rect class="output-background" width="34" height="35" rx="5"/>
+      <def id="OUT_OUTPUT" xlink:href="#output" transform="translate(5 0)"/>
+      <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(8.3 32)">MIX</text>
+    </g>
+  </g>
+</module>

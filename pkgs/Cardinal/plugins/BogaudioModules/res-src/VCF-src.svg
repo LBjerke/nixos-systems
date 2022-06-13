@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<module hp="10">
+  <style/>
+
+  <defs>
+    <symbol id="dial-frequency-vcf" viewBox="0 0 150px 108px">
+      <g transform="translate(75 54)">
+        <g transform="rotate(-240) translate(34 0)">
+          <polyline points="0,0 5,0" stroke-width="1" transform="translate(3 0)"/>
+          <text font-size="7.0pt" transform="translate(14 0) rotate(240) translate(-2 3)">0</text>
+        </g>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-225) translate(37 0)"/>
+
+        <g transform="rotate(-218.8) translate(34 0)">
+          <polyline points="0,0 5,0" stroke-width="1" transform="translate(3 0)"/>
+          <text font-size="7.0pt" transform="translate(14 0) rotate(218.8) translate(-12.5 3.5)">100</text>
+        </g>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-206.5) translate(37 0)"/>
+
+        <g transform="rotate(-192.6) translate(34 0)">
+          <polyline points="0,0 5,0" stroke-width="1" transform="translate(3 0)"/>
+          <text font-size="7.0pt" transform="translate(14 0) rotate(192.6) translate(-11.5 3)">500</text>
+        </g>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-181.9) translate(37 0)"/>
+
+        <g transform="rotate(-172.2) translate(34 0)">
+          <polyline points="0,0 5,0" stroke-width="1" transform="translate(3 0)"/>
+          <text font-size="7.0pt" transform="translate(14 0) rotate(172.2) translate(-7.5 3)">1K</text>
+        </g>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-151.3) translate(37 0)"/>
+
+        <g transform="rotate(-133.9) translate(34 0)">
+          <polyline points="0,0 5,0" stroke-width="1" transform="translate(3 0)"/>
+          <text font-size="7.0pt" transform="translate(14 0) rotate(133.9) translate(-16 3)">2.5K</text>
+        </g>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-110.1) translate(37 0)"/>
+
+        <g transform="rotate(-90) translate(34 0)">
+          <polyline points="0,0 5,0" stroke-width="1" transform="translate(3 0)"/>
+          <text font-size="7.0pt" transform="translate(14 0) rotate(90) translate(-6 4)">5K</text>
+        </g>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-41.6) translate(37 0)"/>
+
+        <g transform="rotate(-56.3) translate(34 0)">
+          <polyline points="0,0 5,0" stroke-width="1" transform="translate(3 0)"/>
+          <text font-size="7.0pt" transform="translate(14 0) rotate(56.3) translate(-3.5 3)">7.5K</text>
+        </g>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-72.3) translate(37 0)"/>
+
+        <g transform="rotate(-27.9) translate(34 0)">
+          <polyline points="0,0 5,0" stroke-width="1" transform="translate(3 0)"/>
+          <text font-size="7.0pt" transform="translate(14 0) rotate(27.9) translate(-5 5)">10K</text>
+        </g>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-2.9) translate(37 0)"/>
+
+        <g transform="rotate(19.8) translate(34 0)">
+          <polyline points="0,0 5,0" stroke-width="1" transform="translate(3 0)"/>
+          <text font-size="7.0pt" transform="translate(14 0) rotate(-19.8) translate(-5 2)">15K</text>
+        </g>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(40.6) translate(37 0)"/>
+
+        <g transform="rotate(60) translate(34 0)">
+          <polyline points="0,0 5,0" stroke-width="1" transform="translate(3 0)"/>
+          <text font-size="7.0pt" transform="translate(14 0) rotate(-60) translate(-2.5 3)">20K</text>
+        </g>
+
+        <text font-size="7.0pt" transform="rotate(90) translate(44.5 0) rotate(-90) translate(-6.5 0)">HZ</text>
+      </g>
+    </symbol>
+
+    <symbol id="dial-slope-vcf" viewBox="0 0 50px 60px">
+      <g transform="translate(25 30)">
+        <text font-size="6.0pt" transform="rotate(-240) translate(24 0) rotate(240) translate(-2 3)">1</text>
+        <polyline points="0,0 2,0" stroke-width="0.7" transform="rotate(-176) translate(22 0)"/>
+        <text font-size="6.0pt" transform="rotate(-149.6) translate(24 0) rotate(149.6) translate(-1.5 1)">2</text>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-112.1) translate(22 0)"/>
+        <text font-size="6.0pt" transform="rotate(-83.3) translate(24 0) rotate(83.3) translate(-2 2)">4</text>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-59.1) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-37.7) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-18.4) translate(22 0)"/>
+        <text font-size="6.0pt" transform="rotate(-0.7) translate(24 0) rotate(0.7) translate(-2 2)">8</text>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(15.8) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(31.4) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(46) translate(22 0)"/>
+        <text font-size="6.0pt" transform="rotate(60) translate(24 0) rotate(-60) translate(-5 3)">12</text>
+      </g>
+    </symbol>
+
+    <symbol id="dial-mode-vcf" viewBox="0 0 60px 60px">
+      <g transform="translate(30 30)">
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-67.5) translate(11 0)"/>
+        <text font-size="6.0pt" transform="rotate(-67.5) translate(24 0) rotate(67.5) translate(-3 7)">LP</text>
+
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-22.5) translate(11 0)"/>
+        <text font-size="6.0pt" transform="rotate(-22.5) translate(24 0) rotate(22.5) translate(-7 5)">HP</text>
+
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(22.5) translate(11 0)"/>
+        <text font-size="6.0pt" transform="rotate(22.5) translate(24 0) rotate(-22.5) translate(-7 0)">BP</text>
+
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(67.5) translate(11 0)"/>
+        <text font-size="6.0pt" transform="rotate(67.5) translate(24 0) rotate(-67.5) translate(-3 -1.5)">BR</text>
+      </g>
+    </symbol>
+
+    <symbol id="dial-linear-vcf" viewBox="0 0 50px 50px">
+      <g transform="translate(25 25)">
+        <text font-size="6.0pt" transform="rotate(-240) translate(24 0) rotate(240) translate(-4 3)">0</text>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-210) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-180) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-150) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-120) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-90) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-60) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-30) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(0) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(30) translate(22 0)"/>
+        <polyline points="0,0 4,0" stroke-width="1" transform="rotate(60) translate(22 0)"/>
+      </g>
+    </symbol>
+  </defs>
+
+  <def xlink:href="#module" var-name="VCF"/>
+
+  <!-- <polyline points="0,0 0,380" stroke="#0f0" stroke-width="1" fill="none" transform="translate(75 0)" /> -->
+  <!-- <polyline points="0,0 0,380" stroke="#0f0" stroke-width="1" fill="none" transform="translate(7 0)" /> -->
+  <!-- <polyline points="0,0 0,380" stroke="#0f0" stroke-width="1" fill="none" transform="translate(143 0)" /> -->
+
+  <g transform="translate(21 25)">
+    <def id="FREQUENCY_PARAM" xlink:href="#knob68" transform="translate(20 20)"/>
+    <use xlink:href="#dial-frequency-vcf" transform="translate(-21 0)"/>
+  </g>
+
+  <g transform="translate(25 126)">
+    <text font-size="8pt" letter-spacing="2px" transform="translate(10 27) rotate(270)">CV</text>
+    <def id="FREQUENCY_CV_PARAM" xlink:href="#knob16" transform="translate(20 12)"/>
+    <def xlink:href="#dial-centertick" transform="translate(8 0)"/>
+  </g>
+
+  <g transform="translate(82 126)">
+    <text font-size="8pt" letter-spacing="2px" transform="translate(10 27) rotate(270)">FM</text>
+    <def id="FM_PARAM" xlink:href="#knob16" transform="translate(20 12)"/>
+    <def xlink:href="#dial-mintick" transform="translate(8 0)"/>
+  </g>
+
+  <g transform="translate(54 165)">
+    <text font-size="8pt" letter-spacing="2px" transform="translate(7 38) rotate(270)">MODE</text>
+    <def id="MODE_PARAM" xlink:href="#knob16" transform="translate(13 11)"/>
+    <use xlink:href="#dial-mode-vcf" transform="translate(-9 -11)"/>
+  </g>
+
+  <g transform="translate(2 220)">
+    <!-- <rect width="75" height="54" fill="#ff0" transform="translate(1 -9)" /> -->
+    <!-- <rect width="64" height="54" fill="#f0f" transform="translate(5.5 -9)" /> -->
+    <text font-size="8pt" letter-spacing="2px" transform="translate(13.5 43.5) rotate(270)">RES/BW</text>
+    <def id="Q_PARAM" xlink:href="#knob38" transform="translate(24.5 0)"/>
+    <use xlink:href="#dial-linear-vcf" transform="translate(18.5 -6)"/>
+  </g>
+
+  <g transform="translate(73 220)">
+    <!-- <rect width="75" height="54" fill="#ff0" transform="translate(0 -9)" /> -->
+    <!-- <rect width="64" height="54" fill="#f0f" transform="translate(5.5 -9)" /> -->
+    <text font-size="8pt" letter-spacing="2px" transform="translate(13.4 38.5) rotate(270)">SLOPE</text>
+    <def id="SLOPE_PARAM" xlink:href="#knob38" transform="translate(24.5 0)"/>
+    <use xlink:href="#dial-slope-vcf" transform="translate(18.5 -11)"/>
+  </g>
+
+  <g class="io-group" transform="translate(0 269)">
+    <rect class="output-background" width="130" height="47" rx="5" transform="translate(10 44)"/>
+    <rect class="input-background" width="98" height="44" rx="5" transform="translate(26 0)"/>
+    <rect class="input-background-filler" width="98" height="10" transform="translate(26 34)"/>
+    <rect class="input-background" width="97" height="47" rx="5" transform="translate(10 44)"/>
+    <rect class="input-background-filler" width="10" height="47" transform="translate(97 44)"/>
+
+    <g transform="translate(16 0)">
+      <g transform="translate(12 0)">
+        <def id="FREQUENCY_CV_INPUT" xlink:href="#input" transform="translate(3 5)"/>
+        <text class="input-label" font-size="6pt" letter-spacing="1px" transform="translate(9 40)">CV</text>
+      </g>
+      <g transform="translate(44 0)">
+        <def id="PITCH_INPUT" xlink:href="#input" transform="translate(3 5)"/>
+        <text class="input-label" font-size="6pt" letter-spacing="1px" transform="translate(1 40)">V/OCT</text>
+      </g>
+      <g transform="translate(76 0)">
+        <def id="FM_INPUT" xlink:href="#input" transform="translate(3 5)"/>
+        <text class="input-label" font-size="6pt" letter-spacing="1px" transform="translate(9 40)">FM</text>
+      </g>
+    </g>
+
+    <g transform="translate(10 44)">
+      <g transform="translate(2 0)">
+        <def id="IN_INPUT" xlink:href="#input" transform="translate(3 5)"/>
+        <text class="input-label" font-size="6pt" letter-spacing="1px" transform="translate(10.5 40)">IN</text>
+      </g>
+      <g transform="translate(34 0)">
+        <def id="Q_INPUT" xlink:href="#input" transform="translate(3 5)"/>
+        <text class="input-label" font-size="6pt" letter-spacing="1px" transform="translate(3 40)">R/BW</text>
+      </g>
+      <g transform="translate(66 0)">
+        <def id="SLOPE_INPUT" xlink:href="#input" transform="translate(3 5)"/>
+        <text class="input-label" font-size="6pt" letter-spacing="1px" transform="translate(7 40)">SLP</text>
+      </g>
+      <g transform="translate(98 0)">
+        <def id="OUT_OUTPUT" xlink:href="#output" transform="translate(3 5)"/>
+        <text class="output-label" font-size="6pt" letter-spacing="1px" transform="translate(6 40)">OUT</text>
+      </g>
+    </g>
+  </g>
+</module>

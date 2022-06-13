@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ -f "$(dirname ${0})/carla-utils.pc" ]; then
+    cd "$(dirname ${0})/.."
+    export ENGINE_OPTION_PATH_BINARIES="$(pwd)/bin"
+else
+    INSTALL_PREFIX="X-PREFIX-X"
+    export ENGINE_OPTION_PATH_BINARIES="${INSTALL_PREFIX}/lib/carla"
+    export ENGINE_OPTION_PATH_RESOURCES="${INSTALL_PREFIX}/share/carla/resources"
+fi
+
+exec "${ENGINE_OPTION_PATH_BINARIES}/carla-bridge-native" internal "" carlapatchbay

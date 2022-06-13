@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<module hp="3">
+  <style/>
+
+  <def xlink:href="#module3" var-name="WALK"/>
+
+  <!-- <polyline points="0,0 0,300" stroke="#0f0" stroke-width="1" fill="none" transform="translate(22.5 0)" /> -->
+
+  <g transform="translate(0 25)">
+    <text font-size="6pt" letter-spacing="1.5px" transform="translate(10 0)">RATE</text>
+    <def id="RATE_PARAM" xlink:href="#knob29" transform="translate(0 3.5)"/>
+    <def xlink:href="#dial-change" transform="translate(0 3)"/>
+  </g>
+
+  <g transform="translate(0 82)">
+    <text font-size="6pt" letter-spacing="1.5px" transform="translate(4.5 0)">OFFSET</text>
+    <def id="OFFSET_PARAM" xlink:href="#knob16" transform="translate(14.5 9)"/>
+    <def xlink:href="#dial-centertick" transform="translate(2.5 -3)"/>
+  </g>
+
+  <g transform="translate(0 121)">
+    <text font-size="6pt" letter-spacing="2.0px" transform="translate(5.5 0)">SCALE</text>
+    <def id="SCALE_PARAM" xlink:href="#knob16" transform="translate(14.5 9)"/>
+    <def xlink:href="#dial-mintick" transform="translate(2.5 -3)"/>
+  </g>
+
+  <g transform="translate(0 157)">
+    <g class="io-group" transform="translate(5.5 0)">
+      <rect class="input-background-filler" width="34" height="10" transform="translate(0 133)"/>
+      <rect class="input-background" width="34" height="140" rx="5"/>
+      <def id="RATE_INPUT" xlink:href="#input" transform="translate(5 3)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(6 35)">RATE</text>
+      <def id="OFFSET_INPUT" xlink:href="#input" transform="translate(5 38)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="1.2px" transform="translate(2 70)">OFFSET</text>
+      <def id="SCALE_INPUT" xlink:href="#input" transform="translate(5 73)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(2.5 105)">SCALE</text>
+      <def id="JUMP_INPUT" xlink:href="#input" transform="translate(5 108)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(5 140)">JUMP</text>
+    </g>
+    <g class="io-group" transform="translate(5.5 146)">
+      <rect class="output-background-filler" width="34" height="10" transform="translate(0 -3)"/>
+      <rect class="output-background" width="34" height="35" rx="5"/>
+      <def id="OUT_OUTPUT" xlink:href="#output" transform="translate(5 0)"/>
+      <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(8.3 32)">OUT</text>
+    </g>
+  </g>
+</module>

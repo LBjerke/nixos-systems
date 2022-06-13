@@ -1,0 +1,11 @@
+<widget width="9" height="9" noskin="true">
+  <g transform="translate(4.5 4.5)">
+    <circle r="4.4" fill="#888" />
+    <circle r="4.2" fill="#333" />
+    <circle r="4.0" fill="#666" />
+    <circle r="3.8" fill="#777" />
+    <circle r="3.6" fill="#888" />
+    <circle r="3.4" fill="#999" />
+    <circle r="3.2" fill="#aaa" />
+  </g>
+</widget>

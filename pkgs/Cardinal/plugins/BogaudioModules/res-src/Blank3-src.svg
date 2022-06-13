@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<module hp="3">
+  <style/>
+
+  <def xlink:href="#module-background"/>
+  <def xlink:href="#module-border"/>
+
+  <!-- <rect width="45" height="380" fill="#0f0" /> -->
+  <!-- <rect width="35" height="130" fill="#ddd" transform="translate(5 125)" /> -->
+  <!-- <g transform="translate(6 122) scale(5.0) rotate(90)"> -->
+    <!-- <text class="brand" font-size="7pt" letter-spacing="2px">BGA</text> -->
+    <!-- <rect width="3.0" height="3" fill="#ddd" transform="translate(11.5 -5)" /> -->
+  <!-- </g> -->
+</module>

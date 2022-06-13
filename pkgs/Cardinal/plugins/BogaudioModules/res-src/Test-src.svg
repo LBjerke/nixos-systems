@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<module hp="3">
+  <style/>
+
+  <def xlink:href="#module3" var-name="test"/>
+
+  <g transform="translate(0 10)">
+    <!-- <text font-size="6pt" letter-spacing="2px" transform="translate(5.5 0)">P1</text> -->
+    <def id="PARAM1_PARAM" xlink:href="#knob26" transform="translate(9.5 3.5)"/>
+    <def xlink:href="#dial-test" transform="translate(0 -6)"/>
+  </g>
+  <g transform="translate(0 50)">
+    <g class="io-group" transform="translate(5.5 0)">
+      <rect class="input-background" width="34" height="38" rx="5"/>
+      <def id="CV1_INPUT" xlink:href="#input" transform="translate(5 3)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(12.5 35)">CV</text>
+    </g>
+  </g>
+
+  <g transform="translate(0 95)">
+    <!-- <text font-size="6pt" letter-spacing="2px" transform="translate(5.5 0)">P2</text> -->
+    <def id="PARAM2_PARAM" xlink:href="#knob26" transform="translate(9.5 3.5)"/>
+    <def xlink:href="#dial-test" transform="translate(0 -6)"/>
+  </g>
+  <g transform="translate(0 135)">
+    <g class="io-group" transform="translate(5.5 0)">
+      <rect class="input-background" width="34" height="38" rx="5"/>
+      <def id="CV2_INPUT" xlink:href="#input" transform="translate(5 3)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(12.5 35)">CV</text>
+    </g>
+  </g>
+
+  <g transform="translate(0 180)">
+    <!-- <text font-size="6pt" letter-spacing="2px" transform="translate(5.5 0)">P3</text> -->
+    <def id="PARAM3_PARAM" xlink:href="#knob26" transform="translate(9.5 3.5)"/>
+    <def xlink:href="#dial-test" transform="translate(0 -6)"/>
+  </g>
+  <g transform="translate(0 220)">
+    <g class="io-group" transform="translate(5.5 0)">
+      <rect class="input-background" width="34" height="38" rx="5"/>
+      <def id="CV3_INPUT" xlink:href="#input" transform="translate(5 3)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(12.5 35)">CV</text>
+    </g>
+  </g>
+
+  <g transform="translate(0 265)">
+    <g class="io-group" transform="translate(5.5 0)">
+      <rect class="input-background-filler" width="34" height="10" transform="translate(0 63)"/>
+      <rect class="input-background" width="34" height="70" rx="5"/>
+      <def id="IN_INPUT" xlink:href="#input" transform="translate(5 3)"/>
+      <text class="input-label" font-size="5pt" letter-spacing="2px" transform="translate(12.5 35)">IN</text>
+    </g>
+    <g class="io-group" transform="translate(5.5 41)">
+      <rect class="output-background-filler" width="34" height="10" transform="translate(0 -3)"/>
+      <rect class="output-background" width="34" height="35" rx="5"/>
+      <def id="OUT_OUTPUT" xlink:href="#output" transform="translate(5 0)"/>
+      <text class="output-label" font-size="5pt" letter-spacing="2px" transform="translate(8.3 32)">OUT</text>
+    </g>
+  </g>
+</module>

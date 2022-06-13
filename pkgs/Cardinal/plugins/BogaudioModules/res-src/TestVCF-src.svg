@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<module hp="12">
+  <style/>
+
+  <defs>
+    <symbol id="dial-cutoff-testvcf" viewBox="0 0 50px 50px">
+      <g transform="translate(25 25)">
+        <text font-size="6.0pt" transform="rotate(-240) translate(24 0) rotate(240) translate(-4 3)">0</text>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-210) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-180) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-150) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-120) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-90) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-60) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-30) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(0) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(30) translate(22 0)"/>
+        <polyline points="0,0 4,0" stroke-width="1" transform="rotate(60) translate(22 0)"/>
+      </g>
+    </symbol>
+
+    <symbol id="dial-resonance-testvcf" viewBox="0 0 50px 50px">
+      <g transform="translate(25 25)">
+        <text font-size="6.0pt" transform="rotate(-240) translate(24 0) rotate(240) translate(-4 3)">0</text>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-210) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-180) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-150) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-120) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-90) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-60) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(-30) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(0) translate(22 0)"/>
+        <polyline points="0,0 3,0" stroke-width="0.7" transform="rotate(30) translate(22 0)"/>
+        <polyline points="0,0 4,0" stroke-width="1" transform="rotate(60) translate(22 0)"/>
+      </g>
+    </symbol>
+  </defs>
+
+  <def xlink:href="#module" var-name="VCF"/>
+
+  <g transform="translate(20 50)">
+    <!-- <polyline points="-50,0 100,0" stroke="#0f0" stroke-width="1" fill="none" transform="translate(0 19)" /> -->
+    <text font-size="8pt" letter-spacing="2px" transform="translate(9 45) rotate(270)">CUTOFF</text>
+    <def id="CUTOFF_PARAM" xlink:href="#knob38" transform="translate(20 0)"/>
+    <use xlink:href="#dial-cutoff-testvcf" transform="translate(14 -6)"/>
+  </g>
+
+  <g transform="translate(20 120)">
+    <!-- <polyline points="-50,0 100,0" stroke="#0f0" stroke-width="1" fill="none" transform="translate(0 19)" /> -->
+    <text font-size="8pt" letter-spacing="1px" transform="translate(9 45) rotate(270)">RES/BW</text>
+    <def id="Q_PARAM" xlink:href="#knob38" transform="translate(20 0)"/>
+    <use xlink:href="#dial-resonance-testvcf" transform="translate(14 -6)"/>
+  </g>
+
+  <g transform="translate(20 190)">
+    <!-- <polyline points="-50,0 100,0" stroke="#0f0" stroke-width="1" fill="none" transform="translate(0 19)" /> -->
+    <text font-size="8pt" letter-spacing="1px" transform="translate(9 39) rotate(270)">DRIVE</text>
+    <def id="DRIVE_PARAM" xlink:href="#knob38" transform="translate(20 0)"/>
+    <use xlink:href="#dial-resonance-testvcf" transform="translate(14 -6)"/>
+  </g>
+
+  <g transform="translate(20 260)">
+    <!-- <polyline points="-50,0 100,0" stroke="#0f0" stroke-width="1" fill="none" transform="translate(0 19)" /> -->
+    <text font-size="8pt" letter-spacing="1px" transform="translate(9 36) rotate(270)">TOPO</text>
+    <def id="TOPOLOGY_PARAM" xlink:href="#knob38" transform="translate(20 0)"/>
+    <use xlink:href="#dial-resonance-testvcf" transform="translate(14 -6)"/>
+  </g>
+
+  <g transform="translate(110 48)">
+    <!-- <polyline points="-50,0 100,0" stroke="#0f0" stroke-width="1" fill="none" transform="translate(0 19)" /> -->
+    <text font-size="8pt" letter-spacing="1px" transform="translate(9 40) rotate(270)">MODE</text>
+    <g transform="translate(20 0)">
+      <g transform="translate(0 10)">
+        <def id="LOWPASS_LIGHT" xlink:href="#light-small" transform="translate(0 0)"/>
+        <text font-size="5pt" letter-spacing="1px" transform="translate(8 5.7)">LP</text>
+      </g>
+      <g transform="translate(21 10)">
+        <def id="HIGHPASS_LIGHT" xlink:href="#light-small" transform="translate(0 0)"/>
+        <text font-size="5pt" letter-spacing="1px" transform="translate(8 5.7)">HP</text>
+      </g>
+      <g transform="translate(0 20)">
+        <def id="BANDPASS_LIGHT" xlink:href="#light-small" transform="translate(0 0)"/>
+        <text font-size="5pt" letter-spacing="1px" transform="translate(8 5.7)">BP</text>
+      </g>
+      <g transform="translate(21 20)">
+        <def id="BAND_REJECT_LIGHT" xlink:href="#light-small" transform="translate(0 0)"/>
+        <text font-size="5pt" letter-spacing="1px" transform="translate(8 5.7)">BR</text>
+      </g>
+      <def id="MODE_PARAM" xlink:href="#button-small" transform="translate(15 29)"/>
+    </g>
+  </g>
+
+  <g transform="translate(110 117)">
+    <!-- <polyline points="-50,0 100,0" stroke="#0f0" stroke-width="1" fill="none" transform="translate(0 19)" /> -->
+    <text font-size="8pt" letter-spacing="1px" transform="translate(9 40) rotate(270)">POLES</text>
+    <g transform="translate(20 0)">
+      <g transform="translate(0 10)">
+        <def id="POLES_2_LIGHT" xlink:href="#light-small" transform="translate(0 0)"/>
+        <text font-size="5pt" letter-spacing="1px" transform="translate(8 5.7)">2</text>
+      </g>
+      <g transform="translate(21 10)">
+        <def id="POLES_4_LIGHT" xlink:href="#light-small" transform="translate(0 0)"/>
+        <text font-size="5pt" letter-spacing="1px" transform="translate(8 5.7)">4</text>
+      </g>
+      <g transform="translate(0 20)">
+        <def id="POLES_6_LIGHT" xlink:href="#light-small" transform="translate(0 0)"/>
+        <text font-size="5pt" letter-spacing="1px" transform="translate(8 5.7)">6</text>
+      </g>
+      <g transform="translate(21 20)">
+        <def id="POLES_8_LIGHT" xlink:href="#light-small" transform="translate(0 0)"/>
+        <text font-size="5pt" letter-spacing="1px" transform="translate(8 5.7)">8</text>
+      </g>
+      <g transform="translate(0 30)">
+        <def id="POLES_10_LIGHT" xlink:href="#light-small" transform="translate(0 0)"/>
+        <text font-size="5pt" letter-spacing="1px" transform="translate(8 5.7)">10</text>
+      </g>
+      <g transform="translate(21 30)">
+        <def id="POLES_12_LIGHT" xlink:href="#light-small" transform="translate(0 0)"/>
+        <text font-size="5pt" letter-spacing="1px" transform="translate(8 5.7)">12</text>
+      </g>
+      <def id="POLES_PARAM" xlink:href="#button-small" transform="translate(15 39)"/>
+    </g>
+  </g>
+
+  <g class="io-group" transform="translate(45 315)">
+    <rect class="input-background" width="58" height="40" rx="5"/>
+    <rect class="output-background" width="50" height="40" rx="5" transform="translate(38)"/>
+    <rect class="output-background-filler" width="20" height="40" transform="translate(29)"/>
+    <def id="IN_INPUT" xlink:href="#input" transform="translate(2.5 3)"/>
+    <text class="input-label" font-size="6pt" letter-spacing="2px" transform="translate(10 36)">IN</text>
+    <def id="OUT_OUTPUT" xlink:href="#output" transform="translate(31.5 3)"/>
+    <text class="output-label" font-size="6pt" letter-spacing="2px" transform="translate(33 36)">OUT</text>
+    <def id="OUT_B_OUTPUT" xlink:href="#output" transform="translate(60.5 3)"/>
+    <text class="output-label" font-size="6pt" letter-spacing="2px" transform="translate(70.5 36)">B</text>
+  </g>
+</module>

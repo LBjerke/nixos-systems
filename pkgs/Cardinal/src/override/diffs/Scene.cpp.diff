@@ -1,0 +1,372 @@
+--- ../Rack/src/app/Scene.cpp	2021-12-14 21:35:44.414568198 +0000
++++ Scene.cpp	2022-01-26 18:47:48.006168325 +0000
+@@ -1,3 +1,30 @@
++/*
++ * DISTRHO Cardinal Plugin
++ * Copyright (C) 2021-2022 Filipe Coelho <falktx@falktx.com>
++ *
++ * This program is free software; you can redistribute it and/or
++ * modify it under the terms of the GNU General Public License as
++ * published by the Free Software Foundation; either version 3 of
++ * the License, or any later version.
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
++ * GNU General Public License for more details.
++ *
++ * For a full copy of the GNU General Public License see the LICENSE file.
++ */
++
++/**
++ * This file is an edited version of VCVRack's app/Scene.cpp
++ * Copyright (C) 2016-2021 VCV.
++ *
++ * This program is free software: you can redistribute it and/or
++ * modify it under the terms of the GNU General Public License as
++ * published by the Free Software Foundation; either version 3 of
++ * the License, or (at your option) any later version.
++ */
++
+ #include <thread>
+ 
+ #include <osdialog.h>
+@@ -7,6 +34,7 @@
+ #include <app/TipWindow.hpp>
+ #include <app/MenuBar.hpp>
+ #include <context.hpp>
++#include <engine/Engine.hpp>
+ #include <system.hpp>
+ #include <network.hpp>
+ #include <history.hpp>
+@@ -14,6 +42,17 @@
+ #include <patch.hpp>
+ #include <asset.hpp>
+ 
++#ifdef NDEBUG
++# undef DEBUG
++#endif
++
++#ifdef HAVE_LIBLO
++# include <lo/lo.h>
++#endif
++
++#include "../CardinalCommon.hpp"
++#include "DistrhoUtils.hpp"
++
+ 
+ namespace rack {
+ namespace app {
+@@ -23,16 +62,55 @@
+ 	math::Vec size;
+ 
+ 	void draw(const DrawArgs& args) override {
++		nvgStrokeColor(args.vg, nvgRGBf(1, 1, 1));
++		nvgStrokeWidth(args.vg, 1);
++
+ 		nvgBeginPath(args.vg);
+-		nvgMoveTo(args.vg, box.size.x, box.size.y);
++		nvgMoveTo(args.vg, box.size.x, 0);
+ 		nvgLineTo(args.vg, 0, box.size.y);
+-		nvgLineTo(args.vg, box.size.x, 0);
+-		nvgClosePath(args.vg);
+-		nvgFillColor(args.vg, nvgRGBAf(1, 1, 1, 0.15));
+-		nvgFill(args.vg);
++		nvgStroke(args.vg);
++
++		nvgBeginPath(args.vg);
++		nvgMoveTo(args.vg, box.size.x + 5, 0);
++		nvgLineTo(args.vg, 0, box.size.y + 5);
++		nvgStroke(args.vg);
++
++		nvgBeginPath(args.vg);
++		nvgMoveTo(args.vg, box.size.x + 10, 0);
++		nvgLineTo(args.vg, 0, box.size.y + 10);
++		nvgStroke(args.vg);
++
++		nvgStrokeColor(args.vg, nvgRGBf(0, 0, 0));
++
++		nvgBeginPath(args.vg);
++		nvgMoveTo(args.vg, box.size.x+1, 0);
++		nvgLineTo(args.vg, 0, box.size.y+1);
++		nvgStroke(args.vg);
++
++		nvgBeginPath(args.vg);
++		nvgMoveTo(args.vg, box.size.x + 6, 0);
++		nvgLineTo(args.vg, 0, box.size.y + 6);
++		nvgStroke(args.vg);
++
++		nvgBeginPath(args.vg);
++		nvgMoveTo(args.vg, box.size.x + 11, 0);
++		nvgLineTo(args.vg, 0, box.size.y + 11);
++		nvgStroke(args.vg);
++	}
++
++	void onHover(const HoverEvent& e) override {
++		e.consume(this);
++	}
++
++	void onEnter(const EnterEvent& e) override {
++		glfwSetCursor(nullptr, (GLFWcursor*)0x1);
++	}
++
++	void onLeave(const LeaveEvent& e) override {
++		glfwSetCursor(nullptr, nullptr);
+ 	}
+ 
+-	void onDragStart(const DragStartEvent& e) override {
++	void onDragStart(const DragStartEvent&) override {
+ 		size = APP->window->getSize();
+ 	}
+ 
+@@ -46,9 +124,32 @@
+ struct Scene::Internal {
+ 	ResizeHandle* resizeHandle;
+ 
+-	double lastAutosaveTime = 0.0;
+-
+ 	bool heldArrowKeys[4] = {};
++
++#ifdef HAVE_LIBLO
++	double lastSceneChangeTime = 0.0;
++	int historyActionIndex = -1;
++
++	bool oscAutoDeploy = false;
++	bool oscConnected = false;
++	lo_server oscServer = nullptr;
++
++	static int osc_handler(const char* const path, const char* const types, lo_arg** argv, const int argc, lo_message, void* const self)
++	{
++		d_stdout("osc_handler(\"%s\", \"%s\", %p, %i)", path, types, argv, argc);
++
++		if (std::strcmp(path, "/resp") == 0 && argc == 2 && types[0] == 's' && types[1] == 's') {
++			d_stdout("osc_handler(\"%s\", ...) - got resp | '%s' '%s'", path, &argv[0]->s, &argv[1]->s);
++			if (std::strcmp(&argv[0]->s, "hello") == 0 && std::strcmp(&argv[1]->s, "ok") == 0)
++				static_cast<Internal*>(self)->oscConnected = true;
++		}
++		return 0;
++	}
++
++	~Internal() {
++		lo_server_free(oscServer);
++	}
++#endif
+ };
+ 
+ 
+@@ -67,13 +168,8 @@
+ 	browser->hide();
+ 	addChild(browser);
+ 
+-	if (settings::showTipsOnLaunch) {
+-		addChild(tipWindowCreate());
+-	}
+-
+ 	internal->resizeHandle = new ResizeHandle;
+-	internal->resizeHandle->box.size = math::Vec(15, 15);
+-	internal->resizeHandle->hide();
++	internal->resizeHandle->box.size = math::Vec(16, 16);
+ 	addChild(internal->resizeHandle);
+ }
+ 
+@@ -89,32 +185,13 @@
+ 
+ 
+ void Scene::step() {
+-	if (APP->window->isFullScreen()) {
+-		// Expand RackScrollWidget to cover entire screen if fullscreen
+-		rackScroll->box.pos.y = 0;
+-	}
+-	else {
+-		// Always show MenuBar if not fullscreen
+-		menuBar->show();
+-		rackScroll->box.pos.y = menuBar->box.size.y;
+-	}
+-
+ 	internal->resizeHandle->box.pos = box.size.minus(internal->resizeHandle->box.size);
+ 
+ 	// Resize owned descendants
+ 	menuBar->box.size.x = box.size.x;
++	rackScroll->box.pos.y = menuBar->box.size.y;
+ 	rackScroll->box.size = box.size.minus(rackScroll->box.pos);
+ 
+-	// Autosave periodically
+-	if (settings::autosaveInterval > 0.0) {
+-		double time = system::getTime();
+-		if (time - internal->lastAutosaveTime >= settings::autosaveInterval) {
+-			internal->lastAutosaveTime = time;
+-			APP->patch->saveAutosave();
+-			settings::save();
+-		}
+-	}
+-
+ 	// Scroll RackScrollWidget with arrow keys
+ 	math::Vec arrowDelta;
+ 	if (internal->heldArrowKeys[0]) {
+@@ -143,6 +220,22 @@
+ 		rackScroll->offset += arrowDelta * arrowSpeed;
+ 	}
+ 
++#ifdef HAVE_LIBLO
++	if (internal->oscServer != nullptr) {
++		while (lo_server_recv_noblock(internal->oscServer, 0) != 0) {}
++
++		if (internal->oscAutoDeploy) {
++			const int actionIndex = APP->history->actionIndex;
++			const double time = system::getTime();
++			if (internal->historyActionIndex != actionIndex && time - internal->lastSceneChangeTime >= 5.0) {
++				internal->historyActionIndex = actionIndex;
++				internal->lastSceneChangeTime = time;
++				patchUtils::deployToRemote();
++			}
++		}
++	}
++#endif
++
+ 	Widget::step();
+ }
+ 
+@@ -172,7 +265,7 @@
+ 	if (e.action == GLFW_PRESS || e.action == GLFW_REPEAT) {
+ 		// DEBUG("key '%d '%c' scancode %d '%c' keyName '%s'", e.key, e.key, e.scancode, e.scancode, e.keyName.c_str());
+ 		if (e.keyName == "n" && (e.mods & RACK_MOD_MASK) == RACK_MOD_CTRL) {
+-			APP->patch->loadTemplateDialog();
++			patchUtils::loadTemplateDialog();
+ 			e.consume(this);
+ 		}
+ 		if (e.keyName == "q" && (e.mods & RACK_MOD_MASK) == RACK_MOD_CTRL) {
+@@ -180,19 +273,20 @@
+ 			e.consume(this);
+ 		}
+ 		if (e.keyName == "o" && (e.mods & RACK_MOD_MASK) == RACK_MOD_CTRL) {
+-			APP->patch->loadDialog();
++			patchUtils::loadDialog();
+ 			e.consume(this);
+ 		}
+ 		if (e.keyName == "o" && (e.mods & RACK_MOD_MASK) == (RACK_MOD_CTRL | GLFW_MOD_SHIFT)) {
+-			APP->patch->revertDialog();
++			patchUtils::revertDialog();
+ 			e.consume(this);
+ 		}
+ 		if (e.keyName == "s" && (e.mods & RACK_MOD_MASK) == RACK_MOD_CTRL) {
+-			APP->patch->saveDialog();
++			// NOTE: will do nothing if path is empty, intentionally
++			patchUtils::saveDialog(APP->patch->path);
+ 			e.consume(this);
+ 		}
+ 		if (e.keyName == "s" && (e.mods & RACK_MOD_MASK) == (RACK_MOD_CTRL | GLFW_MOD_SHIFT)) {
+-			APP->patch->saveAsDialog();
++			patchUtils::saveAsDialog();
+ 			e.consume(this);
+ 		}
+ 		if (e.keyName == "z" && (e.mods & RACK_MOD_MASK) == RACK_MOD_CTRL) {
+@@ -232,10 +326,8 @@
+ 			settings::cpuMeter ^= true;
+ 			e.consume(this);
+ 		}
+-		if (e.key == GLFW_KEY_F11 && (e.mods & RACK_MOD_MASK) == 0) {
+-			APP->window->setFullScreen(!APP->window->isFullScreen());
+-			// The MenuBar will be hidden when the mouse moves over the RackScrollWidget.
+-			// menuBar->hide();
++		if (e.key == GLFW_KEY_F7 && (e.mods & RACK_MOD_MASK) == 0) {
++			patchUtils::deployToRemote();
+ 			e.consume(this);
+ 		}
+ 
+@@ -326,13 +418,6 @@
+ 
+ 	// Key commands that can be overridden by children
+ 	if (e.action == GLFW_PRESS || e.action == GLFW_REPEAT) {
+-		// Alternate key command for exiting fullscreen, since F11 doesn't work reliably on Mac due to "Show desktop" OS binding.
+-		if (e.key == GLFW_KEY_ESCAPE && (e.mods & RACK_MOD_MASK) == 0) {
+-			if (APP->window->isFullScreen()) {
+-				APP->window->setFullScreen(false);
+-				e.consume(this);
+-			}
+-		}
+ 		if (e.keyName == "v" && (e.mods & RACK_MOD_MASK) == RACK_MOD_CTRL) {
+ 			rack->pasteClipboardAction();
+ 			e.consume(this);
+@@ -351,7 +436,7 @@
+ 		std::string extension = system::getExtension(path);
+ 
+ 		if (extension == ".vcv") {
+-			APP->patch->loadPathDialog(path);
++			patchUtils::loadPathDialog(path);
+ 			e.consume(this);
+ 			return;
+ 		}
+@@ -368,3 +453,73 @@
+ 
+ } // namespace app
+ } // namespace rack
++
++
++namespace patchUtils {
++
++
++bool connectToRemote() {
++	rack::app::Scene::Internal* const internal = APP->scene->internal;
++
++	if (internal->oscServer == nullptr) {
++		const lo_server oscServer = lo_server_new_with_proto(nullptr, LO_UDP, nullptr);
++		DISTRHO_SAFE_ASSERT_RETURN(oscServer != nullptr, false);
++		lo_server_add_method(oscServer, "/resp", nullptr, rack::app::Scene::Internal::osc_handler, internal);
++		internal->oscServer = oscServer;
++	}
++
++	const lo_address addr = lo_address_new_with_proto(LO_UDP, REMOTE_HOST, REMOTE_HOST_PORT);
++	DISTRHO_SAFE_ASSERT_RETURN(addr != nullptr, false);
++	lo_send(addr, "/hello", "");
++	lo_address_free(addr);
++
++	return true;
++}
++
++
++bool isRemoteConnected() {
++#ifdef HAVE_LIBLO
++	return APP->scene->internal->oscConnected;
++#else
++	return false;
++#endif
++}
++
++
++bool isRemoteAutoDeployed() {
++#ifdef HAVE_LIBLO
++	return APP->scene->internal->oscAutoDeploy;
++#else
++	return false;
++#endif
++}
++
++
++void setRemoteAutoDeploy(bool autoDeploy) {
++#ifdef HAVE_LIBLO
++	APP->scene->internal->oscAutoDeploy = autoDeploy;
++#endif
++}
++
++
++void deployToRemote() {
++#ifdef HAVE_LIBLO
++	const lo_address addr = lo_address_new_with_proto(LO_UDP, REMOTE_HOST, REMOTE_HOST_PORT);
++	DISTRHO_SAFE_ASSERT_RETURN(addr != nullptr,);
++
++	APP->engine->prepareSave();
++	APP->patch->saveAutosave();
++	APP->patch->cleanAutosave();
++	std::vector<uint8_t> data(rack::system::archiveDirectory(APP->patch->autosavePath, 1));
++
++	if (const lo_blob blob = lo_blob_new(data.size(), data.data())) {
++		lo_send(addr, "/load", "b", blob);
++		lo_blob_free(blob);
++	}
++
++	lo_address_free(addr);
++#endif
++}
++
++
++} // namespace patchUtils

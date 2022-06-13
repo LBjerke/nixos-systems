@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<module hp="42" noskin="true">
+  <style/>
+  <localstyle>
+      text {
+        fill: #fff;
+        font-family: 'Comfortaa', sans-serif;
+        font-size: 7pt;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+  </localstyle>
+
+  <rect width="100%" height="100%" fill="#000"/>
+  <g transform="translate(0 375) rotate(-90)">
+    <text transform="translate(0 12.5)" letter-spacing="1">ANALYZER-XL</text>
+    <text transform="translate(0 25.5)">BOGAUDIO</text>
+  </g>
+
+  <g transform="translate(3, 13)">
+    <def id="SIGNALA_INPUT" xlink:href="#input" transform="translate(0 0)"/>
+    <def id="SIGNALB_INPUT" xlink:href="#input" transform="translate(0 34)"/>
+    <def id="SIGNALC_INPUT" xlink:href="#input" transform="translate(0 68)"/>
+    <def id="SIGNALD_INPUT" xlink:href="#input" transform="translate(0 102)"/>
+    <def id="SIGNALE_INPUT" xlink:href="#input" transform="translate(0 136)"/>
+    <def id="SIGNALF_INPUT" xlink:href="#input" transform="translate(0 170)"/>
+    <def id="SIGNALG_INPUT" xlink:href="#input" transform="translate(0 204)"/>
+    <def id="SIGNALH_INPUT" xlink:href="#input" transform="translate(0 238)"/>
+  </g>
+
+  <def id="DISPLAY_WIDGET" xlink:href="#display" var-width="600" var-height="380" transform="translate(30 0)"/>
+  <!-- <rect cx="0" cy="0" width="600" height="380" fill="#555" transform="translate(30 0)" /> -->
+</module>
