@@ -3,7 +3,6 @@ inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     musnix.url = "github:musnix/musnix";
     home-manager.url = "github:nix-community/home-manager/master";
-    impermanence.url = "github:nix-community/impermanence/master";
   };
   outputs = { self, nixpkgs, musnix, home-manager, impermanence }:
  {
@@ -16,21 +15,6 @@ inputs = {
     home-manager.useGlobalPkgs = true;
     home-manager.useUserPackages = true;
     home-manager.users.orlyn = import ./users/orlyn/home.nix; 
-}
-impermanence.nixosModules.impermanence{
-   environment.persistence."/persist" = {
-    directories = [
-      "/etc/nixos"
-      "/etc/NetworkManager/system-connections"
-      "/music"
-      "/home/orlyn/code"
-    ];
-    files = [
-     "/etc/machine-id"
-     "/etc/nixos/configuration.nix"
-     "/etc/nixos/hardware-configuration.nix"
-     ];
-};
 }
    musnix.nixosModules.musnix
   

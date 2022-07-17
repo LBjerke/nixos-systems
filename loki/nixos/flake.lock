@@ -1,0 +1,220 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1656928814,
+        "narHash": "sha256-RIFfgBuKz6Hp89yRr7+NR5tzIAbn52h8vT6vXkYjZoM=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "7e2a3b3dfd9af950a856d66b0a7d01e3c18aa249",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "flake-utils_2": {
+      "locked": {
+        "lastModified": 1644229661,
+        "narHash": "sha256-1YdnJAsNy69bpcjuoKdOYQX0YxZBiCYZo4Twxerqv7k=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "3cecb5b042f7f209c56ffd8371b2711a290ec797",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "home-manager": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1656169755,
+        "narHash": "sha256-Nlnm4jeQWEGjYrE6hxi/7HYHjBSZ/E0RtjCYifnNsWk=",
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "rev": "4a3d01fb53f52ac83194081272795aa4612c2381",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "ref": "release-22.05",
+        "repo": "home-manager",
+        "type": "github"
+      }
+    },
+    "neovim-flake": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "neovim-flake": "neovim-flake_2",
+        "nixpkgs": "nixpkgs_2",
+        "plugin:gitsigns": "plugin:gitsigns",
+        "plugin:nvim-treesitter": "plugin:nvim-treesitter",
+        "plugin:onedark-vim": "plugin:onedark-vim",
+        "plugin:plenary": "plugin:plenary"
+      },
+      "locked": {
+        "lastModified": 1657983006,
+        "narHash": "sha256-pjwKJsqdLrkG/04EXmAfa32NdLSgbwndqF+W0ZbTEko=",
+        "owner": "LBjerke",
+        "repo": "neovim-flake",
+        "rev": "c4db78fe1559e0adc617c1e5980fc92c64bca5c8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "LBjerke",
+        "repo": "neovim-flake",
+        "type": "github"
+      }
+    },
+    "neovim-flake_2": {
+      "inputs": {
+        "flake-utils": "flake-utils_2",
+        "nixpkgs": [
+          "neovim-flake",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "contrib",
+        "lastModified": 1657954471,
+        "narHash": "sha256-y0VXwj45sLenESKFaWQlfC2g0mJm+X+bNF7ZSpCUeqQ=",
+        "owner": "neovim",
+        "repo": "neovim",
+        "rev": "711a6a915767a97300aba76fb9d79b9784bc76ce",
+        "type": "github"
+      },
+      "original": {
+        "dir": "contrib",
+        "owner": "neovim",
+        "repo": "neovim",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1657888067,
+        "narHash": "sha256-GnwJoFBTPfW3+mz7QEeJEEQ9OMHZOiIJ/qDhZxrlKh8=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "65fae659e31098ca4ac825a6fef26d890aaf3f4e",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1657815135,
+        "narHash": "sha256-+5Jby1ayRjtSgsM5IpRNeUgdcIutCKQWR6sypRtd1RE=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "c06d5fa9c605d143b15cafdbbb61c7c95388d76e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-22.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_3": {
+      "locked": {
+        "lastModified": 1657815135,
+        "narHash": "sha256-+5Jby1ayRjtSgsM5IpRNeUgdcIutCKQWR6sypRtd1RE=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "c06d5fa9c605d143b15cafdbbb61c7c95388d76e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-22.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "plugin:gitsigns": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1657272824,
+        "narHash": "sha256-mUAy+X3wnKGVNydYHzMmwJYdZ4s3QQJOHa6Ww/ay/6Y=",
+        "owner": "lewis6991",
+        "repo": "gitsigns.nvim",
+        "rev": "bb6c3bf6f584e73945a0913bb3adf77b60d6f6a2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lewis6991",
+        "repo": "gitsigns.nvim",
+        "type": "github"
+      }
+    },
+    "plugin:nvim-treesitter": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1657972023,
+        "narHash": "sha256-aNUkThbHnjSYQjd8EmuWboe0hKIeQBFMfT5oCXPR9FA=",
+        "owner": "nvim-treesitter",
+        "repo": "nvim-treesitter",
+        "rev": "a5709e685bad789e84e36cb7c95d3b7d60f744d8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nvim-treesitter",
+        "repo": "nvim-treesitter",
+        "type": "github"
+      }
+    },
+    "plugin:onedark-vim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1656338792,
+        "narHash": "sha256-lFaJ0eJ+ugdEpCpMNhRXf3Mb/1hPA8HtqcQQkzRIYxg=",
+        "owner": "joshdick",
+        "repo": "onedark.vim",
+        "rev": "ff0e0a488ca9d0d146f6e67b6fc3038f760238ea",
+        "type": "github"
+      },
+      "original": {
+        "owner": "joshdick",
+        "repo": "onedark.vim",
+        "type": "github"
+      }
+    },
+    "plugin:plenary": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1657483025,
+        "narHash": "sha256-eBZTFEi7b2CBUakcamhwPcqjzaKg9tAGHNdc4XYUv78=",
+        "owner": "nvim-lua",
+        "repo": "plenary.nvim",
+        "rev": "986ad71ae930c7d96e812734540511b4ca838aa2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nvim-lua",
+        "repo": "plenary.nvim",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "home-manager": "home-manager",
+        "neovim-flake": "neovim-flake",
+        "nixpkgs": "nixpkgs_3"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
